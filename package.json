@@ -1,0 +1,16 @@
+{
+  "name": "onlinejudge3-common",
+  "version": "1.0.0",
+  "description": "OJ3 前后端共用模块。不允许有平台特异性代码（如 fs、window、document 等对象的引用）。",
+  "main": "index.js",
+  "scripts": {
+    "gen:codes": "node codes/gen.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.sdutacm.cn/sdutacm/onlinejudge3-common.git"
+  },
+  "author": "bLue",
+  "license": "ISC"
+}
