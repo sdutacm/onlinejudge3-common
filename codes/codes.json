@@ -2,47 +2,53 @@
   "modules": [
     {
       "name": "General",
-      "range": "0XX",
+      "range": "X",
       "codes": [
         {
+          "code": -1,
+          "var": "GENERAL_INTERNAL_SERVER_ERROR",
+          "msg": "Internal Server Error",
+          "description": "内部服务器错误"
+        },
+        {
           "code": 1,
-          "var": "R_GENERAL_UNKNOWN_ERROR",
+          "var": "GENERAL_UNKNOWN_ERROR",
           "msg": "Unknown Error",
           "description": "未知错误"
         },
         {
           "code": 2,
-          "var": "R_GENERAL_ILLEGAL_REQUEST",
+          "var": "GENERAL_ILLEGAL_REQUEST",
           "msg": "Illegal Request",
           "description": "非法请求"
         },
         {
           "code": 3,
-          "var": "R_GENERAL_NOT_LOGGED_IN",
+          "var": "GENERAL_NOT_LOGGED_IN",
           "msg": "You are not logged in",
           "description": "用户未登录"
         },
         {
           "code": 4,
-          "var": "R_GENERAL_ALREADY_LOGGED_IN",
+          "var": "GENERAL_ALREADY_LOGGED_IN",
           "msg": "You have already logged in",
           "description": "用户已登录"
         },
         {
           "code": 5,
-          "var": "R_GENERAL_NO_PERMISSION",
+          "var": "GENERAL_NO_PERMISSION",
           "msg": "You do not have permission to operate",
           "description": "无权限操作"
         },
         {
           "code": 6,
-          "var": "R_GENERAL_ENTITY_NOT_EXIST",
+          "var": "GENERAL_ENTITY_NOT_EXIST",
           "msg": "The request entity does not exist",
           "description": "请求对象不存在"
         },
         {
           "code": 7,
-          "var": "R_GENERAL_FLE",
+          "var": "GENERAL_FLE",
           "msg": "Request frequency limit exceeded",
           "description": "请求频率超限"
         }
