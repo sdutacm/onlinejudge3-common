@@ -51,6 +51,12 @@
           "var": "GENERAL_FLE",
           "msg": "Request frequency limit exceeded",
           "description": "请求频率超限"
+        },
+        {
+          "code": 8,
+          "var": "GENERAL_REQUEST_PARAMS_ERROR",
+          "msg": "Request params error",
+          "description": "请求参数错误"
         }
       ]
     }

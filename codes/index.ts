@@ -8,6 +8,7 @@ export const codeMsgs = {
   5: 'You do not have permission to operate',
   6: 'The request entity does not exist',
   7: 'Request frequency limit exceeded',
+  8: 'Request params error',
 };
 
 export enum Codes {
@@ -20,4 +21,5 @@ export enum Codes {
   GENERAL_NO_PERMISSION = 5,
   GENERAL_ENTITY_NOT_EXIST = 6,
   GENERAL_FLE = 7,
+  GENERAL_REQUEST_PARAMS_ERROR = 8,
 }
