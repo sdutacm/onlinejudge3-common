@@ -9,6 +9,9 @@ export const codeMsgs = {
   6: 'The request entity does not exist',
   7: 'Request frequency limit exceeded',
   8: 'Request params error',
+
+  // User 1XX
+  101: 'Incorrect login name or password',
 };
 
 export enum Codes {
@@ -22,4 +25,7 @@ export enum Codes {
   GENERAL_ENTITY_NOT_EXIST = 6,
   GENERAL_FLE = 7,
   GENERAL_REQUEST_PARAMS_ERROR = 8,
+
+  // User 1XX
+  USER_INCORRECT_LOGIN_INFO = 101,
 }

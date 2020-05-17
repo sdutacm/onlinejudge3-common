@@ -59,6 +59,18 @@
           "description": "请求参数错误"
         }
       ]
+    },
+    {
+      "name": "User",
+      "range": "1XX",
+      "codes": [
+        {
+          "code": 101,
+          "var": "USER_INCORRECT_LOGIN_INFO",
+          "msg": "Incorrect login name or password",
+          "description": "用户名或密码不正确"
+        }
+      ]
     }
   ]
 }
