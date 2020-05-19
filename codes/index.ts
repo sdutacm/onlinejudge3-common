@@ -12,6 +12,9 @@ export const codeMsgs = {
 
   // User 1XX
   101: 'Incorrect login name or password',
+  102: 'The username already exists',
+  103: 'The nickname already exists',
+  104: 'The email already exists',
 };
 
 export enum Codes {
@@ -28,4 +31,7 @@ export enum Codes {
 
   // User 1XX
   USER_INCORRECT_LOGIN_INFO = 101,
+  USER_USERNAME_EXISTS = 102,
+  USER_NICKNAME_EXISTS = 103,
+  USER_EMAIL_EXISTS = 104,
 }

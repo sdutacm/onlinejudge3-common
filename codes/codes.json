@@ -69,6 +69,24 @@
           "var": "USER_INCORRECT_LOGIN_INFO",
           "msg": "Incorrect login name or password",
           "description": "用户名或密码不正确"
+        },
+        {
+          "code": 102,
+          "var": "USER_USERNAME_EXISTS",
+          "msg": "The username already exists",
+          "description": "用户名已被使用"
+        },
+        {
+          "code": 103,
+          "var": "USER_NICKNAME_EXISTS",
+          "msg": "The nickname already exists",
+          "description": "昵称已被使用"
+        },
+        {
+          "code": 104,
+          "var": "USER_EMAIL_EXISTS",
+          "msg": "The email already exists",
+          "description": "邮箱已被使用"
         }
       ]
     }

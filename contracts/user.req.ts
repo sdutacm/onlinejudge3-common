@@ -12,3 +12,11 @@ export interface ILoginReq {
   loginName: string;
   password: string;
 }
+
+export interface IRegisterReq {
+  username: string;
+  nickname: string;
+  email: string;
+  code: number;
+  password: string;
+}
