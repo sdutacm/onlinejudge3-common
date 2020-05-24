@@ -90,7 +90,7 @@
         },
         {
           "code": 105,
-          "var": "USERS_INCORRECT_VERIFICATION_CODE",
+          "var": "USER_INCORRECT_VERIFICATION_CODE",
           "msg": "The verification code is incorrect",
           "description": "验证码错误"
         }
