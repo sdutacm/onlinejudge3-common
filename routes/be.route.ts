@@ -9,7 +9,7 @@ export interface IRouteBeConfig {
 }
 
 const _routesBe = {
-  // users
+  // user
   getSession: {
     method: 'GET',
     url: '/getSession',
@@ -34,6 +34,15 @@ const _routesBe = {
     method: 'POST',
     url: '/getUserDetail',
     contract: { req: 'user.getUserDetailReq', resp: 'user.getUserDetailResp' },
+  },
+  // verification
+  sendEmailVerification: {
+    method: 'POST',
+    url: '/sendEmailVerification',
+    contract: {
+      req: 'verification.sendEmailVerificationReq',
+      resp: 'verification.sendEmailVerificationResp',
+    },
   },
 };
 
