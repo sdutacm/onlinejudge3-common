@@ -87,6 +87,12 @@
           "var": "USER_EMAIL_EXISTS",
           "msg": "The email already exists",
           "description": "邮箱已被使用"
+        },
+        {
+          "code": 105,
+          "var": "USERS_INCORRECT_VERIFICATION_CODE",
+          "msg": "The verification code is incorrect",
+          "description": "验证码错误"
         }
       ]
     }

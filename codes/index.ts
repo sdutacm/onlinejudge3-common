@@ -15,6 +15,7 @@ export const codeMsgs = {
   102: 'The username already exists',
   103: 'The nickname already exists',
   104: 'The email already exists',
+  105: 'The verification code is incorrect',
 };
 
 export enum Codes {
@@ -34,4 +35,5 @@ export enum Codes {
   USER_USERNAME_EXISTS = 102,
   USER_NICKNAME_EXISTS = 103,
   USER_EMAIL_EXISTS = 104,
+  USERS_INCORRECT_VERIFICATION_CODE = 105,
 }
