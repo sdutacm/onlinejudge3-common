@@ -7,3 +7,7 @@
 export interface ISendEmailVerificationReq {
   email: string;
 }
+
+export interface ISendEmailVerificationResp {
+  retryAfter: number;
+}
