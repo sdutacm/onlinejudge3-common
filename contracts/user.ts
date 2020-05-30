@@ -4,6 +4,14 @@
  * and run `npm run gen:contract` in "onlinejudge3-be" to regenerate this file.
  */
 
+export type IGetSessionResp = {
+  userId: number;
+  username: string;
+  nickname: string;
+  permission: number;
+  avatar: string | null;
+} | null;
+
 export interface IGetUserListReq {
   page?: number;
   limit?: number;
@@ -20,6 +28,36 @@ export interface IGetUserListReq {
 
 export interface IGetUserDetailReq {
   userId: number;
+}
+
+export interface IGetUserDetailResp {
+  userId: number;
+  username?: string;
+  nickname?: string;
+  email?: string;
+  submitted?: number;
+  accepted?: number;
+  permission?: number;
+  avatar?: string | null;
+  bannerImage?: string;
+  school?: string;
+  college?: string;
+  major?: string;
+  class?: string;
+  rating?: number;
+  ratingHistory:
+    | {
+        contest: {
+          contestId: number;
+          title: string;
+        };
+        rank: number;
+        rating: number;
+        ratingChange: number;
+        date: string;
+      }[]
+    | null;
+  createdAt?: string;
 }
 
 export interface ILoginReq {
