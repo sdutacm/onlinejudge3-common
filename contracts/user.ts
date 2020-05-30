@@ -26,25 +26,41 @@ export interface IGetUserListReq {
   grade?: string;
 }
 
+export interface IGetUserListResp {
+  page: number;
+  limit: number;
+  count: number;
+  rows: {
+    userId: number;
+    username: string;
+    nickname: string;
+    submitted: number;
+    accepted: number;
+    avatar: string | null;
+    bannerImage: string;
+    rating: number;
+  }[];
+}
+
 export interface IGetUserDetailReq {
   userId: number;
 }
 
 export interface IGetUserDetailResp {
   userId: number;
-  username?: string;
-  nickname?: string;
-  email?: string;
-  submitted?: number;
-  accepted?: number;
-  permission?: number;
-  avatar?: string | null;
-  bannerImage?: string;
-  school?: string;
-  college?: string;
-  major?: string;
-  class?: string;
-  rating?: number;
+  username: string;
+  nickname: string;
+  email: string;
+  submitted: number;
+  accepted: number;
+  permission: number;
+  avatar: string | null;
+  bannerImage: string;
+  school: string;
+  college: string;
+  major: string;
+  class: string;
+  rating: number;
   ratingHistory:
     | {
         contest: {
@@ -57,7 +73,7 @@ export interface IGetUserDetailResp {
         date: string;
       }[]
     | null;
-  createdAt?: string;
+  createdAt: string;
 }
 
 export interface ILoginReq {
