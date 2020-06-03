@@ -1,5 +1,5 @@
 export interface IRouteBeConfig {
-  name: string;
+  i: string;
   method: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
   url: string;
   contract: {
@@ -40,6 +40,11 @@ const _routesBe = {
     url: '/getUserDetail',
     contract: { req: 'user.getUserDetailReq', resp: 'user.getUserDetailResp' },
   },
+  uploadUserAvatar: {
+    method: 'POST',
+    url: '/uploadUserAvatar',
+    contract: { req: 'user.uploadUserAvatarReq', resp: null },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',
@@ -53,7 +58,7 @@ const _routesBe = {
 
 Object.keys(_routesBe).forEach((key) => {
   // @ts-ignore
-  _routesBe[key].name = key;
+  _routesBe[key].i = key;
 });
 
 export const routesBe = _routesBe as Record<keyof typeof _routesBe, IRouteBeConfig>;

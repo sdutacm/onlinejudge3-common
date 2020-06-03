@@ -57,6 +57,18 @@
           "var": "GENERAL_REQUEST_PARAMS_ERROR",
           "msg": "Request params error",
           "description": "请求参数错误"
+        },
+        {
+          "code": 9,
+          "var": "GENERAL_INVALID_MEDIA",
+          "msg": "The media file is invalid",
+          "description": "上传媒体文件不合法"
+        },
+        {
+          "code": 10,
+          "var": "GENERAL_INVALID_MEDIA_SIZE",
+          "msg": "The media file size limit exceeded",
+          "description": "上传媒体文件小超限"
         }
       ]
     },

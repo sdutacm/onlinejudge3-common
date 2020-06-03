@@ -88,3 +88,8 @@ export interface IRegisterReq {
   code: number;
   password: string;
 }
+
+export interface IUploadUserAvatarReq {
+  userId: number;
+  [k: string]: unknown;
+}
