@@ -93,3 +93,8 @@ export interface IUploadUserAvatarReq {
   userId: number;
   [k: string]: unknown;
 }
+
+export interface IUploadUserBannerImageReq {
+  userId: number;
+  [k: string]: unknown;
+}

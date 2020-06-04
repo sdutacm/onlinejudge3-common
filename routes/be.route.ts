@@ -45,6 +45,11 @@ const _routesBe = {
     url: '/uploadUserAvatar',
     contract: { req: 'user.uploadUserAvatarReq', resp: null },
   },
+  uploadUserBannerImage: {
+    method: 'POST',
+    url: '/uploadUserBannerImage',
+    contract: { req: 'user.uploadUserBannerImageReq', resp: null },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',
