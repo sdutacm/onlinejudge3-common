@@ -39,6 +39,7 @@ export interface IGetUserListResp {
     avatar: string | null;
     bannerImage: string;
     rating: number;
+    grade: string;
   }[];
 }
 
@@ -50,7 +51,7 @@ export interface IGetUserDetailResp {
   userId: number;
   username: string;
   nickname: string;
-  email: string;
+  email?: string;
   submitted: number;
   accepted: number;
   permission: number;
@@ -60,6 +61,7 @@ export interface IGetUserDetailResp {
   college: string;
   major: string;
   class: string;
+  grade: string;
   rating: number;
   ratingHistory:
     | {
@@ -73,7 +75,12 @@ export interface IGetUserDetailResp {
         date: string;
       }[]
     | null;
-  createdAt: string;
+  defaultLanguage?: string;
+  settings?: {} | null;
+  coin?: number;
+  verified?: boolean;
+  lastTime?: string | null;
+  createdAt?: string;
 }
 
 export interface ILoginReq {
