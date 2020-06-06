@@ -12,6 +12,19 @@ export type IGetSessionResp = {
   avatar: string | null;
 } | null;
 
+export interface ILoginReq {
+  loginName: string;
+  password: string;
+}
+
+export interface IRegisterReq {
+  username: string;
+  nickname: string;
+  email: string;
+  code: number;
+  password: string;
+}
+
 export interface IGetUserListReq {
   page?: number;
   limit?: number;
@@ -94,14 +107,13 @@ export interface IUpdateUserDetailReq {
   defaultLanguage?: '' | 'gcc' | 'g++' | 'java' | 'python2' | 'python3' | 'c#';
 }
 
-export interface ILoginReq {
-  loginName: string;
+export interface IUpdateUserPasswordReq {
+  userId: number;
+  oldPassword: string;
   password: string;
 }
 
-export interface IRegisterReq {
-  username: string;
-  nickname: string;
+export interface IResetUserPasswordReq {
   email: string;
   code: number;
   password: string;
