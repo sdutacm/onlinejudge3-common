@@ -119,6 +119,12 @@ export interface IResetUserPasswordReq {
   password: string;
 }
 
+export interface IUpdateUserEmailReq {
+  userId: number;
+  email: string;
+  code: number;
+}
+
 export interface IUploadUserAvatarReq {
   userId: number;
   [k: string]: unknown;

@@ -55,6 +55,11 @@ const _routesBe = {
     url: '/resetUserPassword',
     contract: { req: 'user.resetUserPasswordReq', resp: null },
   },
+  updateUserEmail: {
+    method: 'POST',
+    url: '/updateUserEmail',
+    contract: { req: 'user.updateUserEmailReq', resp: null },
+  },
   uploadUserAvatar: {
     method: 'POST',
     url: '/uploadUserAvatar',
