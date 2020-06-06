@@ -105,6 +105,18 @@
           "var": "USER_INCORRECT_VERIFICATION_CODE",
           "msg": "The verification code is incorrect",
           "description": "验证码错误"
+        },
+        {
+          "code": 106,
+          "var": "USER_INCORRECT_OLD_PASSWORD",
+          "msg": "The old password is incorrect",
+          "description": "旧密码不正确"
+        },
+        {
+          "code": 107,
+          "var": "USER_NOT_EXIST",
+          "msg": "The user does not exist",
+          "description": "用户不存在"
         }
       ]
     }
