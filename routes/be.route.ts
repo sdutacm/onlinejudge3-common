@@ -40,6 +40,11 @@ const _routesBe = {
     url: '/getUserDetail',
     contract: { req: 'user.getUserDetailReq', resp: 'user.getUserDetailResp' },
   },
+  updateUserDetail: {
+    method: 'POST',
+    url: '/updateUserDetail',
+    contract: { req: 'user.updateUserDetailReq', resp: null },
+  },
   uploadUserAvatar: {
     method: 'POST',
     url: '/uploadUserAvatar',

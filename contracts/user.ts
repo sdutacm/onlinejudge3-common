@@ -75,12 +75,23 @@ export interface IGetUserDetailResp {
         date: string;
       }[]
     | null;
+  site: string;
   defaultLanguage?: string;
   settings?: {} | null;
   coin?: number;
   verified?: boolean;
   lastTime?: string | null;
   createdAt?: string;
+}
+
+export interface IUpdateUserDetailReq {
+  userId: number;
+  school?: string;
+  college?: string;
+  major?: string;
+  class?: string;
+  site?: string;
+  defaultLanguage?: '' | 'gcc' | 'g++' | 'java' | 'python2' | 'python3' | 'c#';
 }
 
 export interface ILoginReq {
