@@ -119,6 +119,11 @@ export interface IResetUserPasswordReq {
   password: string;
 }
 
+export interface IResetUserPasswordByAdminReq {
+  userId: number;
+  password: string;
+}
+
 export interface IUpdateUserEmailReq {
   userId: number;
   email: string;
