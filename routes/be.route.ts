@@ -84,6 +84,17 @@ const _routesBe = {
       resp: 'verification.sendEmailVerificationResp',
     },
   },
+  // problem
+  getProblemList: {
+    method: 'POST',
+    url: '/getProblemList',
+    contract: { req: 'problem.getProblemListReq', resp: 'problem.getProblemListResp' },
+  },
+  getProblemDetail: {
+    method: 'POST',
+    url: '/getProblemDetail',
+    contract: { req: 'problem.getProblemDetailReq', resp: 'problem.getProblemDetailResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
