@@ -25,6 +25,10 @@ export interface IRegisterReq {
   password: string;
 }
 
+export interface IRegisterResp {
+  userId: number;
+}
+
 export interface IGetUserListReq {
   page?: number;
   limit?: number;

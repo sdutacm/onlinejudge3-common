@@ -28,7 +28,7 @@ const _routesBe = {
   register: {
     method: 'POST',
     url: '/register',
-    contract: { req: 'user.registerReq', resp: null },
+    contract: { req: 'user.registerReq', resp: 'user.registerResp' },
   },
   getUserList: {
     method: 'POST',
