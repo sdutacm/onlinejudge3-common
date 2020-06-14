@@ -14,6 +14,7 @@ export interface IGetProblemListReq {
   source?: string;
   author?: number;
   tagIds?: number[];
+  _scope?: 'available' | null;
 }
 
 export interface IGetProblemListResp {
@@ -44,6 +45,7 @@ export interface IGetProblemListResp {
 
 export interface IGetProblemDetailReq {
   problemId: number;
+  _scope?: 'available' | null;
 }
 
 export interface IGetProblemDetailResp {

@@ -41,6 +41,8 @@ export interface IGetUserListReq {
   major?: string;
   class?: string;
   grade?: string;
+  forbidden?: number;
+  _scope?: 'available' | null;
 }
 
 export interface IGetUserListResp {
@@ -57,11 +59,13 @@ export interface IGetUserListResp {
     bannerImage: string;
     rating: number;
     grade: string;
+    forbidden: number;
   }[];
 }
 
 export interface IGetUserDetailReq {
   userId: number;
+  _scope?: 'available' | null;
 }
 
 export interface IGetUserDetailResp {
@@ -79,6 +83,7 @@ export interface IGetUserDetailResp {
   major: string;
   class: string;
   grade: string;
+  forbidden: number;
   rating: number;
   ratingHistory:
     | {
