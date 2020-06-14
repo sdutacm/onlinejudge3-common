@@ -25,7 +25,7 @@ export interface IGetProblemListResp {
     problemId: number;
     title: string;
     source: string;
-    author: number;
+    author: number | null;
     difficulty: number;
     accepted: number;
     submitted: number;
@@ -58,7 +58,7 @@ export interface IGetProblemDetailResp {
   sampleOutput: string;
   hint: string;
   source: string;
-  author: number;
+  author: number | null;
   timeLimit: number;
   memoryLimit: number;
   difficulty: number;
