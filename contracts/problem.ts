@@ -75,3 +75,40 @@ export interface IGetProblemDetailResp {
   createdAt: string;
   updatedAt: string | null;
 }
+
+export interface ICreateProblemReq {
+  title: string;
+  description: string;
+  input: string;
+  output: string;
+  sampleInput: string;
+  sampleOutput: string;
+  hint: string;
+  source: string;
+  timeLimit: number;
+  memoryLimit: number;
+  difficulty?: number;
+  spj?: boolean;
+  display?: boolean;
+}
+
+export interface ICreateProblemResp {
+  problemId: number;
+}
+
+export interface IUpdateProblemDetailReq {
+  problemId: number;
+  title?: string;
+  description?: string;
+  input?: string;
+  output?: string;
+  sampleInput?: string;
+  sampleOutput?: string;
+  hint?: string;
+  source?: string;
+  timeLimit?: number;
+  memoryLimit?: number;
+  difficulty?: number;
+  spj?: boolean;
+  display?: boolean;
+}

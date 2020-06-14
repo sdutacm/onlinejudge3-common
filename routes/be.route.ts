@@ -95,6 +95,16 @@ const _routesBe = {
     url: '/getProblemDetail',
     contract: { req: 'problem.getProblemDetailReq', resp: 'problem.getProblemDetailResp' },
   },
+  createProblem: {
+    method: 'POST',
+    url: '/createProblem',
+    contract: { req: 'problem.createProblemReq', resp: 'problem.createProblemResp' },
+  },
+  updateProblemDetail: {
+    method: 'POST',
+    url: '/updateProblemDetail',
+    contract: { req: 'problem.updateProblemDetailReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
