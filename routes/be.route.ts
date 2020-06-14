@@ -105,6 +105,22 @@ const _routesBe = {
     url: '/updateProblemDetail',
     contract: { req: 'problem.updateProblemDetailReq', resp: null },
   },
+  // tag
+  getTagFullList: {
+    method: 'POST',
+    url: '/getTagFullList',
+    contract: { req: 'tag.getTagFullListReq', resp: 'tag.getTagFullListResp' },
+  },
+  createTag: {
+    method: 'POST',
+    url: '/createTag',
+    contract: { req: 'tag.createTagReq', resp: 'tag.createTagResp' },
+  },
+  updateTagDetail: {
+    method: 'POST',
+    url: '/updateTagDetail',
+    contract: { req: 'tag.updateTagDetailReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
