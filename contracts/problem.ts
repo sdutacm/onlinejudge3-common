@@ -114,3 +114,8 @@ export interface IUpdateProblemDetailReq {
   spj?: boolean;
   display?: boolean;
 }
+
+export interface IUpdateProblemTagsReq {
+  problemId: number;
+  tagIds: number[];
+}

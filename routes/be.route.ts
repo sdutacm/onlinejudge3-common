@@ -105,6 +105,11 @@ const _routesBe = {
     url: '/updateProblemDetail',
     contract: { req: 'problem.updateProblemDetailReq', resp: null },
   },
+  updateProblemTags: {
+    method: 'POST',
+    url: '/updateProblemTags',
+    contract: { req: 'problem.updateProblemTagsReq', resp: null },
+  },
   // tag
   getTagFullList: {
     method: 'POST',
