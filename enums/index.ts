@@ -32,6 +32,12 @@ export enum EContestType {
   public = 3,
 }
 
+export enum EContestCategory {
+  contest = 0,
+  experiment = 1,
+  test = 2,
+}
+
 export enum EContestMode {
   none = 0,
   rating = 1,
