@@ -126,6 +126,12 @@ const _routesBe = {
     url: '/updateTagDetail',
     contract: { req: 'tag.updateTagDetailReq', resp: null },
   },
+  // contest
+  getContestList: {
+    method: 'POST',
+    url: '/getContestList',
+    contract: { req: 'contest.getContestListReq', resp: 'contest.getContestListResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
