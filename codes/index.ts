@@ -20,6 +20,33 @@ export const codeMsgs = {
   105: 'The verification code is incorrect',
   106: 'The old password is incorrect',
   107: 'The user does not exist',
+
+  // Problem 2XX
+
+  // Solution 3XX
+
+  // Contest 4XX
+
+  // Topic 5XX
+
+  // Post 6XX
+
+  // Message 7XX
+
+  // Favorite 8XX
+
+  // Note 9XX
+
+  // Set 10XX
+
+  // Group 11XX
+
+  // Judger 12XX
+  1201: 'Unsupported data format',
+  1202: 'Invalid data',
+  1203: 'Data git working dir is not clean. Please retry',
+
+  // Misc 13XX
 };
 
 export enum Codes {
@@ -44,4 +71,31 @@ export enum Codes {
   USER_INCORRECT_VERIFICATION_CODE = 105,
   USER_INCORRECT_OLD_PASSWORD = 106,
   USER_NOT_EXIST = 107,
+
+  // Problem 2XX
+
+  // Solution 3XX
+
+  // Contest 4XX
+
+  // Topic 5XX
+
+  // Post 6XX
+
+  // Message 7XX
+
+  // Favorite 8XX
+
+  // Note 9XX
+
+  // Set 10XX
+
+  // Group 11XX
+
+  // Judger 12XX
+  JUDGER_UNSUPPORTED_DATA_FORMAT = 1201,
+  JUDGER_INVALID_DATA = 1202,
+  JUDGER_DATA_GIT_WD_NOT_CLEAN = 1203,
+
+  // Misc 13XX
 }

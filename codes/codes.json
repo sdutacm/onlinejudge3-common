@@ -119,6 +119,85 @@
           "description": "用户不存在"
         }
       ]
+    },
+    {
+      "name": "Problem",
+      "range": "2XX",
+      "codes": []
+    },
+    {
+      "name": "Solution",
+      "range": "3XX",
+      "codes": []
+    },
+    {
+      "name": "Contest",
+      "range": "4XX",
+      "codes": []
+    },
+    {
+      "name": "Topic",
+      "range": "5XX",
+      "codes": []
+    },
+    {
+      "name": "Post",
+      "range": "6XX",
+      "codes": []
+    },
+    {
+      "name": "Message",
+      "range": "7XX",
+      "codes": []
+    },
+    {
+      "name": "Favorite",
+      "range": "8XX",
+      "codes": []
+    },
+    {
+      "name": "Note",
+      "range": "9XX",
+      "codes": []
+    },
+    {
+      "name": "Set",
+      "range": "10XX",
+      "codes": []
+    },
+    {
+      "name": "Group",
+      "range": "11XX",
+      "codes": []
+    },
+    {
+      "name": "Judger",
+      "range": "12XX",
+      "codes": [
+        {
+          "code": 1201,
+          "var": "JUDGER_UNSUPPORTED_DATA_FORMAT",
+          "msg": "Unsupported data format",
+          "description": "不支持的数据格式"
+        },
+        {
+          "code": 1202,
+          "var": "JUDGER_INVALID_DATA",
+          "msg": "Invalid data",
+          "description": "无效的数据"
+        },
+        {
+          "code": 1203,
+          "var": "JUDGER_DATA_GIT_WD_NOT_CLEAN",
+          "msg": "Data git working dir is not clean. Please retry",
+          "description": "数据 git 工作区非空，请重试"
+        }
+      ]
+    },
+    {
+      "name": "Misc",
+      "range": "13XX",
+      "codes": []
     }
   ]
 }

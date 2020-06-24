@@ -132,6 +132,27 @@ const _routesBe = {
     url: '/getContestList',
     contract: { req: 'contest.getContestListReq', resp: 'contest.getContestListResp' },
   },
+  // judger
+  getJudgerDataFile: {
+    method: 'POST',
+    url: '/getJudgerDataFile',
+    contract: { req: 'judger.getJudgerDataFileReq', resp: 'judger.getJudgerDataFileResp' },
+  },
+  getJudgerDataArchive: {
+    method: 'POST',
+    url: '/getJudgerDataArchive',
+    contract: { req: 'judger.getJudgerDataArchiveReq', resp: null },
+  },
+  prepareJudgerDataUpdate: {
+    method: 'POST',
+    url: '/prepareJudgerDataUpdate',
+    contract: { req: null, resp: null },
+  },
+  uploadJudgerData: {
+    method: 'POST',
+    url: '/uploadJudgerData',
+    contract: { req: 'judger.uploadJudgerDataReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
