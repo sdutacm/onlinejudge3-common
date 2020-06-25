@@ -91,3 +91,32 @@ export interface IGetContestDetailResp {
   ended: boolean;
   hidden: boolean;
 }
+
+export interface IGetContestProblemsReq {
+  contestId: number;
+}
+
+export interface IGetContestProblemsResp {
+  count: number;
+  rows: {
+    problemId: number;
+    title: string;
+    description: string;
+    input: string;
+    output: string;
+    sampleInput: string;
+    sampleOutput: string;
+    hint: string;
+    source: string;
+    author: number | null;
+    timeLimit: number;
+    memoryLimit: number;
+    difficulty: number;
+    accepted: number;
+    submitted: number;
+    spj: boolean;
+    display: boolean;
+    createdAt: string;
+    updatedAt: string | null;
+  }[];
+}
