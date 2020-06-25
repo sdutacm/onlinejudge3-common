@@ -115,7 +115,7 @@ export interface IUpdateProblemDetailReq {
   display?: boolean;
 }
 
-export interface IUpdateProblemTagsReq {
+export interface ISetProblemTagsReq {
   problemId: number;
   tagIds: number[];
 }

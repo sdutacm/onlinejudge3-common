@@ -28,6 +28,7 @@ export const codeMsgs = {
   // Contest 4XX
   401: 'Incorrect username or password',
   402: 'Incorrect password',
+  403: 'The contest is pending',
 
   // Topic 5XX
 
@@ -79,8 +80,9 @@ export enum Codes {
   // Solution 3XX
 
   // Contest 4XX
-  CONTESTS_INCORRECT_USERNAME_OR_PASSWORD = 401,
-  CONTESTS_INCORRECT_PASSWORD = 402,
+  CONTEST_INCORRECT_USERNAME_OR_PASSWORD = 401,
+  CONTEST_INCORRECT_PASSWORD = 402,
+  CONTEST_PENDING = 403,
 
   // Topic 5XX
 

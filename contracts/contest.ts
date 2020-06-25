@@ -120,3 +120,11 @@ export interface IGetContestProblemsResp {
     updatedAt: string | null;
   }[];
 }
+
+export interface ISetContestProblemsReq {
+  contestId: number;
+  problems: {
+    problemId: number;
+    title: string;
+  }[];
+}

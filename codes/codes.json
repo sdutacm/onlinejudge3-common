@@ -136,15 +136,21 @@
       "codes": [
         {
           "code": 401,
-          "var": "CONTESTS_INCORRECT_USERNAME_OR_PASSWORD",
+          "var": "CONTEST_INCORRECT_USERNAME_OR_PASSWORD",
           "msg": "Incorrect username or password",
           "description": "用户名或密码不正确"
         },
         {
           "code": 402,
-          "var": "CONTESTS_INCORRECT_PASSWORD",
+          "var": "CONTEST_INCORRECT_PASSWORD",
           "msg": "Incorrect password",
           "description": "密码不正确"
+        },
+        {
+          "code": 403,
+          "var": "CONTEST_PENDING",
+          "msg": "The contest is pending",
+          "description": "比赛未开始"
         }
       ]
     },

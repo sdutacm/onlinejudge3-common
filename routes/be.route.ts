@@ -105,10 +105,10 @@ const _routesBe = {
     url: '/updateProblemDetail',
     contract: { req: 'problem.updateProblemDetailReq', resp: null },
   },
-  updateProblemTags: {
+  setProblemTags: {
     method: 'POST',
-    url: '/updateProblemTags',
-    contract: { req: 'problem.updateProblemTagsReq', resp: null },
+    url: '/setProblemTags',
+    contract: { req: 'problem.setProblemTagsReq', resp: null },
   },
   // tag
   getTagFullList: {
@@ -159,6 +159,11 @@ const _routesBe = {
     method: 'POST',
     url: '/getContestProblems',
     contract: { req: 'contest.getContestProblemsReq', resp: 'contest.getContestProblemsResp' },
+  },
+  setContestProblems: {
+    method: 'POST',
+    url: '/setContestProblems',
+    contract: { req: 'contest.setContestProblemsReq', resp: null },
   },
   // judger
   getJudgerDataFile: {
