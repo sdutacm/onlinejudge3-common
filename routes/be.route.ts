@@ -132,6 +132,29 @@ const _routesBe = {
     url: '/getContestList',
     contract: { req: 'contest.getContestListReq', resp: 'contest.getContestListResp' },
   },
+  getContestSession: {
+    method: 'POST',
+    url: '/getContestSession',
+    contract: { req: 'contest.getContestSessionReq', resp: 'contest.getContestSessionResp' },
+  },
+  requestContestSession: {
+    method: 'POST',
+    url: '/requestContestSession',
+    contract: {
+      req: 'contest.requestContestSessionReq',
+      resp: 'contest.requestContestSessionResp',
+    },
+  },
+  logoutContest: {
+    method: 'POST',
+    url: '/logoutContest',
+    contract: { req: 'contest.logoutContestReq', resp: null },
+  },
+  getContestDetail: {
+    method: 'POST',
+    url: '/getContestDetail',
+    contract: { req: 'contest.getContestDetailReq', resp: 'contest.getContestDetailResp' },
+  },
   // judger
   getJudgerDataFile: {
     method: 'POST',

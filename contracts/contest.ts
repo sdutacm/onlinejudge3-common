@@ -37,3 +37,57 @@ export interface IGetContestListResp {
     hidden: boolean;
   }[];
 }
+
+export interface IGetContestSessionReq {
+  contestId: number;
+}
+
+export type IGetContestSessionResp = {
+  userId: number;
+  username: string;
+  nickname: string;
+  permission: number;
+  avatar: string | null;
+} | null;
+
+export interface IRequestContestSessionReq {
+  contestId: number;
+  username?: string;
+  password?: string;
+}
+
+export interface IRequestContestSessionResp {
+  userId: number;
+  username: string;
+  nickname: string;
+  permission: number;
+  avatar: string | null;
+}
+
+export interface ILogoutContestReq {
+  contestId: number;
+}
+
+export interface IGetContestDetailReq {
+  contestId: number;
+  _scope?: 'available' | null;
+}
+
+export interface IGetContestDetailResp {
+  contestId: number;
+  title: string;
+  type: number;
+  category: number;
+  mode: number;
+  intro: string;
+  description?: string;
+  password?: string;
+  startAt: string;
+  endAt: string;
+  frozenLength: number;
+  registerStartAt: string | null;
+  registerEndAt: string | null;
+  team: boolean;
+  ended: boolean;
+  hidden: boolean;
+}
