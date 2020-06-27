@@ -128,3 +128,36 @@ export interface ISetContestProblemsReq {
     title: string;
   }[];
 }
+
+export interface IGetContestUserListReq {
+  page?: number;
+  limit?: number;
+  order?: ['contestUserId', 'ASC' | 'DESC'][];
+  contestId: number;
+  contestUserId?: number;
+  username?: string;
+  nickname?: string;
+}
+
+export interface IGetContestUserListResp {
+  page: number;
+  limit: number;
+  count: number;
+  rows: {
+    contestUserId: number;
+    username: string;
+    nickname: string;
+    subname: string;
+    avatar: string;
+    status: number;
+    unofficial: boolean;
+    members: {
+      name: string;
+      school: string;
+      college: string;
+      major: string;
+      class: string;
+    }[];
+    createdAt: string | null;
+  }[];
+}

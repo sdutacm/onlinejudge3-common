@@ -165,6 +165,11 @@ const _routesBe = {
     url: '/setContestProblems',
     contract: { req: 'contest.setContestProblemsReq', resp: null },
   },
+  getContestUserList: {
+    method: 'POST',
+    url: '/getContestUserList',
+    contract: { req: 'contest.getContestUserListReq', resp: 'contest.getContestUserListResp' },
+  },
   // judger
   getJudgerDataFile: {
     method: 'POST',
