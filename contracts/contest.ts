@@ -161,3 +161,31 @@ export interface IGetContestUserListResp {
     createdAt: string | null;
   }[];
 }
+
+export interface IGetContestUserDetailReq {
+  contestUserId: number;
+}
+
+export interface IGetContestUserDetailResp {
+  contestUserId: number;
+  username: string;
+  nickname: string;
+  subname: string;
+  avatar: string;
+  status: number;
+  unofficial: boolean;
+  password: string;
+  sitNo: string;
+  members: {
+    schoolNo: string;
+    name: string;
+    school: string;
+    college: string;
+    major: string;
+    class: string;
+    tel: string;
+    email: string;
+    clothing: string;
+  }[];
+  createdAt: string | null;
+}
