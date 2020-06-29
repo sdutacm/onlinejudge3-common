@@ -151,6 +151,24 @@
           "var": "CONTEST_PENDING",
           "msg": "The contest is pending",
           "description": "比赛未开始"
+        },
+        {
+          "code": 404,
+          "var": "CONTEST_REGISTERED",
+          "msg": "You have already registered a user",
+          "description": "已注册过用户"
+        },
+        {
+          "code": 405,
+          "var": "CONTEST_REGISTER_NOT_IN_PROGRESS",
+          "msg": "The contest register is not in progress",
+          "description": "比赛注册未开始或已结束"
+        },
+        {
+          "code": 406,
+          "var": "CONTEST_REGISTER_NOT_OPEN",
+          "msg": "The contest register is not open",
+          "description": "比赛未开放注册"
         }
       ]
     },

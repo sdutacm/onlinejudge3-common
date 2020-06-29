@@ -175,6 +175,21 @@ const _routesBe = {
     url: '/getContestUserDetail',
     contract: { req: 'contest.getContestUserDetailReq', resp: 'contest.getContestUserDetailResp' },
   },
+  createContestUser: {
+    method: 'POST',
+    url: '/createContestUser',
+    contract: { req: 'contest.createContestUserReq', resp: 'contest.createContestUserResp' },
+  },
+  updateContestUser: {
+    method: 'POST',
+    url: '/updateContestUser',
+    contract: { req: 'contest.updateContestUserReq', resp: null },
+  },
+  auditContestUser: {
+    method: 'POST',
+    url: '/auditContestUser',
+    contract: { req: 'contest.auditContestUserReq', resp: null },
+  },
   // judger
   getJudgerDataFile: {
     method: 'POST',

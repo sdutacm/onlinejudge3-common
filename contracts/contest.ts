@@ -189,3 +189,177 @@ export interface IGetContestUserDetailResp {
   }[];
   createdAt: string | null;
 }
+
+export interface ICreateContestUserReq {
+  contestId: number;
+  nickname: string;
+  subname: string;
+  status?: number;
+  unofficial: boolean;
+  password: string;
+  members:
+    | [
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+      ]
+    | [
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+      ]
+    | [
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+      ];
+}
+
+export interface ICreateContestUserResp {
+  contestUserId: number;
+}
+
+export interface IUpdateContestUserReq {
+  contestUserId: number;
+  nickname: string;
+  subname: string;
+  status?: number;
+  unofficial: boolean;
+  password: string;
+  members:
+    | [
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+      ]
+    | [
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+      ]
+    | [
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+        {
+          schoolNo: string;
+          name: string;
+          school: string;
+          college: string;
+          major: string;
+          class: string;
+          tel: string;
+          email: string;
+          clothing: string;
+        },
+      ];
+}
+
+export interface IAuditContestUserReq {
+  contestUserId: number;
+  status: number;
+  reason?: string;
+}
