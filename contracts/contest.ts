@@ -277,6 +277,7 @@ export interface ICreateContestUserResp {
 }
 
 export interface IUpdateContestUserReq {
+  contestId: number;
   contestUserId: number;
   nickname: string;
   subname: string;
@@ -359,6 +360,7 @@ export interface IUpdateContestUserReq {
 }
 
 export interface IAuditContestUserReq {
+  contestId?: number;
   contestUserId: number;
   status: number;
   reason?: string;
