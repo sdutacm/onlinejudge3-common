@@ -126,6 +126,12 @@ const _routesBe = {
     url: '/updateTagDetail',
     contract: { req: 'tag.updateTagDetailReq', resp: null },
   },
+  // solution
+  getSolutionList: {
+    method: 'POST',
+    url: '/getSolutionList',
+    contract: { req: null, resp: null },
+  },
   // contest
   getContestList: {
     method: 'POST',
