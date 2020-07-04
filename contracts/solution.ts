@@ -42,10 +42,10 @@ export interface IGetSolutionListResp {
       type: number;
     };
     result: number;
-    time: number;
-    memory: number;
+    time?: number;
+    memory?: number;
     language: string;
-    codeLength: number;
+    codeLength?: number;
     shared: boolean;
     isContestUser: boolean;
     createdAt: string;
