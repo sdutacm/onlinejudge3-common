@@ -360,7 +360,7 @@ export interface IUpdateContestUserReq {
 }
 
 export interface IAuditContestUserReq {
-  contestId?: number;
+  contestId: number;
   contestUserId: number;
   status: number;
   reason?: string;

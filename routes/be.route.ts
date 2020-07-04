@@ -130,7 +130,7 @@ const _routesBe = {
   getSolutionList: {
     method: 'POST',
     url: '/getSolutionList',
-    contract: { req: null, resp: null },
+    contract: { req: 'solution.getSolutionListReq', resp: 'solution.getSolutionListResp' },
   },
   // contest
   getContestList: {
