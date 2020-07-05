@@ -132,6 +132,11 @@ const _routesBe = {
     url: '/getSolutionList',
     contract: { req: 'solution.getSolutionListReq', resp: 'solution.getSolutionListResp' },
   },
+  getSolutionDetail: {
+    method: 'POST',
+    url: '/getSolutionDetail',
+    contract: { req: 'solution.getSolutionDetailReq', resp: 'solution.getSolutionDetailResp' },
+  },
   // contest
   getContestList: {
     method: 'POST',
