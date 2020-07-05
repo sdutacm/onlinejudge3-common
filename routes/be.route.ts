@@ -142,6 +142,14 @@ const _routesBe = {
     url: '/updateSolutionShare',
     contract: { req: 'solution.updateSolutionShareReq', resp: null },
   },
+  getUserProblemResultStats: {
+    method: 'POST',
+    url: '/getUserProblemResultStats',
+    contract: {
+      req: 'solution.getUserProblemResultStatsReq',
+      resp: 'solution.getUserProblemResultStatsResp',
+    },
+  },
   // contest
   getContestList: {
     method: 'POST',
