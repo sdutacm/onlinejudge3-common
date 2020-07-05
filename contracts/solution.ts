@@ -87,3 +87,8 @@ export interface IGetSolutionDetailResp {
   isContestUser: boolean;
   createdAt: string;
 }
+
+export interface IUpdateSolutionShareReq {
+  solutionId: number;
+  shared: boolean;
+}
