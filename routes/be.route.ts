@@ -214,6 +214,14 @@ const _routesBe = {
     url: '/auditContestUser',
     contract: { req: 'contest.auditContestUserReq', resp: null },
   },
+  getContestProblemSolutionStats: {
+    method: 'POST',
+    url: '/getContestProblemSolutionStats',
+    contract: {
+      req: 'contest.getContestProblemSolutionStatsReq',
+      resp: 'contest.getContestProblemSolutionStatsResp',
+    },
+  },
   // judger
   getJudgerDataFile: {
     method: 'POST',

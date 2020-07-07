@@ -365,3 +365,14 @@ export interface IAuditContestUserReq {
   status: number;
   reason?: string;
 }
+
+export interface IGetContestProblemSolutionStatsReq {
+  contestId: number;
+}
+
+export interface IGetContestProblemSolutionStatsResp {
+  [k: string]: {
+    accepted: number;
+    submitted: number;
+  };
+}
