@@ -75,6 +75,14 @@ const _routesBe = {
     url: '/uploadUserBannerImage',
     contract: { req: 'user.uploadUserBannerImageReq', resp: null },
   },
+  getUserProblemResultStats: {
+    method: 'POST',
+    url: '/getUserProblemResultStats',
+    contract: {
+      req: 'user.getUserProblemResultStatsReq',
+      resp: 'user.getUserProblemResultStatsResp',
+    },
+  },
   getUserSolutionCalendar: {
     method: 'POST',
     url: '/getUserSolutionCalendar',
@@ -146,14 +154,6 @@ const _routesBe = {
     method: 'POST',
     url: '/updateSolutionShare',
     contract: { req: 'solution.updateSolutionShareReq', resp: null },
-  },
-  getUserProblemResultStats: {
-    method: 'POST',
-    url: '/getUserProblemResultStats',
-    contract: {
-      req: 'solution.getUserProblemResultStatsReq',
-      resp: 'solution.getUserProblemResultStatsResp',
-    },
   },
   // contest
   getContestList: {

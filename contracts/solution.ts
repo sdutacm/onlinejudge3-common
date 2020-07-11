@@ -92,13 +92,3 @@ export interface IUpdateSolutionShareReq {
   solutionId: number;
   shared: boolean;
 }
-
-export interface IGetUserProblemResultStatsReq {
-  userId: number;
-  contestId?: number;
-}
-
-export interface IGetUserProblemResultStatsResp {
-  acceptedProblemIds: number[];
-  attemptedProblemIds: number[];
-}

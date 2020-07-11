@@ -149,6 +149,16 @@ export interface IUploadUserBannerImageReq {
   [k: string]: unknown;
 }
 
+export interface IGetUserProblemResultStatsReq {
+  userId: number;
+  contestId?: number;
+}
+
+export interface IGetUserProblemResultStatsResp {
+  acceptedProblemIds: number[];
+  attemptedProblemIds: number[];
+}
+
 export interface IGetUserSolutionCalendarReq {
   userId: number;
   result: number;
