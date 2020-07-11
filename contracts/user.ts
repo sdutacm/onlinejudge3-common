@@ -148,3 +148,13 @@ export interface IUploadUserBannerImageReq {
   userId: number;
   [k: string]: unknown;
 }
+
+export interface IGetUserSolutionCalendarReq {
+  userId: number;
+  result: number;
+}
+
+export type IGetUserSolutionCalendarResp = {
+  date: string;
+  count: number;
+}[];

@@ -75,6 +75,11 @@ const _routesBe = {
     url: '/uploadUserBannerImage',
     contract: { req: 'user.uploadUserBannerImageReq', resp: null },
   },
+  getUserSolutionCalendar: {
+    method: 'POST',
+    url: '/getUserSolutionCalendar',
+    contract: { req: 'user.getUserSolutionCalendarReq', resp: 'user.getUserSolutionCalendarResp' },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',
