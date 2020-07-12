@@ -376,3 +376,33 @@ export interface IGetContestProblemSolutionStatsResp {
     submitted: number;
   };
 }
+
+export interface IGetContestRanklistReq {
+  contestId: number;
+  god?: boolean;
+}
+
+export interface IGetContestRanklistResp {
+  count: number;
+  rows: {
+    rank: number;
+    user: {
+      userId: number;
+      username: string;
+      nickname: string;
+      avatar: string | null;
+      bannerImage: string;
+      rating: number;
+      globalUserId?: number;
+      oldRating?: number;
+      newRating?: number;
+    };
+    solved: number;
+    time: number;
+    stats: {
+      result: 'FB' | 'AC' | 'X' | '-' | '?';
+      attempted: number;
+      time: number;
+    }[];
+  }[];
+}
