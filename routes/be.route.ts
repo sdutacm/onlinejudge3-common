@@ -261,6 +261,12 @@ const _routesBe = {
     url: '/uploadJudgerData',
     contract: { req: 'judger.uploadJudgerDataReq', resp: null },
   },
+  // message
+  getMessageList: {
+    method: 'POST',
+    url: '/getMessageList',
+    contract: { req: 'message.getMessageListReq', resp: 'message.getMessageListResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
