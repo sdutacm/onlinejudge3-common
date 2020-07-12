@@ -406,3 +406,13 @@ export interface IGetContestRanklistResp {
     }[];
   }[];
 }
+
+export interface IGetContestRatingStatusReq {
+  contestId: number;
+}
+
+export type IGetContestRatingStatusResp = {
+  status: number;
+  progress?: number;
+  used?: number;
+} | null;

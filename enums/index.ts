@@ -50,6 +50,13 @@ export enum EContestUserStatus {
   rejected = 3, // 已拒绝
 }
 
+export enum EContestRatingStatus {
+  PD = 0, // 等待中
+  CAL = 1, // 正在计算
+  DONE = 2, // 已完成
+  ERR = 3, // 出现错误
+}
+
 export enum EGroupJoinChannel {
   any = 0, // 任意加入
   audit = 1, // 需要审核

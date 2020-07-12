@@ -232,6 +232,14 @@ const _routesBe = {
     url: '/getContestRanklist',
     contract: { req: 'contest.getContestRanklistReq', resp: 'contest.getContestRanklistResp' },
   },
+  getContestRatingStatus: {
+    method: 'POST',
+    url: '/getContestRatingStatus',
+    contract: {
+      req: 'contest.getContestRatingStatusReq',
+      resp: 'contest.getContestRatingStatusResp',
+    },
+  },
   // judger
   getJudgerDataFile: {
     method: 'POST',
