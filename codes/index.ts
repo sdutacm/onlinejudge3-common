@@ -38,6 +38,7 @@ export const codeMsgs = {
   // Post 6XX
 
   // Message 7XX
+  701: 'The recipient does not exist',
 
   // Favorite 8XX
 
@@ -95,6 +96,7 @@ export enum Codes {
   // Post 6XX
 
   // Message 7XX
+  MESSAGE_RECIPIENT_NOT_EXIST = 701,
 
   // Favorite 8XX
 

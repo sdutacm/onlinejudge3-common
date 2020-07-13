@@ -185,7 +185,14 @@
     {
       "name": "Message",
       "range": "7XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 701,
+          "var": "MESSAGE_RECIPIENT_NOT_EXIST",
+          "msg": "The recipient does not exist",
+          "description": "收件人不存在"
+        }
+      ]
     },
     {
       "name": "Favorite",

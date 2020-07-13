@@ -41,3 +41,23 @@ export interface IGetMessageListResp {
     createdAt: string;
   }[];
 }
+
+export interface ISendMessageReq {
+  toUserId: number;
+  title: string;
+  content: string;
+  anonymous: boolean;
+}
+
+export interface IBatchSendMessageReq {
+  toUserIds: number[];
+  title: string;
+  content: string;
+  anonymous: boolean;
+  asSystem: boolean;
+}
+
+export interface IUpdateMessageReadReq {
+  messageId: number;
+  read: boolean;
+}

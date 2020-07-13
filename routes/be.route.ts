@@ -267,6 +267,21 @@ const _routesBe = {
     url: '/getMessageList',
     contract: { req: 'message.getMessageListReq', resp: 'message.getMessageListResp' },
   },
+  sendMessage: {
+    method: 'POST',
+    url: '/sendMessage',
+    contract: { req: 'message.sendMessageReq', resp: null },
+  },
+  batchSendMessage: {
+    method: 'POST',
+    url: '/batchSendMessage',
+    contract: { req: 'message.batchSendMessageReq', resp: null },
+  },
+  updateMessageRead: {
+    method: 'POST',
+    url: '/updateMessageRead',
+    contract: { req: 'message.updateMessageReadReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
