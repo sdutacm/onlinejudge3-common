@@ -282,6 +282,12 @@ const _routesBe = {
     url: '/updateMessageRead',
     contract: { req: 'message.updateMessageReadReq', resp: null },
   },
+  // favorite
+  getFavoriteList: {
+    method: 'POST',
+    url: '/getFavoriteList',
+    contract: { req: 'favorite.getFavoriteListReq', resp: 'favorite.getFavoriteListResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
