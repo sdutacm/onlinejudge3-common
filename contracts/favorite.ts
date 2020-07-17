@@ -5,20 +5,17 @@
  */
 
 export interface IGetFavoriteListReq {
-  page?: number;
-  limit?: number;
   order?: ['favoriteId', 'ASC' | 'DESC'][];
   type?: string;
   note?: string;
 }
 
 export interface IGetFavoriteListResp {
-  page: number;
-  limit: number;
   count: number;
   rows: (
     | {
         favoriteId: number;
+        userId: number;
         type: 'problem';
         target: {
           problemId: number;
@@ -31,6 +28,7 @@ export interface IGetFavoriteListResp {
       }
     | {
         favoriteId: number;
+        userId: number;
         type: 'contest';
         target: {
           contestId: number;
@@ -43,6 +41,7 @@ export interface IGetFavoriteListResp {
       }
     | {
         favoriteId: number;
+        userId: number;
         type: 'set';
         target: {
           setId: number;
@@ -55,6 +54,7 @@ export interface IGetFavoriteListResp {
       }
     | {
         favoriteId: number;
+        userId: number;
         type: 'group';
         target: {
           groupId: number;
