@@ -41,6 +41,7 @@ export const codeMsgs = {
   701: 'The recipient does not exist',
 
   // Favorite 8XX
+  801: 'The favorite has been deleted',
 
   // Note 9XX
 
@@ -99,6 +100,7 @@ export enum Codes {
   MESSAGE_RECIPIENT_NOT_EXIST = 701,
 
   // Favorite 8XX
+  FAVORITE_DELETED = 801,
 
   // Note 9XX
 

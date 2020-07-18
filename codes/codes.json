@@ -197,7 +197,14 @@
     {
       "name": "Favorite",
       "range": "8XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 801,
+          "var": "FAVORITE_DELETED",
+          "msg": "The favorite has been deleted",
+          "description": "收藏已删除"
+        }
+      ]
     },
     {
       "name": "Note",
