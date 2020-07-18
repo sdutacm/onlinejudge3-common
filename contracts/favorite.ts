@@ -69,3 +69,42 @@ export interface IGetFavoriteListResp {
       }
   )[];
 }
+
+export type IAddFavoriteReq =
+  | {
+      type: 'problem';
+      target: {
+        problemId: number;
+        contestId?: number;
+      };
+      note: string;
+    }
+  | {
+      type: 'contest';
+      target: {
+        contestId: number;
+      };
+      note: string;
+    }
+  | {
+      type: 'set';
+      target: {
+        setId: number;
+      };
+      note: string;
+    }
+  | {
+      type: 'group';
+      target: {
+        groupId: number;
+      };
+      note: string;
+    };
+
+export interface IAddFavoriteResp {
+  favoriteId: number;
+}
+
+export interface IDeleteFavoriteReq {
+  favoriteId: number;
+}

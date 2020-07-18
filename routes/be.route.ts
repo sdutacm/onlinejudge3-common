@@ -288,6 +288,16 @@ const _routesBe = {
     url: '/getFavoriteList',
     contract: { req: 'favorite.getFavoriteListReq', resp: 'favorite.getFavoriteListResp' },
   },
+  addFavorite: {
+    method: 'POST',
+    url: '/addFavorite',
+    contract: { req: 'favorite.addFavoriteReq', resp: 'favorite.addFavoriteResp' },
+  },
+  deleteFavorite: {
+    method: 'POST',
+    url: '/deleteFavorite',
+    contract: { req: 'favorite.deleteFavoriteReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
