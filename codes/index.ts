@@ -34,6 +34,7 @@ export const codeMsgs = {
   406: 'The contest register is not open',
 
   // Topic 5XX
+  501: 'The problem does not exist',
 
   // Post 6XX
 
@@ -94,6 +95,7 @@ export enum Codes {
   CONTEST_REGISTER_NOT_OPEN = 406,
 
   // Topic 5XX
+  TOPIC_PROBLEM_NOT_EXIST = 501,
 
   // Post 6XX
 

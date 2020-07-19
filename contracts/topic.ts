@@ -69,3 +69,23 @@ export interface IGetTopicDetailResp {
   createdAt: string;
   deleted: boolean;
 }
+
+export interface ICreateTopicReq {
+  title: string;
+  content: string;
+  problemId?: number;
+}
+
+export interface ICreateTopicResp {
+  topicId: number;
+}
+
+export interface IUpdateTopicReq {
+  topicId: number;
+  title: string;
+  content: string;
+}
+
+export interface IDeleteTopicReq {
+  topicId: number;
+}

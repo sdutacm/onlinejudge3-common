@@ -325,6 +325,21 @@ const _routesBe = {
     url: '/getTopicDetail',
     contract: { req: 'topic.getTopicDetailReq', resp: 'topic.getTopicDetailResp' },
   },
+  createTopic: {
+    method: 'POST',
+    url: '/createTopic',
+    contract: { req: 'topic.createTopicReq', resp: 'topic.createTopicResp' },
+  },
+  updateTopic: {
+    method: 'POST',
+    url: '/updateTopic',
+    contract: { req: 'topic.updateTopicReq', resp: null },
+  },
+  deleteTopic: {
+    method: 'POST',
+    url: '/deleteTopic',
+    contract: { req: 'topic.deleteTopicReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

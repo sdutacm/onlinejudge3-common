@@ -175,7 +175,14 @@
     {
       "name": "Topic",
       "range": "5XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 501,
+          "var": "TOPIC_PROBLEM_NOT_EXIST",
+          "msg": "The problem does not exist",
+          "description": "题目不存在"
+        }
+      ]
     },
     {
       "name": "Post",
