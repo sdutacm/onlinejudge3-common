@@ -44,6 +44,7 @@ export const codeMsgs = {
   801: 'The favorite has been deleted',
 
   // Note 9XX
+  901: 'The note has been deleted',
 
   // Set 10XX
 
@@ -103,6 +104,7 @@ export enum Codes {
   FAVORITE_DELETED = 801,
 
   // Note 9XX
+  NOTE_DELETED = 901,
 
   // Set 10XX
 

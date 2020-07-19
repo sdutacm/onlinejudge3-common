@@ -209,7 +209,14 @@
     {
       "name": "Note",
       "range": "9XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 901,
+          "var": "NOTE_DELETED",
+          "msg": "The note has been deleted",
+          "description": "笔记已删除"
+        }
+      ]
     },
     {
       "name": "Set",

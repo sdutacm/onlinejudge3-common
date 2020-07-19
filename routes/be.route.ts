@@ -298,6 +298,22 @@ const _routesBe = {
     url: '/deleteFavorite',
     contract: { req: 'favorite.deleteFavoriteReq', resp: null },
   },
+  // note
+  getNoteList: {
+    method: 'POST',
+    url: '/getNoteList',
+    contract: { req: 'note.getNoteListReq', resp: 'note.getNoteListResp' },
+  },
+  addNote: {
+    method: 'POST',
+    url: '/addNote',
+    contract: { req: 'note.addNoteReq', resp: 'note.addNoteResp' },
+  },
+  deleteNote: {
+    method: 'POST',
+    url: '/deleteNote',
+    contract: { req: 'note.deleteNoteReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
