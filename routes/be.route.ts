@@ -314,6 +314,17 @@ const _routesBe = {
     url: '/deleteNote',
     contract: { req: 'note.deleteNoteReq', resp: null },
   },
+  // topic
+  getTopicList: {
+    method: 'POST',
+    url: '/getTopicList',
+    contract: { req: 'topic.getTopicListReq', resp: 'topic.getTopicListResp' },
+  },
+  getTopicDetail: {
+    method: 'POST',
+    url: '/getTopicDetail',
+    contract: { req: 'topic.getTopicDetailReq', resp: 'topic.getTopicDetailResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
