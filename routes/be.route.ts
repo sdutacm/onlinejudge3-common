@@ -340,6 +340,12 @@ const _routesBe = {
     url: '/deleteTopic',
     contract: { req: 'topic.deleteTopicReq', resp: null },
   },
+  // reply
+  getReplyList: {
+    method: 'POST',
+    url: '/getReplyList',
+    contract: { req: 'reply.getReplyListReq', resp: 'reply.getReplyListResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
