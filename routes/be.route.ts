@@ -346,6 +346,16 @@ const _routesBe = {
     url: '/getReplyList',
     contract: { req: 'reply.getReplyListReq', resp: 'reply.getReplyListResp' },
   },
+  createReply: {
+    method: 'POST',
+    url: '/createReply',
+    contract: { req: 'reply.createReplyReq', resp: 'reply.createReplyResp' },
+  },
+  deleteReply: {
+    method: 'POST',
+    url: '/deleteReply',
+    contract: { req: 'reply.deleteReplyReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

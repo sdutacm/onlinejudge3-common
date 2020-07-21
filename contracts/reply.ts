@@ -40,3 +40,16 @@ export interface IGetReplyListResp {
     deleted: boolean;
   }[];
 }
+
+export interface ICreateReplyReq {
+  topicId: number;
+  content: string;
+}
+
+export interface ICreateReplyResp {
+  replyId: number;
+}
+
+export interface IDeleteReplyReq {
+  replyId: number;
+}

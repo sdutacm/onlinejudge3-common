@@ -35,6 +35,7 @@ export const codeMsgs = {
 
   // Topic 5XX
   501: 'The problem does not exist',
+  502: 'The topic does not exist',
 
   // Post 6XX
 
@@ -96,6 +97,7 @@ export enum Codes {
 
   // Topic 5XX
   TOPIC_PROBLEM_NOT_EXIST = 501,
+  TOPIC_NOT_EXIST = 502,
 
   // Post 6XX
 

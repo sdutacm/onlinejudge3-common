@@ -181,6 +181,12 @@
           "var": "TOPIC_PROBLEM_NOT_EXIST",
           "msg": "The problem does not exist",
           "description": "题目不存在"
+        },
+        {
+          "code": 502,
+          "var": "TOPIC_NOT_EXIST",
+          "msg": "The topic does not exist",
+          "description": "话题不存在"
         }
       ]
     },
