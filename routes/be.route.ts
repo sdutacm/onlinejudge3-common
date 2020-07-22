@@ -356,6 +356,27 @@ const _routesBe = {
     url: '/deleteReply',
     contract: { req: 'reply.deleteReplyReq', resp: null },
   },
+  // post
+  getPostList: {
+    method: 'POST',
+    url: '/getPostList',
+    contract: { req: 'post.getPostListReq', resp: 'post.getPostListResp' },
+  },
+  getPostDetail: {
+    method: 'POST',
+    url: '/getPostDetail',
+    contract: { req: 'post.getPostDetailReq', resp: 'post.getPostDetailResp' },
+  },
+  createPost: {
+    method: 'POST',
+    url: '/createPost',
+    contract: { req: 'post.createPostReq', resp: 'post.createPostResp' },
+  },
+  updatePost: {
+    method: 'POST',
+    url: '/updatePost',
+    contract: { req: 'post.updatePostReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
