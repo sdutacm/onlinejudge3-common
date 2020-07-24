@@ -57,7 +57,7 @@ export interface IGetSetDetailResp {
     bannerImage: string;
   };
   title: string;
-  description?: string;
+  description: string;
   type: string;
   props: {
     sections: {
