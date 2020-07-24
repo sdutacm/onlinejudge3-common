@@ -377,6 +377,32 @@ const _routesBe = {
     url: '/updatePost',
     contract: { req: 'post.updatePostReq', resp: null },
   },
+  // set
+  getSetList: {
+    method: 'POST',
+    url: '/getSetList',
+    contract: { req: 'set.getSetListReq', resp: 'set.getSetListResp' },
+  },
+  getSetDetail: {
+    method: 'POST',
+    url: '/getSetDetail',
+    contract: { req: 'set.getSetDetailReq', resp: 'set.getSetDetailResp' },
+  },
+  createSet: {
+    method: 'POST',
+    url: '/createSet',
+    contract: { req: 'set.createSetReq', resp: 'set.createSetResp' },
+  },
+  updateSet: {
+    method: 'POST',
+    url: '/updateSet',
+    contract: { req: 'set.updateSetReq', resp: null },
+  },
+  deleteSet: {
+    method: 'POST',
+    url: '/deleteSet',
+    contract: { req: 'set.deleteSetReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
