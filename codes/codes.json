@@ -234,7 +234,14 @@
     {
       "name": "Set",
       "range": "10XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 1001,
+          "var": "SET_PROBLEM_NOT_EXIST",
+          "msg": "Some of problems do not exist",
+          "description": "部分题目不存在"
+        }
+      ]
     },
     {
       "name": "Group",

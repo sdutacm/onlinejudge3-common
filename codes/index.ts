@@ -49,6 +49,7 @@ export const codeMsgs = {
   901: 'The note has been deleted',
 
   // Set 10XX
+  1001: 'Some of problems do not exist',
 
   // Group 11XX
 
@@ -111,6 +112,7 @@ export enum Codes {
   NOTE_DELETED = 901,
 
   // Set 10XX
+  SET_PROBLEM_NOT_EXIST = 1001,
 
   // Group 11XX
 
