@@ -17,6 +17,14 @@ export interface ILoginReq {
   password: string;
 }
 
+export interface ILoginResp {
+  userId: number;
+  username: string;
+  nickname: string;
+  permission: number;
+  avatar: string | null;
+}
+
 export interface IRegisterReq {
   username: string;
   nickname: string;
