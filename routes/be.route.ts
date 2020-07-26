@@ -18,7 +18,7 @@ const _routesBe = {
   login: {
     method: 'POST',
     url: '/login',
-    contract: { req: 'user.loginReq', resp: null },
+    contract: { req: 'user.loginReq', resp: 'user.loginResp' },
   },
   logout: {
     method: 'POST',
