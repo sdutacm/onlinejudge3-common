@@ -403,6 +403,17 @@ const _routesBe = {
     url: '/deleteSet',
     contract: { req: 'set.deleteSetReq', resp: null },
   },
+  // group
+  getGroupList: {
+    method: 'POST',
+    url: '/getGroupList',
+    contract: { req: 'group.getGroupListReq', resp: 'group.getGroupListResp' },
+  },
+  getGroupDetail: {
+    method: 'POST',
+    url: '/getGroupDetail',
+    contract: { req: 'group.getGroupDetailReq', resp: 'group.getGroupDetailResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
