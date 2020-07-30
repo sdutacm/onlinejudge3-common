@@ -30,6 +30,7 @@ export interface IGetGroupListResp {
     membersCount: number;
     createdAt: string;
     updatedAt: string;
+    deleted: boolean;
   }[];
 }
 
@@ -49,4 +50,5 @@ export interface IGetGroupDetailResp {
   membersCount: number;
   createdAt: string;
   updatedAt: string;
+  deleted: boolean;
 }
