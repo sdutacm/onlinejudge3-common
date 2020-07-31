@@ -414,6 +414,11 @@ const _routesBe = {
     url: '/getGroupDetail',
     contract: { req: 'group.getGroupDetailReq', resp: 'group.getGroupDetailResp' },
   },
+  getUserGroups: {
+    method: 'POST',
+    url: '/getUserGroups',
+    contract: { req: 'group.getUserGroupsReq', resp: 'group.getUserGroupsResp' },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

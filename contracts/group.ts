@@ -52,3 +52,24 @@ export interface IGetGroupDetailResp {
   updatedAt: string;
   deleted: boolean;
 }
+
+export interface IGetUserGroupsReq {
+  userId: number;
+}
+
+export interface IGetUserGroupsResp {
+  count: number;
+  rows: {
+    groupId: number;
+    name: string;
+    avatar: string;
+    intro: string;
+    verified: boolean;
+    private: boolean;
+    joinChannel: number;
+    membersCount: number;
+    createdAt: string;
+    updatedAt: string;
+    deleted: boolean;
+  }[];
+}
