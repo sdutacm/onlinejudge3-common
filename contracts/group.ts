@@ -73,3 +73,39 @@ export interface IGetUserGroupsResp {
     deleted: boolean;
   }[];
 }
+
+export interface ICreateGroupReq {
+  name: string;
+  intro: string;
+  verified?: boolean;
+  private: boolean;
+  joinChannel: 0 | 1 | 2;
+}
+
+export interface ICreateGroupResp {
+  groupId: number;
+}
+
+export interface ICreateEmptyGroupReq {
+  name: string;
+  intro: string;
+  verified?: boolean;
+  private: boolean;
+}
+
+export interface ICreateEmptyGroupResp {
+  groupId: number;
+}
+
+export interface IUpdateGroupReq {
+  groupId: number;
+  name: string;
+  intro: string;
+  verified?: boolean;
+  private: boolean;
+  joinChannel: 0 | 1 | 2;
+}
+
+export interface IDeleteGroupReq {
+  groupId: number;
+}
