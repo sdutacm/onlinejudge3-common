@@ -426,7 +426,7 @@ const _routesBe = {
   },
   createEmptyGroup: {
     method: 'POST',
-    url: '/createGroup',
+    url: '/createEmptyGroup',
     contract: { req: 'group.createEmptyGroupReq', resp: 'group.createEmptyGroupResp' },
   },
   updateGroup: {
