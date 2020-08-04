@@ -439,6 +439,36 @@ const _routesBe = {
     url: '/deleteGroup',
     contract: { req: 'group.deleteGroupReq', resp: null },
   },
+  getGroupMemberList: {
+    method: 'POST',
+    url: '/getGroupMemberList',
+    contract: { req: 'group.getGroupMemberListReq', resp: 'group.getGroupMemberListResp' },
+  },
+  joinGroup: {
+    method: 'POST',
+    url: '/joinGroup',
+    contract: { req: 'group.joinGroupReq', resp: null },
+  },
+  batchAddGroupMembers: {
+    method: 'POST',
+    url: '/batchAddGroupMembers',
+    contract: { req: 'group.batchAddGroupMembersReq', resp: null },
+  },
+  updateGroupMember: {
+    method: 'POST',
+    url: '/updateGroupMember',
+    contract: { req: 'group.updateGroupMemberReq', resp: null },
+  },
+  deleteGroupMember: {
+    method: 'POST',
+    url: '/deleteGroupMember',
+    contract: { req: 'group.deleteGroupMemberReq', resp: null },
+  },
+  exitGroup: {
+    method: 'POST',
+    url: '/exitGroup',
+    contract: { req: 'group.exitGroupReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

@@ -109,3 +109,49 @@ export interface IUpdateGroupReq {
 export interface IDeleteGroupReq {
   groupId: number;
 }
+
+export interface IGetGroupMemberListReq {
+  groupId: number;
+}
+
+export interface IGetGroupMemberListResp {
+  count: number;
+  rows: {
+    user: {
+      userId: number;
+      username: string;
+      nickname: string;
+      avatar: string | null;
+      bannerImage: string;
+    };
+    permission?: number;
+    status?: number;
+    joinedAt?: string;
+  }[];
+}
+
+export interface IJoinGroupReq {
+  groupId: number;
+}
+
+export interface IBatchAddGroupMembersReq {
+  groupId: number;
+  userIds?: number[];
+  usernames?: string[];
+}
+
+export interface IUpdateGroupMemberReq {
+  groupId: number;
+  userId: number;
+  permission?: 0 | 1 | 3;
+  status?: 0 | 1;
+}
+
+export interface IDeleteGroupMemberReq {
+  groupId: number;
+  userId: number;
+}
+
+export interface IExitGroupReq {
+  groupId: number;
+}
