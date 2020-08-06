@@ -117,6 +117,8 @@ export interface IGetGroupMemberListReq {
 export interface IGetGroupMemberListResp {
   count: number;
   rows: {
+    groupMemberId: number;
+    groupId: number;
     user: {
       userId: number;
       username: string;
