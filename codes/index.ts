@@ -24,6 +24,11 @@ export const codeMsgs = {
   // Problem 2XX
 
   // Solution 3XX
+  301: 'The problem does not exist',
+  302: 'You do not have permission to view this problem',
+  303: 'The contest does not exis',
+  304: 'You do not have permission to view this contest',
+  305: 'The contest is not in progress',
 
   // Contest 4XX
   401: 'Incorrect username or password',
@@ -89,6 +94,11 @@ export enum Codes {
   // Problem 2XX
 
   // Solution 3XX
+  SOLUTION_PROBLEM_NOT_EXIST = 301,
+  SOLUTION_PROBLEM_NO_PERMISSION = 302,
+  SOLUTION_CONTEST_NOT_EXIST = 303,
+  SOLUTION_CONTEST_NO_PERMISSION = 304,
+  SOLUTION_CONTEST_NOT_IN_PROGRESS = 305,
 
   // Contest 4XX
   CONTEST_INCORRECT_USERNAME_OR_PASSWORD = 401,
