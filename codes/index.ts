@@ -52,6 +52,8 @@ export const codeMsgs = {
   1001: 'Some of problems do not exist',
 
   // Group 11XX
+  1101: 'The group can not join',
+  1102: 'You have already joined this group or under auditing',
 
   // Judger 12XX
   1201: 'Unsupported data format',
@@ -115,6 +117,8 @@ export enum Codes {
   SET_PROBLEM_NOT_EXIST = 1001,
 
   // Group 11XX
+  GROUP_CANNOT_JOIN = 1101,
+  GROUP_ALREADY_JOINED_OR_UNDER_AUDITING = 1102,
 
   // Judger 12XX
   JUDGER_UNSUPPORTED_DATA_FORMAT = 1201,

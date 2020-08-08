@@ -246,7 +246,20 @@
     {
       "name": "Group",
       "range": "11XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 1101,
+          "var": "GROUP_CANNOT_JOIN",
+          "msg": "The group can not join",
+          "description": "群组无法加入"
+        },
+        {
+          "code": 1102,
+          "var": "GROUP_ALREADY_JOINED_OR_UNDER_AUDITING",
+          "msg": "You have already joined this group or under auditing",
+          "description": "已加入此群组或正在等待管理员审核"
+        }
+      ]
     },
     {
       "name": "Judger",
