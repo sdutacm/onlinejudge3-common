@@ -92,3 +92,14 @@ export interface IUpdateSolutionShareReq {
   solutionId: number;
   shared: boolean;
 }
+
+export interface ISubmitSolutionReq {
+  problemId: number;
+  contestId?: number;
+  language: 'gcc' | 'g++' | 'java' | 'python2' | 'python3' | 'c#';
+  code: string;
+}
+
+export interface ISubmitSolutionResp {
+  solutionId: number;
+}

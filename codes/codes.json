@@ -128,7 +128,38 @@
     {
       "name": "Solution",
       "range": "3XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 301,
+          "var": "SOLUTION_PROBLEM_NOT_EXIST",
+          "msg": "The problem does not exist",
+          "description": "题目不存在"
+        },
+        {
+          "code": 302,
+          "var": "SOLUTION_PROBLEM_NO_PERMISSION",
+          "msg": "You do not have permission to view this problem",
+          "description": "题目无权限提交"
+        },
+        {
+          "code": 303,
+          "var": "SOLUTION_CONTEST_NOT_EXIST",
+          "msg": "The contest does not exis",
+          "description": "比赛不存在"
+        },
+        {
+          "code": 304,
+          "var": "SOLUTION_CONTEST_NO_PERMISSION",
+          "msg": "You do not have permission to view this contest",
+          "description": "比赛无权限提交"
+        },
+        {
+          "code": 305,
+          "var": "SOLUTION_CONTEST_NOT_IN_PROGRESS",
+          "msg": "The contest is not in progress",
+          "description": "比赛未开始或已结束"
+        }
+      ]
     },
     {
       "name": "Contest",

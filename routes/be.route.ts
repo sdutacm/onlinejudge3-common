@@ -155,6 +155,11 @@ const _routesBe = {
     url: '/updateSolutionShare',
     contract: { req: 'solution.updateSolutionShareReq', resp: null },
   },
+  submitSolution: {
+    method: 'POST',
+    url: '/submitSolution',
+    contract: { req: 'solution.submitSolutionReq', resp: 'solution.submitSolutionResp' },
+  },
   // contest
   getContestList: {
     method: 'POST',
