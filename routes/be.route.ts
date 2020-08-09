@@ -245,6 +245,14 @@ const _routesBe = {
       resp: 'contest.getContestRatingStatusResp',
     },
   },
+  endContest: {
+    method: 'POST',
+    url: '/endContest',
+    contract: {
+      req: 'contest.endContestReq',
+      resp: null,
+    },
+  },
   // judger
   getJudgerDataFile: {
     method: 'POST',
