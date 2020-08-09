@@ -206,6 +206,18 @@
           "var": "CONTEST_USER_NOT_ACCEPTED",
           "msg": "The contest user does not accepted",
           "description": "比赛用户注册审核待通过"
+        },
+        {
+          "code": 408,
+          "var": "CONTEST_NOT_ENDED",
+          "msg": "The contest is not ended yet",
+          "description": "比赛未结束"
+        },
+        {
+          "code": 409,
+          "var": "CONTEST_ENDED",
+          "msg": "The contest is already ended",
+          "description": "比赛已被结束"
         }
       ]
     },

@@ -38,6 +38,8 @@ export const codeMsgs = {
   405: 'The contest register is not in progress',
   406: 'The contest register is not open',
   407: 'The contest user does not accepted',
+  408: 'The contest is not ended yet',
+  409: 'The contest is already ended',
 
   // Topic 5XX
   501: 'The problem does not exist',
@@ -109,6 +111,8 @@ export enum Codes {
   CONTEST_REGISTER_NOT_IN_PROGRESS = 405,
   CONTEST_REGISTER_NOT_OPEN = 406,
   CONTEST_USER_NOT_ACCEPTED = 407,
+  CONTEST_NOT_ENDED = 408,
+  CONTEST_ENDED = 409,
 
   // Topic 5XX
   TOPIC_PROBLEM_NOT_EXIST = 501,
