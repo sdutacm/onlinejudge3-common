@@ -200,6 +200,12 @@
           "var": "CONTEST_REGISTER_NOT_OPEN",
           "msg": "The contest register is not open",
           "description": "比赛未开放注册"
+        },
+        {
+          "code": 407,
+          "var": "CONTEST_USER_NOT_ACCEPTED",
+          "msg": "The contest user does not accepted",
+          "description": "比赛用户注册审核待通过"
         }
       ]
     },
