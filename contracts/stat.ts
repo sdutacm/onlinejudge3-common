@@ -21,6 +21,9 @@ export interface IGetUserACRankResp {
     accepted: number;
   }[];
   truncated: number;
+  /**
+   * YYYY-MM-DD HH:mm:ss
+   */
   startAt: string;
   /**
    * ms
