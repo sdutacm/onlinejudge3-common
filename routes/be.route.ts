@@ -482,6 +482,31 @@ const _routesBe = {
     url: '/exitGroup',
     contract: { req: 'group.exitGroupReq', resp: null },
   },
+  // misc
+  uploadMedia: {
+    method: 'POST',
+    url: '/uploadMedia',
+    contract: { req: 'misc.uploadMediaReq', resp: 'misc.uploadMediaResp' },
+  },
+  // stat
+  getUserACRank: {
+    method: 'POST',
+    url: '/getUserACRank',
+    contract: { req: 'stat.getUserACRankReq', resp: 'stat.getUserACRankResp' },
+  },
+  getUserAcceptedProblems: {
+    method: 'POST',
+    url: '/getUserAcceptedProblems',
+    contract: { req: 'stat.getUserAcceptedProblemsReq', resp: 'stat.getUserAcceptedProblemsResp' },
+  },
+  getUserSubmittedProblems: {
+    method: 'POST',
+    url: '/getUserSubmittedProblems',
+    contract: {
+      req: 'stat.getUserSubmittedProblemsReq',
+      resp: 'stat.getUserSubmittedProblemsResp',
+    },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
