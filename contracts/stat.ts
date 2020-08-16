@@ -46,7 +46,10 @@ export interface IGetUserAcceptedProblemsResp {
       problems: {
         pid: number;
         sid: number;
-        at: string;
+        /**
+         * timestamp s
+         */
+        at: number;
       }[];
       /**
        * timestamp ms
@@ -79,7 +82,10 @@ export interface IGetUserSubmittedProblemsResp {
         s: {
           sid: number;
           res: number;
-          at: string;
+          /**
+           * timestamp s
+           */
+          at: number;
         }[];
       }[];
       /**
