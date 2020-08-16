@@ -36,7 +36,7 @@ export interface IGetUserACRankResp {
 }
 
 export interface IGetUserAcceptedProblemsReq {
-  userIds: string[];
+  userIds: number[];
 }
 
 export interface IGetUserAcceptedProblemsResp {
@@ -69,7 +69,7 @@ export interface IGetUserAcceptedProblemsResp {
 }
 
 export interface IGetUserSubmittedProblemsReq {
-  userIds: string[];
+  userIds: number[];
 }
 
 export interface IGetUserSubmittedProblemsResp {
