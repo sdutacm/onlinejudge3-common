@@ -48,7 +48,7 @@ export interface IGetUserListReq {
   college?: string;
   major?: string;
   class?: string;
-  grade?: string;
+  grade?: string | null;
   forbidden?: number;
   _scope?: 'available' | null;
 }
@@ -66,7 +66,7 @@ export interface IGetUserListResp {
     avatar: string | null;
     bannerImage: string;
     rating: number;
-    grade: string;
+    grade: string | null;
     forbidden: number;
   }[];
 }
@@ -90,7 +90,7 @@ export interface IGetUserDetailResp {
   college: string;
   major: string;
   class: string;
-  grade: string;
+  grade: string | null;
   forbidden: number;
   rating: number;
   ratingHistory:
@@ -148,12 +148,10 @@ export interface IUpdateUserEmailReq {
 }
 
 export interface IUploadUserAvatarReq {
-  userId: number;
   [k: string]: unknown;
 }
 
 export interface IUploadUserBannerImageReq {
-  userId: number;
   [k: string]: unknown;
 }
 
