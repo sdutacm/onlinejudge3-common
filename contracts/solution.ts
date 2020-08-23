@@ -77,12 +77,12 @@ export interface IGetSolutionDetailResp {
     type: number;
   };
   result: number;
-  time: number;
-  memory: number;
+  time?: number;
+  memory?: number;
   language: string;
-  codeLength: number;
-  compileInfo: string;
-  code: string;
+  codeLength?: number;
+  compileInfo?: string;
+  code?: string;
   shared: boolean;
   isContestUser: boolean;
   createdAt: string;
