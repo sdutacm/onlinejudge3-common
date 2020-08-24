@@ -40,6 +40,9 @@ export const codeMsgs = {
   407: 'The contest user does not accepted',
   408: 'The contest is not ended yet',
   409: 'The contest is already ended',
+  410: 'Please login OJ',
+  411: 'Please login this private-type contest',
+  412: 'Please login this register-type contest',
 
   // Topic 5XX
   501: 'The problem does not exist',
@@ -113,6 +116,9 @@ export enum Codes {
   CONTEST_USER_NOT_ACCEPTED = 407,
   CONTEST_NOT_ENDED = 408,
   CONTEST_ENDED = 409,
+  CONTEST_NEED_LOGIN_OJ = 410,
+  CONTEST_NEED_LOGIN_PRIVATE_CONTEST = 411,
+  CONTEST_NEED_LOGIN_REGISTER_CONTEST = 412,
 
   // Topic 5XX
   TOPIC_PROBLEM_NOT_EXIST = 501,

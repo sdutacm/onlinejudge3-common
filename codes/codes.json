@@ -218,6 +218,24 @@
           "var": "CONTEST_ENDED",
           "msg": "The contest is already ended",
           "description": "比赛已被结束"
+        },
+        {
+          "code": 410,
+          "var": "CONTEST_NEED_LOGIN_OJ",
+          "msg": "Please login OJ",
+          "description": "需要登录 OJ"
+        },
+        {
+          "code": 411,
+          "var": "CONTEST_NEED_LOGIN_PRIVATE_CONTEST",
+          "msg": "Please login this private-type contest",
+          "description": "需要登录 Private 比赛"
+        },
+        {
+          "code": 412,
+          "var": "CONTEST_NEED_LOGIN_REGISTER_CONTEST",
+          "msg": "Please login this register-type contest",
+          "description": "需要登录 Register 比赛"
         }
       ]
     },
