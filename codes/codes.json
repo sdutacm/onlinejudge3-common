@@ -236,6 +236,12 @@
           "var": "CONTEST_NEED_LOGIN_REGISTER_CONTEST",
           "msg": "Please login this register-type contest",
           "description": "需要登录 Register 比赛"
+        },
+        {
+          "code": 413,
+          "var": "CONTEST_NOT_LOGGED_IN",
+          "msg": "You are not logged in the contest",
+          "description": "比赛未登录"
         }
       ]
     },
