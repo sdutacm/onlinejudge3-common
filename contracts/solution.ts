@@ -40,6 +40,8 @@ export interface IGetSolutionListResp {
       contestId: number;
       title: string;
       type: number;
+      startAt: string;
+      endAt: string;
     };
     result: number;
     time?: number;
@@ -75,6 +77,8 @@ export interface IGetSolutionDetailResp {
     contestId: number;
     title: string;
     type: number;
+    startAt: string;
+    endAt: string;
   };
   result: number;
   time?: number;
