@@ -188,6 +188,8 @@ export interface IGetContestUserDetailResp {
     clothing: string;
   }[];
   createdAt: string | null;
+  globalUserId?: number;
+  rating?: number;
 }
 
 export interface ICreateContestUserReq {
