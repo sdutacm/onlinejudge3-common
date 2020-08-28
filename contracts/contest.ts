@@ -145,6 +145,7 @@ export interface IGetContestUserListResp {
   count: number;
   rows: {
     contestUserId: number;
+    contestId: number;
     username: string;
     nickname: string;
     subname: string;
@@ -168,6 +169,7 @@ export interface IGetContestUserDetailReq {
 
 export interface IGetContestUserDetailResp {
   contestUserId: number;
+  contestId: number;
   username: string;
   nickname: string;
   subname: string;
@@ -195,7 +197,7 @@ export interface IGetContestUserDetailResp {
 export interface ICreateContestUserReq {
   contestId: number;
   nickname: string;
-  subname: string;
+  subname?: string;
   status?: number;
   unofficial: boolean;
   password: string;
@@ -282,7 +284,7 @@ export interface IUpdateContestUserReq {
   contestId: number;
   contestUserId: number;
   nickname: string;
-  subname: string;
+  subname?: string;
   status?: number;
   unofficial: boolean;
   password: string;
