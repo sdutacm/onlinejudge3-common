@@ -90,7 +90,7 @@ export interface ICreateSetReq {
       description?: string;
       problems: {
         problemId: number;
-        title: string;
+        title?: string;
       }[];
     }[];
   };
@@ -112,7 +112,7 @@ export interface IUpdateSetReq {
       description?: string;
       problems: {
         problemId: number;
-        title: string;
+        title?: string;
       }[];
     }[];
   };
