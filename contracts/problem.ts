@@ -13,6 +13,7 @@ export interface IGetProblemListReq {
   title?: string;
   source?: string;
   author?: number;
+  display?: boolean;
   tagIds?: number[];
   _scope?: 'available' | null;
 }
