@@ -488,6 +488,11 @@ const _routesBe = {
     url: '/uploadMedia',
     contract: { req: 'misc.uploadMediaReq', resp: 'misc.uploadMediaResp' },
   },
+  uploadAsset: {
+    method: 'POST',
+    url: '/uploadAsset',
+    contract: { req: 'misc.uploadAssetReq', resp: 'misc.uploadAssetResp' },
+  },
   // stat
   getUserACRank: {
     method: 'POST',

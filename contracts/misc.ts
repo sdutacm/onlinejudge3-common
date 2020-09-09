@@ -11,3 +11,12 @@ export interface IUploadMediaReq {
 export interface IUploadMediaResp {
   url: string;
 }
+
+export interface IUploadAssetReq {
+  prefix?: string;
+  [k: string]: unknown;
+}
+
+export interface IUploadAssetResp {
+  url: string;
+}
