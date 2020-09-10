@@ -150,6 +150,14 @@ const _routesBe = {
     url: '/getSolutionDetail',
     contract: { req: 'solution.getSolutionDetailReq', resp: 'solution.getSolutionDetailResp' },
   },
+  batchGetSolutionDetail: {
+    method: 'POST',
+    url: '/batchGetSolutionDetail',
+    contract: {
+      req: 'solution.batchGetSolutionDetailReq',
+      resp: 'solution.batchGetSolutionDetailResp',
+    },
+  },
   updateSolutionShare: {
     method: 'POST',
     url: '/updateSolutionShare',

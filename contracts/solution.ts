@@ -92,6 +92,46 @@ export interface IGetSolutionDetailResp {
   createdAt: string;
 }
 
+export interface IBatchGetSolutionDetailReq {
+  solutionIds: number[];
+}
+
+export interface IBatchGetSolutionDetailResp {
+  [k: string]: {
+    solutionId: number;
+    problem: {
+      problemId: number;
+      title: string;
+      timeLimit: number;
+    };
+    user: {
+      userId: number;
+      username: string;
+      nickname: string;
+      avatar: string | null;
+      bannerImage: string;
+      rating: number;
+    };
+    contest?: {
+      contestId: number;
+      title: string;
+      type: number;
+      startAt: string;
+      endAt: string;
+    };
+    result: number;
+    time?: number;
+    memory?: number;
+    language: string;
+    codeLength?: number;
+    compileInfo?: string;
+    code?: string;
+    shared: boolean;
+    isContestUser: boolean;
+    createdAt: string;
+  };
+}
+
 export interface IUpdateSolutionShareReq {
   solutionId: number;
   shared: boolean;
