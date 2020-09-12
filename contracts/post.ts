@@ -11,6 +11,7 @@ export interface IGetPostListReq {
   postId?: number;
   userId?: number;
   title?: string;
+  display?: boolean;
   _scope?: 'available' | null;
 }
 
