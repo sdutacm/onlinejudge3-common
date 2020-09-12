@@ -92,6 +92,45 @@ export interface IGetContestDetailResp {
   hidden: boolean;
 }
 
+export interface ICreateContestReq {
+  title: string;
+  type: number;
+  category: number;
+  mode: number;
+  intro: string;
+  description: string;
+  password?: string;
+  startAt: string;
+  endAt: string;
+  frozenLength: number;
+  registerStartAt: string | null;
+  registerEndAt: string | null;
+  team: boolean;
+  hidden?: boolean;
+}
+
+export interface ICreateContestResp {
+  contestId: number;
+}
+
+export interface IUpdateContestDetailReq {
+  contestId: number;
+  title?: string;
+  type?: number;
+  category?: number;
+  mode?: number;
+  intro?: string;
+  description?: string;
+  password?: string;
+  startAt?: string;
+  endAt?: string;
+  frozenLength?: number;
+  registerStartAt?: string | null;
+  registerEndAt?: string | null;
+  team?: boolean;
+  hidden?: boolean;
+}
+
 export interface IGetContestProblemsReq {
   contestId: number;
 }

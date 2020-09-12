@@ -197,6 +197,16 @@ const _routesBe = {
     url: '/getContestDetail',
     contract: { req: 'contest.getContestDetailReq', resp: 'contest.getContestDetailResp' },
   },
+  createContest: {
+    method: 'POST',
+    url: '/createContest',
+    contract: { req: 'contest.createContestReq', resp: 'contest.createContestResp' },
+  },
+  updateContestDetail: {
+    method: 'POST',
+    url: '/updateContestDetail',
+    contract: { req: 'contest.updateContestDetailReq', resp: null },
+  },
   getContestProblems: {
     method: 'POST',
     url: '/getContestProblems',
