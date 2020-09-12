@@ -97,7 +97,7 @@ export interface ICreateContestReq {
   type: number;
   category: number;
   mode: number;
-  intro: string;
+  intro?: string;
   description: string;
   password?: string;
   startAt: string;
