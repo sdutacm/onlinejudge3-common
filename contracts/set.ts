@@ -101,7 +101,7 @@ export interface ICreateSetResp {
   setId: number;
 }
 
-export interface IUpdateSetReq {
+export interface IUpdateSetDetailReq {
   setId: number;
   title: string;
   description: string;

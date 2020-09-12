@@ -361,10 +361,10 @@ const _routesBe = {
     url: '/createTopic',
     contract: { req: 'topic.createTopicReq', resp: 'topic.createTopicResp' },
   },
-  updateTopic: {
+  updateTopicDetail: {
     method: 'POST',
-    url: '/updateTopic',
-    contract: { req: 'topic.updateTopicReq', resp: null },
+    url: '/updateTopicDetail',
+    contract: { req: 'topic.updateTopicDetailReq', resp: null },
   },
   deleteTopic: {
     method: 'POST',
@@ -403,10 +403,10 @@ const _routesBe = {
     url: '/createPost',
     contract: { req: 'post.createPostReq', resp: 'post.createPostResp' },
   },
-  updatePost: {
+  updatePostDetail: {
     method: 'POST',
-    url: '/updatePost',
-    contract: { req: 'post.updatePostReq', resp: null },
+    url: '/updatePostDetail',
+    contract: { req: 'post.updatePostDetailReq', resp: null },
   },
   // set
   getSetList: {
@@ -424,10 +424,10 @@ const _routesBe = {
     url: '/createSet',
     contract: { req: 'set.createSetReq', resp: 'set.createSetResp' },
   },
-  updateSet: {
+  updateSetDetail: {
     method: 'POST',
-    url: '/updateSet',
-    contract: { req: 'set.updateSetReq', resp: null },
+    url: '/updateSetDetail',
+    contract: { req: 'set.updateSetDetailReq', resp: null },
   },
   deleteSet: {
     method: 'POST',
@@ -460,10 +460,10 @@ const _routesBe = {
     url: '/createEmptyGroup',
     contract: { req: 'group.createEmptyGroupReq', resp: 'group.createEmptyGroupResp' },
   },
-  updateGroup: {
+  updateGroupDetail: {
     method: 'POST',
-    url: '/updateGroup',
-    contract: { req: 'group.updateGroupReq', resp: null },
+    url: '/updateGroupDetail',
+    contract: { req: 'group.updateGroupDetailReq', resp: null },
   },
   deleteGroup: {
     method: 'POST',

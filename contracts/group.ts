@@ -97,7 +97,7 @@ export interface ICreateEmptyGroupResp {
   groupId: number;
 }
 
-export interface IUpdateGroupReq {
+export interface IUpdateGroupDetailReq {
   groupId: number;
   name: string;
   intro: string;

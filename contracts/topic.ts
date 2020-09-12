@@ -80,7 +80,7 @@ export interface ICreateTopicResp {
   topicId: number;
 }
 
-export interface IUpdateTopicReq {
+export interface IUpdateTopicDetailReq {
   topicId: number;
   title: string;
   content: string;

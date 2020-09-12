@@ -69,7 +69,7 @@ export interface ICreatePostResp {
   postId: number;
 }
 
-export interface IUpdatePostReq {
+export interface IUpdatePostDetailReq {
   postId: number;
   title: string;
   content: string;
