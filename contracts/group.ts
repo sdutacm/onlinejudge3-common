@@ -12,6 +12,7 @@ export interface IGetGroupListReq {
   name?: string;
   verified?: boolean;
   private?: boolean;
+  joinChannel?: number;
   _scope?: 'available' | null;
 }
 
