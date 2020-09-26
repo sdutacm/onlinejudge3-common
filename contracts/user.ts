@@ -110,6 +110,7 @@ export interface IGetUserDetailResp {
   settings?: {} | null;
   coin?: number;
   verified?: boolean;
+  lastIp?: string;
   lastTime?: string | null;
   createdAt?: string;
 }
@@ -122,6 +123,7 @@ export interface IUpdateUserDetailReq {
   class?: string;
   site?: string;
   defaultLanguage?: '' | 'gcc' | 'g++' | 'java' | 'python2' | 'python3' | 'c#';
+  forbidden?: 0 | 1 | 2;
 }
 
 export interface IUpdateUserPasswordReq {
