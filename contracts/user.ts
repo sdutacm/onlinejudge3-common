@@ -37,6 +37,22 @@ export interface IRegisterResp {
   userId: number;
 }
 
+export interface ICreateUserReq {
+  username: string;
+  nickname: string;
+  email?: string;
+  password: string;
+  school?: string;
+  college?: string;
+  major?: string;
+  class?: string;
+  grade?: string;
+}
+
+export interface ICreateUserResp {
+  userId: number;
+}
+
 export interface IGetUserListReq {
   page?: number;
   limit?: number;

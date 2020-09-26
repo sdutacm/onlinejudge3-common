@@ -30,6 +30,11 @@ const _routesBe = {
     url: '/register',
     contract: { req: 'user.registerReq', resp: 'user.registerResp' },
   },
+  createUser: {
+    method: 'POST',
+    url: '/createUser',
+    contract: { req: 'user.createUserReq', resp: 'user.createUserResp' },
+  },
   getUserList: {
     method: 'POST',
     url: '/getUserList',
