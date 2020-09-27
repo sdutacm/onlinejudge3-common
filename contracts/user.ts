@@ -84,6 +84,10 @@ export interface IGetUserListResp {
     rating: number;
     grade: string | null;
     forbidden: number;
+    verified?: boolean;
+    lastIp?: string;
+    lastTime?: string | null;
+    createdAt?: string;
   }[];
 }
 
