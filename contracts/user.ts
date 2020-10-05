@@ -66,6 +66,7 @@ export interface IGetUserListReq {
   class?: string;
   grade?: string | null;
   forbidden?: number;
+  permission?: number;
   verified?: boolean;
   _scope?: 'available' | null;
 }
@@ -85,6 +86,7 @@ export interface IGetUserListResp {
     rating: number;
     grade: string | null;
     forbidden: number;
+    permission?: number;
     verified?: boolean;
     lastIp?: string;
     lastTime?: string | null;
