@@ -145,6 +145,7 @@ export interface IUpdateUserDetailReq {
   site?: string;
   defaultLanguage?: '' | 'gcc' | 'g++' | 'java' | 'python2' | 'python3' | 'c#';
   forbidden?: 0 | 1 | 2;
+  permission?: 0 | 1 | 3;
 }
 
 export interface IUpdateUserPasswordReq {
