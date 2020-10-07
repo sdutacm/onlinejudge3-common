@@ -35,6 +35,11 @@ const _routesBe = {
     url: '/createUser',
     contract: { req: 'user.createUserReq', resp: 'user.createUserResp' },
   },
+  batchCreateUsers: {
+    method: 'POST',
+    url: '/batchCreateUsers',
+    contract: { req: 'user.batchCreateUsersReq', resp: null },
+  },
   getUserList: {
     method: 'POST',
     url: '/getUserList',

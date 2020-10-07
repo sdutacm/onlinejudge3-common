@@ -53,6 +53,20 @@ export interface ICreateUserResp {
   userId: number;
 }
 
+export interface IBatchCreateUsersReq {
+  users: {
+    username: string;
+    nickname: string;
+    password: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    grade?: string;
+  }[];
+  conflict: 'insert' | 'upsert';
+}
+
 export interface IGetUserListReq {
   page?: number;
   limit?: number;
