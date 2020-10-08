@@ -325,7 +325,7 @@ export interface IBatchCreateContestUsersReq {
     status?: number;
     sitNo?: string;
     unofficial: boolean;
-    password: string;
+    password?: string;
     members:
       | [
           {
