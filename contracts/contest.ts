@@ -323,6 +323,7 @@ export interface IBatchCreateContestUsersReq {
     nickname: string;
     subname?: string;
     status?: number;
+    sitNo?: string;
     unofficial: boolean;
     password: string;
     members:
