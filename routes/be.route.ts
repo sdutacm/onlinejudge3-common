@@ -242,6 +242,11 @@ const _routesBe = {
     url: '/createContestUser',
     contract: { req: 'contest.createContestUserReq', resp: 'contest.createContestUserResp' },
   },
+  batchCreateContestUsers: {
+    method: 'POST',
+    url: '/batchCreateContestUsers',
+    contract: { req: 'contest.batchCreateContestUsersReq', resp: null },
+  },
   updateContestUser: {
     method: 'POST',
     url: '/updateContestUser',

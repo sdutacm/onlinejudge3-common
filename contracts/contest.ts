@@ -316,6 +316,92 @@ export interface ICreateContestUserReq {
       ];
 }
 
+export interface IBatchCreateContestUsersReq {
+  contestId: number;
+  users: {
+    username: string;
+    nickname: string;
+    subname?: string;
+    status?: number;
+    unofficial: boolean;
+    password: string;
+    members:
+      | [
+          {
+            schoolNo: string;
+            name: string;
+            school: string;
+            college: string;
+            major: string;
+            class: string;
+            tel: string;
+            email: string;
+            clothing: string;
+          },
+        ]
+      | [
+          {
+            schoolNo: string;
+            name: string;
+            school: string;
+            college: string;
+            major: string;
+            class: string;
+            tel: string;
+            email: string;
+            clothing: string;
+          },
+          {
+            schoolNo: string;
+            name: string;
+            school: string;
+            college: string;
+            major: string;
+            class: string;
+            tel: string;
+            email: string;
+            clothing: string;
+          },
+        ]
+      | [
+          {
+            schoolNo: string;
+            name: string;
+            school: string;
+            college: string;
+            major: string;
+            class: string;
+            tel: string;
+            email: string;
+            clothing: string;
+          },
+          {
+            schoolNo: string;
+            name: string;
+            school: string;
+            college: string;
+            major: string;
+            class: string;
+            tel: string;
+            email: string;
+            clothing: string;
+          },
+          {
+            schoolNo: string;
+            name: string;
+            school: string;
+            college: string;
+            major: string;
+            class: string;
+            tel: string;
+            email: string;
+            clothing: string;
+          },
+        ];
+  }[];
+  conflict: 'insert' | 'upsert';
+}
+
 export interface ICreateContestUserResp {
   contestUserId: number;
 }
