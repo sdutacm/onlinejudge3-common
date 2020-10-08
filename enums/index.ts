@@ -44,7 +44,7 @@ export enum EContestMode {
 }
 
 export enum EContestUserStatus {
-  wating = 0, // 待审核
+  waiting = 0, // 待审核
   accepted = 1, // 已接受
   return = 2, // 等待修改
   rejected = 3, // 已拒绝
