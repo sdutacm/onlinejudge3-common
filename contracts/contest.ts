@@ -235,6 +235,7 @@ export interface IGetContestUserDetailResp {
 
 export interface ICreateContestUserReq {
   contestId: number;
+  username?: string;
   nickname: string;
   subname?: string;
   status?: number;
