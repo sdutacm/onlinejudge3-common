@@ -232,6 +232,11 @@ const _routesBe = {
     url: '/getContestUserList',
     contract: { req: 'contest.getContestUserListReq', resp: 'contest.getContestUserListResp' },
   },
+  getContestUsers: {
+    method: 'POST',
+    url: '/getContestUsers',
+    contract: { req: 'contest.getContestUsersReq', resp: 'contest.getContestUsersResp' },
+  },
   getContestUserDetail: {
     method: 'POST',
     url: '/getContestUserDetail',

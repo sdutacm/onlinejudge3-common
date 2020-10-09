@@ -202,6 +202,40 @@ export interface IGetContestUserListResp {
   }[];
 }
 
+export interface IGetContestUsersReq {
+  contestId: number;
+}
+
+export interface IGetContestUsersResp {
+  count: number;
+  rows: {
+    contestUserId: number;
+    contestId: number;
+    username: string;
+    nickname: string;
+    subname: string;
+    avatar: string;
+    status: number;
+    unofficial: boolean;
+    password: string;
+    sitNo: string;
+    members: {
+      schoolNo: string;
+      name: string;
+      school: string;
+      college: string;
+      major: string;
+      class: string;
+      tel: string;
+      email: string;
+      clothing: string;
+    }[];
+    createdAt: string | null;
+    globalUserId?: number;
+    rating?: number;
+  }[];
+}
+
 export interface IGetContestUserDetailReq {
   contestUserId: number;
 }
