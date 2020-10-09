@@ -204,6 +204,7 @@ export interface IGetContestUserListResp {
 
 export interface IGetContestUsersReq {
   contestId: number;
+  status?: 0 | 1 | 2 | 3;
 }
 
 export interface IGetContestUsersResp {
