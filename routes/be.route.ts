@@ -222,10 +222,18 @@ const _routesBe = {
     url: '/getContestProblems',
     contract: { req: 'contest.getContestProblemsReq', resp: 'contest.getContestProblemsResp' },
   },
-  setContestProblems: {
+  getContestProblemConfig: {
     method: 'POST',
-    url: '/setContestProblems',
-    contract: { req: 'contest.setContestProblemsReq', resp: null },
+    url: '/getContestProblemConfig',
+    contract: {
+      req: 'contest.getContestProblemConfigReq',
+      resp: 'contest.getContestProblemConfigResp',
+    },
+  },
+  setContestProblemConfig: {
+    method: 'POST',
+    url: '/setContestProblemConfig',
+    contract: { req: 'contest.setContestProblemConfigReq', resp: null },
   },
   getContestUserList: {
     method: 'POST',

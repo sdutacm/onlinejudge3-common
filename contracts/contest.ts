@@ -160,7 +160,20 @@ export interface IGetContestProblemsResp {
   }[];
 }
 
-export interface ISetContestProblemsReq {
+export interface IGetContestProblemConfigReq {
+  contestId: number;
+}
+
+export interface IGetContestProblemConfigResp {
+  count: number;
+  rows: {
+    problemId: number;
+    title: string;
+    originalTitle?: string;
+  }[];
+}
+
+export interface ISetContestProblemConfigReq {
   contestId: number;
   problems: {
     problemId: number;
