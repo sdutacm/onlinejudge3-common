@@ -147,3 +147,11 @@ export interface ISubmitSolutionReq {
 export interface ISubmitSolutionResp {
   solutionId: number;
 }
+
+export interface IRejudgeSolutionReq {
+  solutionId?: number;
+  problemId?: number;
+  userId?: number;
+  contestId?: number;
+  result?: number;
+}

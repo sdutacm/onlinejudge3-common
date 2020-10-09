@@ -178,6 +178,11 @@ const _routesBe = {
     url: '/submitSolution',
     contract: { req: 'solution.submitSolutionReq', resp: 'solution.submitSolutionResp' },
   },
+  rejudgeSolution: {
+    method: 'POST',
+    url: '/rejudgeSolution',
+    contract: { req: 'solution.rejudgeSolutionReq', resp: null },
+  },
   // contest
   getContestList: {
     method: 'POST',
