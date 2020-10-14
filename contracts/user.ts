@@ -154,6 +154,7 @@ export interface IGetUserDetailResp {
 
 export interface IUpdateUserDetailReq {
   userId: number;
+  nickname?: string;
   school?: string;
   college?: string;
   major?: string;
