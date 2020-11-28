@@ -16,12 +16,7 @@ export type IGetJudgerDataFileResp = {
   createTime: string;
   modifyTime: string;
   isBinary?: boolean;
-  content?:
-    | string
-    | {
-        type: 'Buffer';
-        data: number[];
-      };
+  content?: string;
   files?: {
     type: 'file' | 'directory' | 'N/A';
     filename: string;
