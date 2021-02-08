@@ -27,6 +27,7 @@ export interface IGetSolutionListResp {
       problemId: number;
       title: string;
       timeLimit: number;
+      memoryLimit: number;
     };
     user: {
       userId: number;
@@ -64,6 +65,7 @@ export interface IGetSolutionDetailResp {
     problemId: number;
     title: string;
     timeLimit: number;
+    memoryLimit: number;
   };
   user: {
     userId: number;
@@ -103,6 +105,7 @@ export interface IBatchGetSolutionDetailResp {
       problemId: number;
       title: string;
       timeLimit: number;
+      memoryLimit: number;
     };
     user: {
       userId: number;

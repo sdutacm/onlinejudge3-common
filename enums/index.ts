@@ -24,6 +24,9 @@ export enum ESolutionResult {
   CE = 7,
   PE = 8,
   SE = 11,
+
+  // temp (river Pending)
+  RPD = -1,
 }
 
 export enum EContestType {
