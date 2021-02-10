@@ -158,6 +158,12 @@
           "var": "SOLUTION_CONTEST_NOT_IN_PROGRESS",
           "msg": "The contest is not in progress",
           "description": "比赛未开始或已结束"
+        },
+        {
+          "code": 306,
+          "var": "SOLUTION_INVALID_LANGUAGE",
+          "msg": "The language is invalid",
+          "description": "语言不合法"
         }
       ]
     },

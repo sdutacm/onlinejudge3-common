@@ -38,3 +38,10 @@ export interface IUploadJudgerDataReq {
   commitMessage: string;
   [k: string]: unknown;
 }
+
+export type IGetLanguageConfigResp = {
+  language: string;
+  compile: string;
+  run: string;
+  version: string;
+}[];

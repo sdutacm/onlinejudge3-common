@@ -29,6 +29,7 @@ export const codeMsgs = {
   303: 'The contest does not exis',
   304: 'You do not have permission to view this contest',
   305: 'The contest is not in progress',
+  306: 'The language is invalid',
 
   // Contest 4XX
   401: 'Incorrect username or password',
@@ -106,6 +107,7 @@ export enum Codes {
   SOLUTION_CONTEST_NOT_EXIST = 303,
   SOLUTION_CONTEST_NO_PERMISSION = 304,
   SOLUTION_CONTEST_NOT_IN_PROGRESS = 305,
+  SOLUTION_INVALID_LANGUAGE = 306,
 
   // Contest 4XX
   CONTEST_INCORRECT_USERNAME_OR_PASSWORD = 401,

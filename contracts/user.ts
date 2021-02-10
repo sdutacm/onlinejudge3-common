@@ -160,7 +160,7 @@ export interface IUpdateUserDetailReq {
   major?: string;
   class?: string;
   site?: string;
-  defaultLanguage?: '' | 'gcc' | 'g++' | 'java' | 'python2' | 'python3' | 'c#';
+  defaultLanguage?: string;
   forbidden?: 0 | 1 | 2;
   permission?: 0 | 1 | 2 | 3;
 }

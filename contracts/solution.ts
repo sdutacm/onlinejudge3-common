@@ -143,7 +143,7 @@ export interface IUpdateSolutionShareReq {
 export interface ISubmitSolutionReq {
   problemId: number;
   contestId?: number;
-  language: 'gcc' | 'g++' | 'java' | 'python2' | 'python3' | 'c#';
+  language: string;
   code: string;
 }
 
