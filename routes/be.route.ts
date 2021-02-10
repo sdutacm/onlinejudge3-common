@@ -325,6 +325,11 @@ const _routesBe = {
     url: '/uploadJudgerData',
     contract: { req: 'judger.uploadJudgerDataReq', resp: null },
   },
+  getLanguageConfig: {
+    method: 'POST',
+    url: '/getLanguageConfig',
+    contract: { req: null, resp: 'judger.getLanguageConfigResp' },
+  },
   // message
   getMessageList: {
     method: 'POST',
