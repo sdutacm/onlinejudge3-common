@@ -51,6 +51,18 @@ export interface IGetSolutionListResp {
     codeLength?: number;
     shared: boolean;
     isContestUser: boolean;
+    judgeInfo?: {
+      lastCase: number;
+      totalCase: number;
+      detail: {
+        cases: {
+          result: number;
+          time: number;
+          memory: number;
+        }[];
+      };
+      finishedAt: string;
+    };
     createdAt: string;
   }[];
 }
@@ -91,6 +103,18 @@ export interface IGetSolutionDetailResp {
   code?: string;
   shared: boolean;
   isContestUser: boolean;
+  judgeInfo?: {
+    lastCase: number;
+    totalCase: number;
+    detail: {
+      cases: {
+        result: number;
+        time: number;
+        memory: number;
+      }[];
+    };
+    finishedAt: string;
+  };
   createdAt: string;
 }
 
@@ -131,6 +155,18 @@ export interface IBatchGetSolutionDetailResp {
     code?: string;
     shared: boolean;
     isContestUser: boolean;
+    judgeInfo?: {
+      lastCase: number;
+      totalCase: number;
+      detail: {
+        cases: {
+          result: number;
+          time: number;
+          memory: number;
+        }[];
+      };
+      finishedAt: string;
+    };
     createdAt: string;
   };
 }
