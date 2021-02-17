@@ -5,7 +5,8 @@
  */
 
 export interface IGetSolutionListReq {
-  page?: number;
+  lt?: number | null;
+  gt?: number;
   limit?: number;
   order?: ['solutionId' | 'time' | 'memory', 'ASC' | 'DESC'][];
   solutionId?: number;
@@ -18,9 +19,9 @@ export interface IGetSolutionListReq {
 }
 
 export interface IGetSolutionListResp {
-  page: number;
+  lt?: number | null;
+  gt?: number;
   limit: number;
-  count: number;
   rows: {
     solutionId: number;
     problem: {
