@@ -61,6 +61,8 @@ export interface IGetSolutionListResp {
           result: number;
           time: number;
           memory: number;
+          errMsg?: string;
+          outMsg?: string;
         }[];
       };
       finishedAt: string;
@@ -169,6 +171,8 @@ export interface IBatchGetSolutionDetailResp {
           result: number;
           time: number;
           memory: number;
+          errMsg?: string;
+          outMsg?: string;
         }[];
       };
       finishedAt: string;
