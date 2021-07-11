@@ -232,3 +232,7 @@ export interface IGetSessionListResp {
 export interface IClearSessionReq {
   sessionId: string;
 }
+
+export interface IGetActiveUserCountResp {
+  count: number;
+}

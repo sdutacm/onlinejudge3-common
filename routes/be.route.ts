@@ -108,6 +108,11 @@ const _routesBe = {
     url: '/clearSession',
     contract: { req: 'user.clearSessionReq', resp: null },
   },
+  getActiveUserCount: {
+    method: 'POST',
+    url: '/getActiveUserCount',
+    contract: { req: null, resp: 'user.getActiveUserCountResp' },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',
