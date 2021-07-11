@@ -117,6 +117,12 @@
           "var": "USER_NOT_EXIST",
           "msg": "The user does not exist",
           "description": "用户不存在"
+        },
+        {
+          "code": 108,
+          "var": "USER_CANNOT_CLEAR_CURRENT_SESSION",
+          "msg": "Cannot clear current session",
+          "description": "无法清除当前登录会话"
         }
       ]
     },

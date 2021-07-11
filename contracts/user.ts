@@ -215,3 +215,20 @@ export type IGetUserSolutionCalendarResp = {
   date: string;
   count: number;
 }[];
+
+export interface IGetSessionListResp {
+  count: number;
+  rows: {
+    sessionId: string;
+    isCurrent: boolean;
+    loginUa: string;
+    loginIp: string;
+    loginAt: string;
+    lastAccessIp: string;
+    lastAccessAt: string;
+  }[];
+}
+
+export interface IClearSessionReq {
+  sessionId: string;
+}

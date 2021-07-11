@@ -98,6 +98,16 @@ const _routesBe = {
     url: '/getUserSolutionCalendar',
     contract: { req: 'user.getUserSolutionCalendarReq', resp: 'user.getUserSolutionCalendarResp' },
   },
+  getSessionList: {
+    method: 'POST',
+    url: '/getSessionList',
+    contract: { req: null, resp: 'user.getSessionListResp' },
+  },
+  clearSession: {
+    method: 'POST',
+    url: '/clearSession',
+    contract: { req: 'user.clearSessionReq', resp: null },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',

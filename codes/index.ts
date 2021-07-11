@@ -20,6 +20,7 @@ export const codeMsgs = {
   105: 'The verification code is incorrect',
   106: 'The old password is incorrect',
   107: 'The user does not exist',
+  108: 'Cannot clear current session',
 
   // Problem 2XX
 
@@ -98,6 +99,7 @@ export enum Codes {
   USER_INCORRECT_VERIFICATION_CODE = 105,
   USER_INCORRECT_OLD_PASSWORD = 106,
   USER_NOT_EXIST = 107,
+  USER_CANNOT_CLEAR_CURRENT_SESSION = 108,
 
   // Problem 2XX
 
