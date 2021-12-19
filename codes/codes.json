@@ -69,6 +69,12 @@
           "var": "GENERAL_INVALID_MEDIA_SIZE",
           "msg": "The media file size limit exceeded",
           "description": "上传媒体文件小超限"
+        },
+        {
+          "code": 11,
+          "var": "GENERAL_FEATURE_NOT_AVAILABLE",
+          "msg": "The feature is not available now",
+          "description": "该特性现已不可用"
         }
       ]
     },
@@ -123,6 +129,12 @@
           "var": "USER_CANNOT_CLEAR_CURRENT_SESSION",
           "msg": "Cannot clear current session",
           "description": "无法清除当前登录会话"
+        },
+        {
+          "code": 109,
+          "var": "USER_NICKNAME_CONTAINS_ILLEGAL_CONTENT",
+          "msg": "The nickname contains illegal content",
+          "description": "昵称包含非法内容"
         }
       ]
     },

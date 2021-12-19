@@ -11,6 +11,7 @@ export const codeMsgs = {
   8: 'Request params error',
   9: 'The media file is invalid',
   10: 'The media file size limit exceeded',
+  11: 'The feature is not available now',
 
   // User 1XX
   101: 'Incorrect login name or password',
@@ -21,6 +22,7 @@ export const codeMsgs = {
   106: 'The old password is incorrect',
   107: 'The user does not exist',
   108: 'Cannot clear current session',
+  109: 'The nickname contains illegal content',
 
   // Problem 2XX
 
@@ -90,6 +92,7 @@ export enum Codes {
   GENERAL_REQUEST_PARAMS_ERROR = 8,
   GENERAL_INVALID_MEDIA = 9,
   GENERAL_INVALID_MEDIA_SIZE = 10,
+  GENERAL_FEATURE_NOT_AVAILABLE = 11,
 
   // User 1XX
   USER_INCORRECT_LOGIN_INFO = 101,
@@ -100,6 +103,7 @@ export enum Codes {
   USER_INCORRECT_OLD_PASSWORD = 106,
   USER_NOT_EXIST = 107,
   USER_CANNOT_CLEAR_CURRENT_SESSION = 108,
+  USER_NICKNAME_CONTAINS_ILLEGAL_CONTENT = 109,
 
   // Problem 2XX
 
