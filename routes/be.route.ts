@@ -113,6 +113,16 @@ const _routesBe = {
     url: '/getActiveUserCount',
     contract: { req: null, resp: 'user.getActiveUserCountResp' },
   },
+  getAllUserPermissionsMap: {
+    method: 'POST',
+    url: '/getAllUserPermissionsMap',
+    contract: { req: null, resp: 'user.getAllUserPermissionsMapResp' },
+  },
+  setUserPermissions: {
+    method: 'POST',
+    url: '/setUserPermissions',
+    contract: { req: 'user.setUserPermissionsReq', resp: null },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',

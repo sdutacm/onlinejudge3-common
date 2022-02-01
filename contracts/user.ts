@@ -9,6 +9,7 @@ export type IGetSessionResp = {
   username: string;
   nickname: string;
   permission: number;
+  permissions: string[];
   avatar: string | null;
 } | null;
 
@@ -22,6 +23,7 @@ export interface ILoginResp {
   username: string;
   nickname: string;
   permission: number;
+  permissions: string[];
   avatar: string | null;
 }
 
@@ -235,4 +237,20 @@ export interface IClearSessionReq {
 
 export interface IGetActiveUserCountResp {
   count: number;
+}
+
+export interface IGetAllUserPermissionsMapResp {
+  count: number;
+  rows: {
+    userId: number;
+    username: string;
+    nickname: string;
+    avatar: string | null;
+    permissions: string[];
+  }[];
+}
+
+export interface ISetUserPermissionsReq {
+  userId: number;
+  permissions: string[];
 }
