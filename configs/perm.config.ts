@@ -179,3 +179,39 @@ const permConfig = [
 
 export default permConfig;
 export type IPermConfig = typeof permConfig;
+
+/**
+ * 校验指定权限表达式。
+ *
+ * 传递一个数组作为表达式，每一项之间是且关系，如果项本身为数组，则此项内是或关系。
+ * @param permExpr 要校验的权限表达式
+ * @param userPerms 用户当前拥有的权限
+ * @example
+ * checkPermExpr(['A', 'B'], ['A']) // false
+ * checkPermExpr(['A', 'B'], ['B', 'A', 'C']) // true
+ * checkPermExpr(['A', ['B', 'C']], ['A']) // false
+ * checkPermExpr(['A', ['B', 'C']], ['A', 'C']) // true
+ */
+export function checkPermExpr(permExpr: (EPerm | EPerm[])[], userPerms: EPerm[]) {
+  for (const expr of permExpr) {
+    if (Array.isArray(expr)) {
+      // or
+      let passed = false;
+      for (const subExpr of expr) {
+        if (userPerms.includes(subExpr)) {
+          passed = true;
+          break;
+        }
+      }
+      if (!passed) {
+        return false;
+      }
+    } else {
+      // and
+      if (!userPerms.includes(expr)) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
