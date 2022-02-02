@@ -45,7 +45,7 @@ const permConfig = [
   {
     permission: EPerm.AdminAccess,
     name: '访问管理后台',
-    description: '可见管理后台入口，但具体可管理项目受其他权限控制',
+    description: '可进入管理后台，但具体可管理项目受其他权限控制',
   },
   {
     permission: EPerm.UploadAsset,
@@ -72,9 +72,14 @@ const permConfig = [
   { permission: EPerm.WriteTag, name: '标签-写', description: '可创建、编辑标签' },
   { permission: EPerm.WriteProblemTag, name: '题目标签-写', description: '可编辑任何题目的标签' },
   {
-    permission: EPerm.SendSystemMessage,
-    name: '发送系统消息',
-    description: '可发送系统消息到一个或多个用户',
+    permission: EPerm.ReadSolution,
+    name: '提交-读',
+    description: '可读取任何提交的代码、评测结果等信息，包括比赛中的提交',
+  },
+  {
+    permission: EPerm.RejudgeSolution,
+    name: '重判提交',
+    description: '可重判任何提交，包括比赛中的提交',
   },
   { permission: EPerm.ContestAccess, name: '访问比赛', description: '可直接访问任何比赛（只读）' },
   {
@@ -120,7 +125,7 @@ const permConfig = [
   {
     permission: EPerm.AuditContestUser,
     name: '审核比赛用户',
-    description: '可审核任何比赛的用户，仅能提交审核结果',
+    description: '可审核任何比赛的用户，仅能根据公开注册信息提交审核结果',
   },
   {
     permission: EPerm.ReadUser,
@@ -143,16 +148,6 @@ const permConfig = [
     name: '用户权限-写',
     description: '可编辑任何用户的权限列表',
   },
-  {
-    permission: EPerm.ReadSolution,
-    name: '提交-读',
-    description: '可读取任何提交的代码、评测结果等信息，包括比赛中的提交',
-  },
-  {
-    permission: EPerm.RejudgeSolution,
-    name: '重判提交',
-    description: '可重判任何提交，包括比赛中的提交',
-  },
   { permission: EPerm.ReadTopic, name: '话题-读', description: '可读取完整话题列表和话题详情' },
   { permission: EPerm.DeleteTopic, name: '删除话题', description: '可删除任何话题' },
   { permission: EPerm.DeleteReply, name: '删除评论', description: '可删除任何评论' },
@@ -164,6 +159,7 @@ const permConfig = [
     name: '题目集-写',
     description: '可创建、编辑题目集，控制是否隐藏',
   },
+  { permission: EPerm.DeleteSet, name: '删除题目集', description: '可删除任何题目集' },
   {
     permission: EPerm.ReadGroup,
     name: '用户组-读',
@@ -175,6 +171,11 @@ const permConfig = [
     description: '可创建、编辑用户组，包含成员管理',
   },
   { permission: EPerm.DeleteGroup, name: '删除用户组', description: '可删除任何用户组' },
+  {
+    permission: EPerm.SendSystemMessage,
+    name: '发送系统消息',
+    description: '可发送系统消息到一个或多个用户',
+  },
 ];
 
 export default permConfig;
