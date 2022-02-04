@@ -18,7 +18,6 @@ export enum EPerm {
   WriteContestProblem = 'WriteContestProblem',
   ReadContestUser = 'ReadContestUser',
   WriteContestUser = 'WriteContestUser',
-  ExportContestUsers = 'ExportContestUsers',
   AuditContestUser = 'AuditContestUser',
   ReadUser = 'ReadUser',
   WriteUser = 'WriteUser',
@@ -110,17 +109,12 @@ const permConfig = [
   {
     permission: EPerm.ReadContestUser,
     name: '比赛用户-读',
-    description: '可读取任何比赛的完整用户列表和用户详情，包括用户密码和审核状态',
+    description: '可读取任何比赛的完整用户列表和用户详情，包括用户密码和审核状态，以及导出用户信息',
   },
   {
     permission: EPerm.WriteContestUser,
     name: '比赛用户-写',
     description: '可创建、导入、编辑任何比赛的用户，包括设置用户密码和审核状态',
-  },
-  {
-    permission: EPerm.ExportContestUsers,
-    name: '导出比赛用户',
-    description: '可导出任何比赛的已审核通过的用户列表，包括用户密码',
   },
   {
     permission: EPerm.AuditContestUser,
