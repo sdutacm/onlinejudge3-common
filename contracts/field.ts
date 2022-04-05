@@ -91,3 +91,7 @@ export interface IUpdateFieldDetailReq {
   };
   deleted?: boolean;
 }
+
+export interface IDeleteFieldReq {
+  fieldId: number;
+}

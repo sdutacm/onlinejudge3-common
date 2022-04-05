@@ -614,6 +614,11 @@ const _routesBe = {
     url: '/updateFieldDetail',
     contract: { req: 'field.updateFieldDetailReq', resp: null },
   },
+  deleteField: {
+    method: 'POST',
+    url: '/deleteField',
+    contract: { req: 'field.deleteFieldReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
