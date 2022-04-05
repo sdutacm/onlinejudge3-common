@@ -39,6 +39,7 @@ export enum EPerm {
   DeleteGroup = 'DeleteGroup',
   ReadField = 'ReadField',
   WriteField = 'WriteField',
+  DeleteField = 'DeleteField',
   UploadAsset = 'UploadAsset',
 }
 
@@ -167,6 +168,17 @@ const permConfig = [
     description: '可创建、编辑用户组，包含成员管理',
   },
   { permission: EPerm.DeleteGroup, name: '删除用户组', description: '可删除任何用户组' },
+  {
+    permission: EPerm.ReadField,
+    name: '场地-读',
+    description: '可读取完整场地列表和场地详情',
+  },
+  {
+    permission: EPerm.WriteField,
+    name: '场地-写',
+    description: '可创建、编辑场地',
+  },
+  { permission: EPerm.DeleteField, name: '删除场地', description: '可删除任何场地' },
   {
     permission: EPerm.SendSystemMessage,
     name: '发送系统消息',
