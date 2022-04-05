@@ -37,6 +37,8 @@ export enum EPerm {
   ReadGroup = 'ReadGroup',
   WriteGroup = 'WriteGroup',
   DeleteGroup = 'DeleteGroup',
+  ReadField = 'ReadField',
+  WriteField = 'WriteField',
   UploadAsset = 'UploadAsset',
 }
 

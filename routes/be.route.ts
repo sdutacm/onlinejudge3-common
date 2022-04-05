@@ -593,6 +593,27 @@ const _routesBe = {
       resp: 'stat.getUserSubmittedProblemsResp',
     },
   },
+  // field
+  getFieldList: {
+    method: 'POST',
+    url: '/getFieldList',
+    contract: { req: 'field.getFieldListReq', resp: 'field.getFieldListResp' },
+  },
+  getFieldDetail: {
+    method: 'POST',
+    url: '/getFieldDetail',
+    contract: { req: 'field.getFieldDetailReq', resp: 'field.getFieldDetailResp' },
+  },
+  createField: {
+    method: 'POST',
+    url: '/createField',
+    contract: { req: 'field.createFieldReq', resp: 'field.createFieldResp' },
+  },
+  updateFieldDetail: {
+    method: 'POST',
+    url: '/updateFieldDetail',
+    contract: { req: 'field.updateFieldDetailReq', resp: null },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
