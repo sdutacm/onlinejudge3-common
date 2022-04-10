@@ -190,6 +190,7 @@ export interface ISubmitSolutionReq {
   problemId: number;
   contestId?: number;
   language: string;
+  codeFormat?: 'raw' | 'base64';
   code: string;
 }
 
