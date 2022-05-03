@@ -77,6 +77,12 @@ export const codeMsgs = {
   1203: 'Data git working dir is not clean. Please retry',
 
   // Misc 13XX
+
+  // Field 14XX
+
+  // Competition 15XX
+  1501: 'Incorrect password',
+  1502: 'The user is not available to access contest',
 };
 
 export enum Codes {
@@ -158,4 +164,10 @@ export enum Codes {
   JUDGER_DATA_GIT_WD_NOT_CLEAN = 1203,
 
   // Misc 13XX
+
+  // Field 14XX
+
+  // Competition 15XX
+  COMPETITION_INCORRECT_PASSWORD = 1501,
+  COMPETITION_USER_STATUS_CANNOT_ACCESS = 1502,
 }

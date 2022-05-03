@@ -76,3 +76,37 @@ export enum EGroupMemberStatus {
   normal = 0, // 正常
   auditing = 1, // 等待审核
 }
+
+export enum ECompetitionUserRole {
+  /** 管理员 */
+  admin = 1,
+  /** 选手 */
+  participant,
+  /** 赛事负责人 */
+  principal,
+  /** 裁判 */
+  judge,
+  /** 审核员 */
+  auditor,
+  /** 场地协助 */
+  fieldAssistantant,
+  /** 志愿者 */
+  volunteer,
+  /** 观察者 */
+  observer,
+}
+
+export enum ECompetitionUserStatus {
+  /** 可用 */
+  available = 1,
+  /** 审核中 */
+  auditing,
+  /** 需要修改 */
+  modificationRequired,
+  /** 已拒绝 */
+  rejected,
+  /** 已进入比赛 */
+  entered,
+  /** 已签退比赛 */
+  quitted,
+}

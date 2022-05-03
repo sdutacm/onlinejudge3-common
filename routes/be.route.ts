@@ -619,6 +619,47 @@ const _routesBe = {
     url: '/deleteField',
     contract: { req: 'field.deleteFieldReq', resp: null },
   },
+  // competition
+  getCompetitionList: {
+    method: 'POST',
+    url: '/getCompetitionList',
+    contract: {
+      req: 'competition.getCompetitionListReq',
+      resp: 'competition.getCompetitionListResp',
+    },
+  },
+  getCompetitionSession: {
+    method: 'POST',
+    url: '/getCompetitionSession',
+    contract: {
+      req: 'competition.getCompetitionSessionReq',
+      resp: 'competition.getCompetitionSessionResp',
+    },
+  },
+  loginCompetition: {
+    method: 'POST',
+    url: '/loginCompetition',
+    contract: {
+      req: 'competition.loginCompetitionReq',
+      resp: 'competition.loginCompetitionResp',
+    },
+  },
+  logoutCompetition: {
+    method: 'POST',
+    url: '/logoutCompetition',
+    contract: {
+      req: 'competition.logoutCompetitionReq',
+      resp: null,
+    },
+  },
+  getCompetitionDetail: {
+    method: 'POST',
+    url: '/getCompetitionDetail',
+    contract: {
+      req: 'competition.getCompetitionDetailReq',
+      resp: 'competition.getCompetitionDetailResp',
+    },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

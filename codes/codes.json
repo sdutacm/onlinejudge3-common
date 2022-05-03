@@ -386,6 +386,29 @@
       "name": "Misc",
       "range": "13XX",
       "codes": []
+    },
+    {
+      "name": "Field",
+      "range": "14XX",
+      "codes": []
+    },
+    {
+      "name": "Competition",
+      "range": "15XX",
+      "codes": [
+        {
+          "code": 1501,
+          "var": "COMPETITION_INCORRECT_PASSWORD",
+          "msg": "Incorrect password",
+          "description": "密码不正确"
+        },
+        {
+          "code": 1502,
+          "var": "COMPETITION_USER_STATUS_CANNOT_ACCESS",
+          "msg": "The user is not available to access contest",
+          "description": "该比赛用户无法访问"
+        }
+      ]
     }
   ]
 }
