@@ -660,6 +660,22 @@ const _routesBe = {
       resp: 'competition.getCompetitionDetailResp',
     },
   },
+  getCompetitionUsers: {
+    method: 'POST',
+    url: '/getCompetitionUsers',
+    contract: {
+      req: 'competition.getCompetitionUsersReq',
+      resp: 'competition.getCompetitionUsersResp',
+    },
+  },
+  getCompetitionUserDetail: {
+    method: 'POST',
+    url: '/getCompetitionUserDetail',
+    contract: {
+      req: 'competition.getCompetitionUserDetailReq',
+      resp: 'competition.getCompetitionUserDetailResp',
+    },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

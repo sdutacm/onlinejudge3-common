@@ -43,6 +43,8 @@ export interface ICompetitionUserInfo {
   major?: string;
   class?: string;
   tel?: string;
+  qq?: string;
+  weChat?: string;
   clothing?: string;
   birthDate?: Date;
   slogan?: string;
