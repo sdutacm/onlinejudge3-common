@@ -82,7 +82,8 @@ export const codeMsgs = {
 
   // Competition 15XX
   1501: 'Incorrect password',
-  1502: 'The user is not available to access contest',
+  1502: 'The user is not available to access competition',
+  1503: 'The user has already quitted competition',
 };
 
 export enum Codes {
@@ -170,4 +171,5 @@ export enum Codes {
   // Competition 15XX
   COMPETITION_INCORRECT_PASSWORD = 1501,
   COMPETITION_USER_STATUS_CANNOT_ACCESS = 1502,
+  COMPETITION_USER_QUITTED = 1503,
 }

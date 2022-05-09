@@ -692,6 +692,14 @@ const _routesBe = {
       resp: 'competition.getPublicCompetitionParticipantDetailResp',
     },
   },
+  requestCompetitionParticipantPassword: {
+    method: 'POST',
+    url: '/requestCompetitionParticipantPassword',
+    contract: {
+      req: 'competition.requestCompetitionParticipantPasswordReq',
+      resp: 'competition.requestCompetitionParticipantPasswordResp',
+    },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

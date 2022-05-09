@@ -41,6 +41,7 @@ export interface IGetCompetitionSessionReq {
 export type IGetCompetitionSessionResp = {
   userId: number;
   nickname: string;
+  subname: string;
   role: number;
 } | null;
 
@@ -53,6 +54,7 @@ export interface ILoginCompetitionReq {
 export interface ILoginCompetitionResp {
   userId: number;
   nickname: string;
+  subname: string;
   role: number;
 }
 
@@ -95,6 +97,7 @@ export interface IGetCompetitionUsersResp {
     userId: number;
     role: number;
     status: number;
+    password?: string | null;
     fieldShortName: string | null;
     seatNo: number | null;
     banned: boolean;
@@ -131,6 +134,7 @@ export interface IGetCompetitionUserDetailResp {
   userId: number;
   role: number;
   status: number;
+  password?: string | null;
   fieldShortName: string | null;
   seatNo: number | null;
   banned: boolean;
@@ -214,4 +218,13 @@ export interface IGetPublicCompetitionParticipantDetailResp {
     class?: string;
     slogan?: string;
   };
+}
+
+export interface IRequestCompetitionParticipantPasswordReq {
+  competitionId: number;
+  userId: number;
+}
+
+export interface IRequestCompetitionParticipantPasswordResp {
+  password: string;
 }

@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "gen:codes": "cross-env IS_EXEC_FROM_PKG_SCRIPT=1 node codes/gen.js"
+    "gen:codes": "IS_EXEC_FROM_PKG_SCRIPT=1 node codes/gen.js"
   },
   "repository": {
     "type": "git",
     "url": "https://git.sdutacm.cn/sdutacm/onlinejudge3-common.git"
   },
   "author": "bLue",
-  "license": "ISC",
-  "devDependencies": {
-    "cross-env": "^7.0.2"
-  }
+  "license": "ISC"
 }
