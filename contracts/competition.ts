@@ -155,3 +155,63 @@ export interface IGetCompetitionUserDetailResp {
     slogan?: string;
   };
 }
+
+export interface IGetPublicCompetitionParticipantsReq {
+  competitionId: number;
+}
+
+export interface IGetPublicCompetitionParticipantsResp {
+  count: number;
+  rows: {
+    competitionId: number;
+    userId: number;
+    role: number;
+    status: number;
+    fieldShortName: string | null;
+    seatNo: number | null;
+    banned: boolean;
+    unofficialParticipation: boolean;
+    createdAt: string;
+    info: {
+      nickname: string;
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      slogan?: string;
+    };
+  }[];
+}
+
+export interface IGetPublicCompetitionParticipantDetailReq {
+  competitionId: number;
+  userId: number;
+}
+
+export interface IGetPublicCompetitionParticipantDetailResp {
+  competitionId: number;
+  userId: number;
+  role: number;
+  status: number;
+  fieldShortName: string | null;
+  seatNo: number | null;
+  banned: boolean;
+  unofficialParticipation: boolean;
+  createdAt: string;
+  info: {
+    nickname: string;
+    subname?: string;
+    realName?: string;
+    organization?: string;
+    company?: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    slogan?: string;
+  };
+}
