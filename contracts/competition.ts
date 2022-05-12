@@ -97,7 +97,6 @@ export interface IGetCompetitionUsersResp {
     userId: number;
     role: number;
     status: number;
-    password?: string | null;
     fieldShortName: string | null;
     seatNo: number | null;
     banned: boolean;
