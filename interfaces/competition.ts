@@ -46,6 +46,5 @@ export interface ICompetitionUserInfo {
   qq?: string;
   weChat?: string;
   clothing?: string;
-  birthDate?: Date;
   slogan?: string;
 }

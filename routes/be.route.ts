@@ -700,6 +700,30 @@ const _routesBe = {
       resp: 'competition.requestCompetitionParticipantPasswordResp',
     },
   },
+  getSignedUpCompetitionParticipant: {
+    method: 'POST',
+    url: '/getSignedUpCompetitionParticipant',
+    contract: {
+      req: 'competition.getSignedUpCompetitionParticipantReq',
+      resp: 'competition.getSignedUpCompetitionParticipantResp',
+    },
+  },
+  signUpCompetitionParticipant: {
+    method: 'POST',
+    url: '/signUpCompetitionParticipant',
+    contract: {
+      req: 'competition.signUpCompetitionParticipantReq',
+      resp: null,
+    },
+  },
+  modifySignedUpCompetitionParticipant: {
+    method: 'POST',
+    url: '/modifySignedUpCompetitionParticipant',
+    contract: {
+      req: 'competition.modifySignedUpCompetitionParticipantReq',
+      resp: null,
+    },
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

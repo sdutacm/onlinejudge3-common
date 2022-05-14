@@ -413,6 +413,36 @@
           "var": "COMPETITION_USER_QUITTED",
           "msg": "The user has already quitted competition",
           "description": "该比赛用户已退出比赛"
+        },
+        {
+          "code": 1504,
+          "var": "COMPETITION_USER_CANNOT_SIGN_UP",
+          "msg": "Cannot sign up competition",
+          "description": "无法注册比赛"
+        },
+        {
+          "code": 1505,
+          "var": "COMPETITION_ALREADY_SIGNED_UP_AS_A_PARTICIPANT",
+          "msg": "You have already signed up as a participant",
+          "description": "已注册过参赛选手"
+        },
+        {
+          "code": 1506,
+          "var": "COMPETITION_ALREADY_BEEN_A_USER",
+          "msg": "You have already been a non-participant user",
+          "description": "已是除参赛选手外的其他比赛用户"
+        },
+        {
+          "code": 1507,
+          "var": "COMPETITION_SIGN_UP_NOT_IN_PROGRESS",
+          "msg": "The competition signing up is not in progress",
+          "description": "比赛注册未开始或已结束"
+        },
+        {
+          "code": 1508,
+          "var": "COMPETITION_CANNOT_MODIFY_SELF_PARTICIPANT",
+          "msg": "Cannot modify participant info",
+          "description": "无法修改自己的选手注册信息"
         }
       ]
     }

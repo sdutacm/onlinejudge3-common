@@ -117,7 +117,6 @@ export interface IGetCompetitionUsersResp {
       qq?: string;
       weChat?: string;
       clothing?: string;
-      birthDate?: string;
       slogan?: string;
     };
   }[];
@@ -154,7 +153,6 @@ export interface IGetCompetitionUserDetailResp {
     qq?: string;
     weChat?: string;
     clothing?: string;
-    birthDate?: string;
     slogan?: string;
   };
 }
@@ -226,4 +224,77 @@ export interface IRequestCompetitionParticipantPasswordReq {
 
 export interface IRequestCompetitionParticipantPasswordResp {
   password: string;
+}
+
+export interface IGetSignedUpCompetitionParticipantReq {
+  competitionId: number;
+}
+
+export interface IGetSignedUpCompetitionParticipantResp {
+  competitionId: number;
+  userId: number;
+  status: number;
+  unofficialParticipation: boolean;
+  createdAt: string;
+  info: {
+    nickname: string;
+    subname?: string;
+    realName?: string;
+    organization?: string;
+    company?: string;
+    schoolNo?: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    tel?: string;
+    qq?: string;
+    weChat?: string;
+    clothing?: string;
+    slogan?: string;
+  };
+}
+
+export interface ISignUpCompetitionParticipantReq {
+  competitionId: number;
+  unofficialParticipation: boolean;
+  info: {
+    nickname: string;
+    subname?: string;
+    realName?: string;
+    organization?: string;
+    company?: string;
+    schoolNo?: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    tel?: string;
+    qq?: string;
+    weChat?: string;
+    clothing?: string;
+    slogan?: string;
+  };
+}
+
+export interface IModifySignedUpCompetitionParticipantReq {
+  competitionId: number;
+  unofficialParticipation: boolean;
+  info: {
+    nickname: string;
+    subname?: string;
+    realName?: string;
+    organization?: string;
+    company?: string;
+    schoolNo?: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    tel?: string;
+    qq?: string;
+    weChat?: string;
+    clothing?: string;
+    slogan?: string;
+  };
 }

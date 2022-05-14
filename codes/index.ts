@@ -84,6 +84,11 @@ export const codeMsgs = {
   1501: 'Incorrect password',
   1502: 'The user is not available to access competition',
   1503: 'The user has already quitted competition',
+  1504: 'Cannot sign up competition',
+  1505: 'You have already signed up as a participant',
+  1506: 'You have already been a non-participant user',
+  1507: 'The competition signing up is not in progress',
+  1508: 'Cannot modify participant info',
 };
 
 export enum Codes {
@@ -172,4 +177,9 @@ export enum Codes {
   COMPETITION_INCORRECT_PASSWORD = 1501,
   COMPETITION_USER_STATUS_CANNOT_ACCESS = 1502,
   COMPETITION_USER_QUITTED = 1503,
+  COMPETITION_USER_CANNOT_SIGN_UP = 1504,
+  COMPETITION_ALREADY_SIGNED_UP_AS_A_PARTICIPANT = 1505,
+  COMPETITION_ALREADY_BEEN_A_USER = 1506,
+  COMPETITION_SIGN_UP_NOT_IN_PROGRESS = 1507,
+  COMPETITION_CANNOT_MODIFY_SELF_PARTICIPANT = 1508,
 }
