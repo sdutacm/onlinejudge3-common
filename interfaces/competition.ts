@@ -48,3 +48,18 @@ export interface ICompetitionUserInfo {
   clothing?: string;
   slogan?: string;
 }
+
+export interface ICompetitionSelfParticipant {
+  competitionId: number;
+  userId: number;
+  status: number;
+  unofficialParticipation: boolean;
+  createdAt: string;
+  info: ICompetitionUserInfo;
+}
+
+export interface ICompetitionSelfParticipantForm {
+  competitionId: number;
+  unofficialParticipation: boolean;
+  info: ICompetitionUserInfo;
+}
