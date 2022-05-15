@@ -230,7 +230,7 @@ export interface IGetSignedUpCompetitionParticipantReq {
   competitionId: number;
 }
 
-export interface IGetSignedUpCompetitionParticipantResp {
+export type IGetSignedUpCompetitionParticipantResp = {
   competitionId: number;
   userId: number;
   status: number;
@@ -253,7 +253,7 @@ export interface IGetSignedUpCompetitionParticipantResp {
     clothing?: string;
     slogan?: string;
   };
-}
+} | null;
 
 export interface ISignUpCompetitionParticipantReq {
   competitionId: number;
