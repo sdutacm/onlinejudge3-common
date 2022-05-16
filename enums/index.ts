@@ -81,32 +81,32 @@ export enum ECompetitionUserRole {
   /** 管理员 */
   admin = 1,
   /** 选手 */
-  participant,
+  participant = 2,
   /** 赛事负责人 */
-  principal,
+  principal = 3,
   /** 裁判 */
-  judge,
+  judge = 4,
   /** 审核员 */
-  auditor,
+  auditor = 5,
   /** 场地协助 */
-  fieldAssistantant,
+  fieldAssistantant = 6,
   /** 志愿者 */
-  volunteer,
+  volunteer = 7,
   /** 观察者 */
-  observer,
+  observer = 8,
 }
 
 export enum ECompetitionUserStatus {
   /** 可用 */
   available = 1,
   /** 审核中 */
-  auditing,
+  auditing = 2,
   /** 需要修改 */
-  modificationRequired,
+  modificationRequired = 3,
   /** 已拒绝 */
-  rejected,
+  rejected = 4,
   /** 已进入比赛 */
-  entered,
+  entered = 5,
   /** 已签退比赛 */
-  quitted,
+  quitted = 6,
 }

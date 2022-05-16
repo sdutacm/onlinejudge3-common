@@ -797,6 +797,15 @@ const _routesBe = {
     },
     csrf: true,
   },
+  auditCompetitionParticipant: {
+    method: 'POST',
+    url: '/auditCompetitionParticipant',
+    contract: {
+      req: 'competition.auditCompetitionParticipantReq',
+      resp: null,
+    },
+    csrf: true,
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

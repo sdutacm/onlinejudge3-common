@@ -89,6 +89,10 @@ export const codeMsgs = {
   1506: 'You have already been a non-participant user',
   1507: 'The competition signing up is not in progress',
   1508: 'Cannot modify participant info',
+  1509: 'The competition is pending',
+  1510: 'The competition is not ended yet',
+  1511: 'The competition is running or ended',
+  1512: 'The competition is already ended',
 };
 
 export enum Codes {
@@ -182,4 +186,8 @@ export enum Codes {
   COMPETITION_ALREADY_BEEN_A_USER = 1506,
   COMPETITION_SIGN_UP_NOT_IN_PROGRESS = 1507,
   COMPETITION_CANNOT_MODIFY_SELF_PARTICIPANT = 1508,
+  COMPETITION_PENDING = 1509,
+  COMPETITION_NOT_ENDED = 1510,
+  COMPETITION_RUNNING_OR_ENDED = 1511,
+  COMPETITION_ENDED = 1512,
 }

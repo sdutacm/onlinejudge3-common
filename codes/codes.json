@@ -443,6 +443,30 @@
           "var": "COMPETITION_CANNOT_MODIFY_SELF_PARTICIPANT",
           "msg": "Cannot modify participant info",
           "description": "无法修改自己的选手注册信息"
+        },
+        {
+          "code": 1509,
+          "var": "COMPETITION_PENDING",
+          "msg": "The competition is pending",
+          "description": "比赛未开始"
+        },
+        {
+          "code": 1510,
+          "var": "COMPETITION_NOT_ENDED",
+          "msg": "The competition is not ended yet",
+          "description": "比赛未结束"
+        },
+        {
+          "code": 1511,
+          "var": "COMPETITION_RUNNING_OR_ENDED",
+          "msg": "The competition is running or ended",
+          "description": "比赛已开始或已结束"
+        },
+        {
+          "code": 1512,
+          "var": "COMPETITION_ENDED",
+          "msg": "The competition is already ended",
+          "description": "比赛已被结束"
         }
       ]
     }

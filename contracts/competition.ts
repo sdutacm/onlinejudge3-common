@@ -298,3 +298,10 @@ export interface IModifySignedUpCompetitionParticipantReq {
     slogan?: string;
   };
 }
+
+export interface IAuditCompetitionParticipantReq {
+  competitionId: number;
+  userId: number;
+  status: number;
+  reason?: string;
+}
