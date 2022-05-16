@@ -15,6 +15,7 @@ const _routesBe = {
     method: 'GET',
     url: '/getSession',
     contract: { req: null, resp: 'user.getSessionResp' },
+    csrf: true,
   },
   login: {
     method: 'POST',
