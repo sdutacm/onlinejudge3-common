@@ -6,6 +6,7 @@ export interface IRouteBeConfig {
     req: string | null;
     resp: string | null;
   };
+  csrf?: boolean;
 }
 
 const _routesBe = {
@@ -19,26 +20,31 @@ const _routesBe = {
     method: 'POST',
     url: '/login',
     contract: { req: 'user.loginReq', resp: 'user.loginResp' },
+    csrf: true,
   },
   logout: {
     method: 'POST',
     url: '/logout',
     contract: { req: null, resp: null },
+    csrf: true,
   },
   register: {
     method: 'POST',
     url: '/register',
     contract: { req: 'user.registerReq', resp: 'user.registerResp' },
+    csrf: true,
   },
   createUser: {
     method: 'POST',
     url: '/createUser',
     contract: { req: 'user.createUserReq', resp: 'user.createUserResp' },
+    csrf: true,
   },
   batchCreateUsers: {
     method: 'POST',
     url: '/batchCreateUsers',
     contract: { req: 'user.batchCreateUsersReq', resp: null },
+    csrf: true,
   },
   getUserList: {
     method: 'POST',
@@ -54,36 +60,43 @@ const _routesBe = {
     method: 'POST',
     url: '/updateUserDetail',
     contract: { req: 'user.updateUserDetailReq', resp: null },
+    csrf: true,
   },
   updateUserPassword: {
     method: 'POST',
     url: '/updateUserPassword',
     contract: { req: 'user.updateUserPasswordReq', resp: null },
+    csrf: true,
   },
   resetUserPassword: {
     method: 'POST',
     url: '/resetUserPassword',
     contract: { req: 'user.resetUserPasswordReq', resp: null },
+    csrf: true,
   },
   resetUserPasswordByAdmin: {
     method: 'POST',
     url: '/resetUserPasswordByAdmin',
     contract: { req: 'user.resetUserPasswordByAdminReq', resp: null },
+    csrf: true,
   },
   updateUserEmail: {
     method: 'POST',
     url: '/updateUserEmail',
     contract: { req: 'user.updateUserEmailReq', resp: null },
+    csrf: true,
   },
   uploadUserAvatar: {
     method: 'POST',
     url: '/uploadUserAvatar',
     contract: { req: 'user.uploadUserAvatarReq', resp: null },
+    csrf: true,
   },
   uploadUserBannerImage: {
     method: 'POST',
     url: '/uploadUserBannerImage',
     contract: { req: 'user.uploadUserBannerImageReq', resp: null },
+    csrf: true,
   },
   getUserProblemResultStats: {
     method: 'POST',
@@ -107,6 +120,7 @@ const _routesBe = {
     method: 'POST',
     url: '/clearSession',
     contract: { req: 'user.clearSessionReq', resp: null },
+    csrf: true,
   },
   getActiveUserCount: {
     method: 'POST',
@@ -122,6 +136,7 @@ const _routesBe = {
     method: 'POST',
     url: '/setUserPermissions',
     contract: { req: 'user.setUserPermissionsReq', resp: null },
+    csrf: true,
   },
   // verification
   sendEmailVerification: {
@@ -131,6 +146,7 @@ const _routesBe = {
       req: 'verification.sendEmailVerificationReq',
       resp: 'verification.sendEmailVerificationResp',
     },
+    csrf: true,
   },
   // problem
   getProblemList: {
@@ -147,16 +163,19 @@ const _routesBe = {
     method: 'POST',
     url: '/createProblem',
     contract: { req: 'problem.createProblemReq', resp: 'problem.createProblemResp' },
+    csrf: true,
   },
   updateProblemDetail: {
     method: 'POST',
     url: '/updateProblemDetail',
     contract: { req: 'problem.updateProblemDetailReq', resp: null },
+    csrf: true,
   },
   setProblemTags: {
     method: 'POST',
     url: '/setProblemTags',
     contract: { req: 'problem.setProblemTagsReq', resp: null },
+    csrf: true,
   },
   // tag
   getTagFullList: {
@@ -168,11 +187,13 @@ const _routesBe = {
     method: 'POST',
     url: '/createTag',
     contract: { req: 'tag.createTagReq', resp: 'tag.createTagResp' },
+    csrf: true,
   },
   updateTagDetail: {
     method: 'POST',
     url: '/updateTagDetail',
     contract: { req: 'tag.updateTagDetailReq', resp: null },
+    csrf: true,
   },
   // solution
   getSolutionList: {
@@ -197,16 +218,19 @@ const _routesBe = {
     method: 'POST',
     url: '/updateSolutionShare',
     contract: { req: 'solution.updateSolutionShareReq', resp: null },
+    csrf: true,
   },
   submitSolution: {
     method: 'POST',
     url: '/submitSolution',
     contract: { req: 'solution.submitSolutionReq', resp: 'solution.submitSolutionResp' },
+    csrf: true,
   },
   rejudgeSolution: {
     method: 'POST',
     url: '/rejudgeSolution',
     contract: { req: 'solution.rejudgeSolutionReq', resp: null },
+    csrf: true,
   },
   // contest
   getContestList: {
@@ -226,11 +250,13 @@ const _routesBe = {
       req: 'contest.requestContestSessionReq',
       resp: 'contest.requestContestSessionResp',
     },
+    csrf: true,
   },
   logoutContest: {
     method: 'POST',
     url: '/logoutContest',
     contract: { req: 'contest.logoutContestReq', resp: null },
+    csrf: true,
   },
   getContestDetail: {
     method: 'POST',
@@ -241,11 +267,13 @@ const _routesBe = {
     method: 'POST',
     url: '/createContest',
     contract: { req: 'contest.createContestReq', resp: 'contest.createContestResp' },
+    csrf: true,
   },
   updateContestDetail: {
     method: 'POST',
     url: '/updateContestDetail',
     contract: { req: 'contest.updateContestDetailReq', resp: null },
+    csrf: true,
   },
   getContestProblems: {
     method: 'POST',
@@ -264,6 +292,7 @@ const _routesBe = {
     method: 'POST',
     url: '/setContestProblemConfig',
     contract: { req: 'contest.setContestProblemConfigReq', resp: null },
+    csrf: true,
   },
   getContestUserList: {
     method: 'POST',
@@ -284,21 +313,25 @@ const _routesBe = {
     method: 'POST',
     url: '/createContestUser',
     contract: { req: 'contest.createContestUserReq', resp: 'contest.createContestUserResp' },
+    csrf: true,
   },
   batchCreateContestUsers: {
     method: 'POST',
     url: '/batchCreateContestUsers',
     contract: { req: 'contest.batchCreateContestUsersReq', resp: null },
+    csrf: true,
   },
   updateContestUser: {
     method: 'POST',
     url: '/updateContestUser',
     contract: { req: 'contest.updateContestUserReq', resp: null },
+    csrf: true,
   },
   auditContestUser: {
     method: 'POST',
     url: '/auditContestUser',
     contract: { req: 'contest.auditContestUserReq', resp: null },
+    csrf: true,
   },
   getContestProblemSolutionStats: {
     method: 'POST',
@@ -328,6 +361,7 @@ const _routesBe = {
       req: 'contest.endContestReq',
       resp: null,
     },
+    csrf: true,
   },
   // judger
   getJudgerDataFile: {
@@ -344,11 +378,13 @@ const _routesBe = {
     method: 'POST',
     url: '/prepareJudgerDataUpdate',
     contract: { req: null, resp: null },
+    csrf: true,
   },
   uploadJudgerData: {
     method: 'POST',
     url: '/uploadJudgerData',
     contract: { req: 'judger.uploadJudgerDataReq', resp: null },
+    csrf: true,
   },
   getLanguageConfig: {
     method: 'POST',
@@ -365,16 +401,19 @@ const _routesBe = {
     method: 'POST',
     url: '/sendMessage',
     contract: { req: 'message.sendMessageReq', resp: null },
+    csrf: true,
   },
   batchSendMessage: {
     method: 'POST',
     url: '/batchSendMessage',
     contract: { req: 'message.batchSendMessageReq', resp: null },
+    csrf: true,
   },
   updateMessageRead: {
     method: 'POST',
     url: '/updateMessageRead',
     contract: { req: 'message.updateMessageReadReq', resp: null },
+    csrf: true,
   },
   // favorite
   getFavoriteList: {
@@ -386,11 +425,13 @@ const _routesBe = {
     method: 'POST',
     url: '/addFavorite',
     contract: { req: 'favorite.addFavoriteReq', resp: 'favorite.addFavoriteResp' },
+    csrf: true,
   },
   deleteFavorite: {
     method: 'POST',
     url: '/deleteFavorite',
     contract: { req: 'favorite.deleteFavoriteReq', resp: null },
+    csrf: true,
   },
   // note
   getNoteList: {
@@ -402,11 +443,13 @@ const _routesBe = {
     method: 'POST',
     url: '/addNote',
     contract: { req: 'note.addNoteReq', resp: 'note.addNoteResp' },
+    csrf: true,
   },
   deleteNote: {
     method: 'POST',
     url: '/deleteNote',
     contract: { req: 'note.deleteNoteReq', resp: null },
+    csrf: true,
   },
   // topic
   getTopicList: {
@@ -423,16 +466,19 @@ const _routesBe = {
     method: 'POST',
     url: '/createTopic',
     contract: { req: 'topic.createTopicReq', resp: 'topic.createTopicResp' },
+    csrf: true,
   },
   updateTopicDetail: {
     method: 'POST',
     url: '/updateTopicDetail',
     contract: { req: 'topic.updateTopicDetailReq', resp: null },
+    csrf: true,
   },
   deleteTopic: {
     method: 'POST',
     url: '/deleteTopic',
     contract: { req: 'topic.deleteTopicReq', resp: null },
+    csrf: true,
   },
   // reply
   getReplyList: {
@@ -444,11 +490,13 @@ const _routesBe = {
     method: 'POST',
     url: '/createReply',
     contract: { req: 'reply.createReplyReq', resp: 'reply.createReplyResp' },
+    csrf: true,
   },
   deleteReply: {
     method: 'POST',
     url: '/deleteReply',
     contract: { req: 'reply.deleteReplyReq', resp: null },
+    csrf: true,
   },
   // post
   getPostList: {
@@ -465,11 +513,13 @@ const _routesBe = {
     method: 'POST',
     url: '/createPost',
     contract: { req: 'post.createPostReq', resp: 'post.createPostResp' },
+    csrf: true,
   },
   updatePostDetail: {
     method: 'POST',
     url: '/updatePostDetail',
     contract: { req: 'post.updatePostDetailReq', resp: null },
+    csrf: true,
   },
   // set
   getSetList: {
@@ -486,16 +536,19 @@ const _routesBe = {
     method: 'POST',
     url: '/createSet',
     contract: { req: 'set.createSetReq', resp: 'set.createSetResp' },
+    csrf: true,
   },
   updateSetDetail: {
     method: 'POST',
     url: '/updateSetDetail',
     contract: { req: 'set.updateSetDetailReq', resp: null },
+    csrf: true,
   },
   deleteSet: {
     method: 'POST',
     url: '/deleteSet',
     contract: { req: 'set.deleteSetReq', resp: null },
+    csrf: true,
   },
   // group
   getGroupList: {
@@ -517,21 +570,25 @@ const _routesBe = {
     method: 'POST',
     url: '/createGroup',
     contract: { req: 'group.createGroupReq', resp: 'group.createGroupResp' },
+    csrf: true,
   },
   createEmptyGroup: {
     method: 'POST',
     url: '/createEmptyGroup',
     contract: { req: 'group.createEmptyGroupReq', resp: 'group.createEmptyGroupResp' },
+    csrf: true,
   },
   updateGroupDetail: {
     method: 'POST',
     url: '/updateGroupDetail',
     contract: { req: 'group.updateGroupDetailReq', resp: null },
+    csrf: true,
   },
   deleteGroup: {
     method: 'POST',
     url: '/deleteGroup',
     contract: { req: 'group.deleteGroupReq', resp: null },
+    csrf: true,
   },
   getGroupMemberList: {
     method: 'POST',
@@ -542,37 +599,44 @@ const _routesBe = {
     method: 'POST',
     url: '/joinGroup',
     contract: { req: 'group.joinGroupReq', resp: null },
+    csrf: true,
   },
   batchAddGroupMembers: {
     method: 'POST',
     url: '/batchAddGroupMembers',
     contract: { req: 'group.batchAddGroupMembersReq', resp: null },
+    csrf: true,
   },
   updateGroupMember: {
     method: 'POST',
     url: '/updateGroupMember',
     contract: { req: 'group.updateGroupMemberReq', resp: null },
+    csrf: true,
   },
   deleteGroupMember: {
     method: 'POST',
     url: '/deleteGroupMember',
     contract: { req: 'group.deleteGroupMemberReq', resp: null },
+    csrf: true,
   },
   exitGroup: {
     method: 'POST',
     url: '/exitGroup',
     contract: { req: 'group.exitGroupReq', resp: null },
+    csrf: true,
   },
   // misc
   uploadMedia: {
     method: 'POST',
     url: '/uploadMedia',
     contract: { req: 'misc.uploadMediaReq', resp: 'misc.uploadMediaResp' },
+    csrf: true,
   },
   uploadAsset: {
     method: 'POST',
     url: '/uploadAsset',
     contract: { req: 'misc.uploadAssetReq', resp: 'misc.uploadAssetResp' },
+    csrf: true,
   },
   // stat
   getUserACRank: {
@@ -608,16 +672,19 @@ const _routesBe = {
     method: 'POST',
     url: '/createField',
     contract: { req: 'field.createFieldReq', resp: 'field.createFieldResp' },
+    csrf: true,
   },
   updateFieldDetail: {
     method: 'POST',
     url: '/updateFieldDetail',
     contract: { req: 'field.updateFieldDetailReq', resp: null },
+    csrf: true,
   },
   deleteField: {
     method: 'POST',
     url: '/deleteField',
     contract: { req: 'field.deleteFieldReq', resp: null },
+    csrf: true,
   },
   // competition
   getCompetitionList: {
@@ -643,6 +710,7 @@ const _routesBe = {
       req: 'competition.loginCompetitionReq',
       resp: 'competition.loginCompetitionResp',
     },
+    csrf: true,
   },
   logoutCompetition: {
     method: 'POST',
@@ -651,6 +719,7 @@ const _routesBe = {
       req: 'competition.logoutCompetitionReq',
       resp: null,
     },
+    csrf: true,
   },
   getCompetitionDetail: {
     method: 'POST',
@@ -699,6 +768,7 @@ const _routesBe = {
       req: 'competition.requestCompetitionParticipantPasswordReq',
       resp: 'competition.requestCompetitionParticipantPasswordResp',
     },
+    csrf: true,
   },
   getSignedUpCompetitionParticipant: {
     method: 'POST',
@@ -715,6 +785,7 @@ const _routesBe = {
       req: 'competition.signUpCompetitionParticipantReq',
       resp: null,
     },
+    csrf: true,
   },
   modifySignedUpCompetitionParticipant: {
     method: 'POST',
@@ -723,6 +794,7 @@ const _routesBe = {
       req: 'competition.modifySignedUpCompetitionParticipantReq',
       resp: null,
     },
+    csrf: true,
   },
 };
 
