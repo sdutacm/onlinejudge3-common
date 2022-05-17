@@ -37,7 +37,7 @@ export interface ICompetitionUserInfo {
   realName?: string;
   organization?: string;
   company?: string;
-  schoolNo?: string;
+  studentNo?: string;
   school?: string;
   college?: string;
   major?: string;

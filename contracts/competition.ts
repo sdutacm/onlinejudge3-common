@@ -108,7 +108,7 @@ export interface IGetCompetitionUsersResp {
       realName?: string;
       organization?: string;
       company?: string;
-      schoolNo?: string;
+      studentNo?: string;
       school?: string;
       college?: string;
       major?: string;
@@ -144,7 +144,7 @@ export interface IGetCompetitionUserDetailResp {
     realName?: string;
     organization?: string;
     company?: string;
-    schoolNo?: string;
+    studentNo?: string;
     school?: string;
     college?: string;
     major?: string;
@@ -242,7 +242,7 @@ export type IGetSignedUpCompetitionParticipantResp = {
     realName?: string;
     organization?: string;
     company?: string;
-    schoolNo?: string;
+    studentNo?: string;
     school?: string;
     college?: string;
     major?: string;
@@ -264,7 +264,7 @@ export interface ISignUpCompetitionParticipantReq {
     realName?: string;
     organization?: string;
     company?: string;
-    schoolNo?: string;
+    studentNo?: string;
     school?: string;
     college?: string;
     major?: string;
@@ -286,7 +286,7 @@ export interface IModifySignedUpCompetitionParticipantReq {
     realName?: string;
     organization?: string;
     company?: string;
-    schoolNo?: string;
+    studentNo?: string;
     school?: string;
     college?: string;
     major?: string;
