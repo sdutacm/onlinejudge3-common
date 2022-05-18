@@ -19,7 +19,7 @@ export interface ICompetition {
 
 export interface ICompetitionUser {
   competitionId: number;
-  user: IUserCommonRelative;
+  userId: number;
   role: ECompetitionUserRole;
   status: ECompetitionUserStatus;
   info: ICompetitionUserInfo;
