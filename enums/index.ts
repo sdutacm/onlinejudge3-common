@@ -110,3 +110,21 @@ export enum ECompetitionUserStatus {
   /** 已签退比赛 */
   quitted = 6,
 }
+
+export enum EBalloonType {
+  /** 派送 */
+  delivery = 1,
+  /** 撤回 */
+  recall = 2,
+}
+
+export enum EBalloonStatus {
+  /** 待分配 */
+  pending = 1,
+  /** 进行中 */
+  doing = 2,
+  /** 已完成 */
+  completed = 3,
+  /** 已取消 */
+  cancelled = 4,
+}

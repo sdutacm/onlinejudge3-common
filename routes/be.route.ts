@@ -806,6 +806,16 @@ const _routesBe = {
     },
     csrf: true,
   },
+  // balloon
+  getCompetitionBalloons: {
+    method: 'POST',
+    url: '/getCompetitionBalloons',
+    contract: {
+      req: 'balloon.getCompetitionBalloonsReq',
+      resp: 'balloon.getCompetitionBalloonsResp',
+    },
+    csrf: true,
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
