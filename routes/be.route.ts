@@ -730,6 +730,46 @@ const _routesBe = {
       resp: 'competition.getCompetitionDetailResp',
     },
   },
+  getCompetitionProblems: {
+    method: 'POST',
+    url: '/getCompetitionProblems',
+    contract: {
+      req: 'competition.getCompetitionProblemsReq',
+      resp: 'competition.getCompetitionProblemsResp',
+    },
+  },
+  createCompetition: {
+    method: 'POST',
+    url: '/createCompetition',
+    contract: {
+      req: 'competition.createCompetitionReq',
+      resp: 'competition.createCompetitionResp',
+    },
+  },
+  updateCompetitionDetail: {
+    method: 'POST',
+    url: '/updateCompetitionDetail',
+    contract: {
+      req: 'competition.updateCompetitionDetailReq',
+      resp: null,
+    },
+  },
+  getCompetitionProblemConfig: {
+    method: 'POST',
+    url: '/getCompetitionProblemConfig',
+    contract: {
+      req: 'competition.getCompetitionProblemConfigReq',
+      resp: 'competition.getCompetitionProblemConfigResp',
+    },
+  },
+  setCompetitionProblemConfig: {
+    method: 'POST',
+    url: '/setCompetitionProblemConfig',
+    contract: {
+      req: 'competition.setCompetitionProblemConfigReq',
+      resp: null,
+    },
+  },
   getCompetitionUsers: {
     method: 'POST',
     url: '/getCompetitionUsers',

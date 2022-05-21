@@ -22,6 +22,7 @@ export interface IGetCompetitionBalloonsResp {
     balloonAlias: string;
     balloonColor: string;
     nickname: string;
+    subname?: string;
     fieldShortName: string | null;
     seatNo: number | null;
     type: number;

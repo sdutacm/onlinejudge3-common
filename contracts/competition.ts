@@ -81,6 +81,87 @@ export interface IGetCompetitionDetailResp {
   createdBy: number;
 }
 
+export interface ICreateCompetitionReq {
+  title: string;
+  introduction: string;
+  startAt: string;
+  endAt: string;
+  registerStartAt: string | null;
+  registerEndAt: string | null;
+  isTeam: boolean;
+  hidden: boolean;
+}
+
+export interface ICreateCompetitionResp {
+  competitionId: number;
+}
+
+export interface IUpdateCompetitionDetailReq {
+  competitionId: number;
+  title?: string;
+  introduction?: string;
+  startAt?: string;
+  endAt?: string;
+  registerStartAt?: string | null;
+  registerEndAt?: string | null;
+  isTeam?: boolean;
+  hidden?: boolean;
+}
+
+export interface IGetCompetitionProblemsReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionProblemsResp {
+  count: number;
+  rows: {
+    problemId: number;
+    title: string;
+    description: string;
+    input: string;
+    output: string;
+    sampleInput: string;
+    sampleOutput: string;
+    hint: string;
+    source: string;
+    author: number | null;
+    timeLimit: number;
+    memoryLimit: number;
+    difficulty: number;
+    accepted: number;
+    submitted: number;
+    spj: boolean;
+    display: boolean;
+    createdAt: string;
+    updatedAt: string | null;
+    balloonAlias?: string;
+    balloonColor?: string;
+  }[];
+}
+
+export interface IGetCompetitionProblemConfigReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionProblemConfigResp {
+  count: number;
+  rows: {
+    problemId: number;
+    title: string;
+    balloonAlias: string;
+    balloonColor: string;
+  }[];
+}
+
+export interface ISetCompetitionProblemConfigReq {
+  competitionId: number;
+  problems: {
+    problemId: number;
+    balloonAlias: string;
+    balloonColor: string;
+  }[];
+}
+
 export interface IGetCompetitionUsersReq {
   competitionId: number;
   role?: number;
