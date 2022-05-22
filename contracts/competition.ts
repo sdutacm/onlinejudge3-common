@@ -391,3 +391,22 @@ export interface IAuditCompetitionParticipantReq {
   status: number;
   reason?: string;
 }
+
+export interface IConfirmEnterCompetitionReq {
+  competitionId: number;
+}
+
+export interface IConfirmQuitCompetitionReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionProblemSolutionStatsReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionProblemSolutionStatsResp {
+  [k: string]: {
+    accepted: number;
+    submitted: number;
+  };
+}

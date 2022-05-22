@@ -14,6 +14,7 @@ export interface IGetSolutionListReq {
   problemId?: number;
   userId?: number;
   contestId?: number;
+  competitionId?: number;
   result?: number;
   language?: string;
 }
@@ -43,6 +44,13 @@ export interface IGetSolutionListResp {
       contestId: number;
       title: string;
       type: number;
+      startAt: string;
+      endAt: string;
+    };
+    competition?: {
+      competitionId: number;
+      title: string;
+      isTeam: boolean;
       startAt: string;
       endAt: string;
     };
@@ -96,6 +104,13 @@ export interface IGetSolutionDetailResp {
     contestId: number;
     title: string;
     type: number;
+    startAt: string;
+    endAt: string;
+  };
+  competition?: {
+    competitionId: number;
+    title: string;
+    isTeam: boolean;
     startAt: string;
     endAt: string;
   };
@@ -154,6 +169,13 @@ export interface IBatchGetSolutionDetailResp {
       startAt: string;
       endAt: string;
     };
+    competition?: {
+      competitionId: number;
+      title: string;
+      isTeam: boolean;
+      startAt: string;
+      endAt: string;
+    };
     result: number;
     time?: number;
     memory?: number;
@@ -189,6 +211,7 @@ export interface IUpdateSolutionShareReq {
 export interface ISubmitSolutionReq {
   problemId: number;
   contestId?: number;
+  competitionId?: number;
   language: string;
   codeFormat?: 'raw' | 'base64';
   code: string;
@@ -203,5 +226,6 @@ export interface IRejudgeSolutionReq {
   problemId?: number;
   userId?: number;
   contestId?: number;
+  competitionId?: number;
   result?: number;
 }

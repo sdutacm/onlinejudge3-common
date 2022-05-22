@@ -464,9 +464,33 @@
         },
         {
           "code": 1512,
+          "var": "COMPETITION_NOT_RUNNING",
+          "msg": "The competition is not running",
+          "description": "比赛未在进行中"
+        },
+        {
+          "code": 1513,
           "var": "COMPETITION_ENDED",
           "msg": "The competition is already ended",
           "description": "比赛已被结束"
+        },
+        {
+          "code": 1514,
+          "var": "COMPETITION_ALREADY_QUITTED",
+          "msg": "You have already quitted the competition",
+          "description": "已签退比赛"
+        },
+        {
+          "code": 1515,
+          "var": "COMPETITION_CURRENT_USER_INVALID_STATUS_TO_OPERATE",
+          "msg": "Current user status cannot operate",
+          "description": "当前用户状态无法操作"
+        },
+        {
+          "code": 1516,
+          "var": "COMPETITION_NOT_LOGGED_IN",
+          "msg": "You are not logged in the competition",
+          "description": "比赛未登录"
         }
       ]
     }

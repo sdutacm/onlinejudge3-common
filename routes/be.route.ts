@@ -846,6 +846,32 @@ const _routesBe = {
     },
     csrf: true,
   },
+  confirmEnterCompetition: {
+    method: 'POST',
+    url: '/confirmEnterCompetition',
+    contract: {
+      req: 'competition.confirmEnterCompetitionReq',
+      resp: null,
+    },
+    csrf: true,
+  },
+  confirmQuitCompetition: {
+    method: 'POST',
+    url: '/confirmQuitCompetition',
+    contract: {
+      req: 'competition.confirmQuitCompetitionReq',
+      resp: null,
+    },
+    csrf: true,
+  },
+  getCompetitionProblemSolutionStats: {
+    method: 'POST',
+    url: '/getCompetitionProblemSolutionStats',
+    contract: {
+      req: 'competition.getCompetitionProblemSolutionStatsReq',
+      resp: 'competition.getCompetitionProblemSolutionStatsResp',
+    },
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',
@@ -854,7 +880,6 @@ const _routesBe = {
       req: 'balloon.getCompetitionBalloonsReq',
       resp: 'balloon.getCompetitionBalloonsResp',
     },
-    csrf: true,
   },
 };
 

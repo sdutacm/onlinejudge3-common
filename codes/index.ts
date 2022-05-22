@@ -92,7 +92,11 @@ export const codeMsgs = {
   1509: 'The competition is pending',
   1510: 'The competition is not ended yet',
   1511: 'The competition is running or ended',
-  1512: 'The competition is already ended',
+  1512: 'The competition is not running',
+  1513: 'The competition is already ended',
+  1514: 'You have already quitted the competition',
+  1515: 'Current user status cannot operate',
+  1516: 'You are not logged in the competition',
 };
 
 export enum Codes {
@@ -189,5 +193,9 @@ export enum Codes {
   COMPETITION_PENDING = 1509,
   COMPETITION_NOT_ENDED = 1510,
   COMPETITION_RUNNING_OR_ENDED = 1511,
-  COMPETITION_ENDED = 1512,
+  COMPETITION_NOT_RUNNING = 1512,
+  COMPETITION_ENDED = 1513,
+  COMPETITION_ALREADY_QUITTED = 1514,
+  COMPETITION_CURRENT_USER_INVALID_STATUS_TO_OPERATE = 1515,
+  COMPETITION_NOT_LOGGED_IN = 1516,
 }
