@@ -881,6 +881,15 @@ const _routesBe = {
       resp: 'balloon.getCompetitionBalloonsResp',
     },
   },
+  updateCompetitionBalloonStatus: {
+    method: 'POST',
+    url: '/updateCompetitionBalloonStatus',
+    contract: {
+      req: 'balloon.updateCompetitionBalloonStatusReq',
+      resp: null,
+    },
+    csrf: true,
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {

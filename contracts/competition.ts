@@ -199,6 +199,7 @@ export interface IGetCompetitionUsersResp {
       weChat?: string;
       clothing?: string;
       slogan?: string;
+      group?: string;
       [k: string]: unknown;
     };
   }[];
@@ -236,6 +237,7 @@ export interface IGetCompetitionUserDetailResp {
     weChat?: string;
     clothing?: string;
     slogan?: string;
+    group?: string;
     [k: string]: unknown;
   };
 }
@@ -267,6 +269,7 @@ export interface IGetPublicCompetitionParticipantsResp {
       major?: string;
       class?: string;
       slogan?: string;
+      group?: string;
       [k: string]: unknown;
     };
   }[];
@@ -298,6 +301,7 @@ export interface IGetPublicCompetitionParticipantDetailResp {
     major?: string;
     class?: string;
     slogan?: string;
+    group?: string;
     [k: string]: unknown;
   };
 }
@@ -337,6 +341,7 @@ export type IGetSignedUpCompetitionParticipantResp = {
     weChat?: string;
     clothing?: string;
     slogan?: string;
+    group?: string;
     [k: string]: unknown;
   };
 } | null;

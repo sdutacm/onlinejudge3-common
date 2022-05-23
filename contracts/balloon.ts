@@ -39,3 +39,10 @@ export interface IGetCompetitionBalloonsResp {
     updatedAt: string;
   }[];
 }
+
+export interface IUpdateCompetitionBalloonStatusReq {
+  balloonId: number;
+  competitionId: number;
+  status?: number;
+  assignedUserId?: number;
+}

@@ -47,6 +47,7 @@ export interface ICompetitionUserInfo {
   weChat?: string;
   clothing?: string;
   slogan?: string;
+  group?: string;
 }
 
 export interface ICompetitionSelfParticipant {
