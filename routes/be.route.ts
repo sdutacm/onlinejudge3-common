@@ -872,6 +872,14 @@ const _routesBe = {
       resp: 'competition.getCompetitionProblemSolutionStatsResp',
     },
   },
+  getCompetitionSettings: {
+    method: 'POST',
+    url: '/getCompetitionSettings',
+    contract: {
+      req: 'competition.getCompetitionSettingsReq',
+      resp: 'competition.getCompetitionSettingsResp',
+    },
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',

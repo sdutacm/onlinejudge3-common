@@ -415,3 +415,13 @@ export interface IGetCompetitionProblemSolutionStatsResp {
     submitted: number;
   };
 }
+
+export interface IGetCompetitionSettingsReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionSettingsResp {
+  frozenLength: number;
+  allowedAuthMethods: string[];
+  allowedSolutionLanguages: string[];
+}
