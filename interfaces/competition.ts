@@ -64,3 +64,10 @@ export interface ICompetitionSelfParticipantForm {
   unofficialParticipation: boolean;
   info: ICompetitionUserInfo;
 }
+
+export interface ICompetitionSettings {
+  frozenLength: number;
+  allowedAuthMethods: string[];
+  allowedSolutionLanguages: string[];
+  externalRanklistUrl: string;
+}
