@@ -426,3 +426,11 @@ export interface IGetCompetitionSettingsResp {
   allowedSolutionLanguages: string[];
   externalRanklistUrl: string;
 }
+
+export interface IUpdateCompetitionSettingsReq {
+  competitionId: number;
+  frozenLength?: number;
+  allowedAuthMethods?: string[];
+  allowedSolutionLanguages?: string[];
+  externalRanklistUrl?: string;
+}

@@ -880,6 +880,15 @@ const _routesBe = {
       resp: 'competition.getCompetitionSettingsResp',
     },
   },
+  updateCompetitionSettings: {
+    method: 'POST',
+    url: '/updateCompetitionSettings',
+    contract: {
+      req: 'competition.updateCompetitionSettingsReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',
