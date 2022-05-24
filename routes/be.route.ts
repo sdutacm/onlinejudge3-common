@@ -786,6 +786,14 @@ const _routesBe = {
       resp: 'competition.getCompetitionUserDetailResp',
     },
   },
+  getSelfCompetitionUserDetail: {
+    method: 'POST',
+    url: '/getSelfCompetitionUserDetail',
+    contract: {
+      req: 'competition.getSelfCompetitionUserDetailReq',
+      resp: 'competition.getSelfCompetitionUserDetailResp',
+    },
+  },
   getPublicCompetitionParticipants: {
     method: 'POST',
     url: '/getPublicCompetitionParticipants',

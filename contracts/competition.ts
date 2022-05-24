@@ -242,6 +242,41 @@ export interface IGetCompetitionUserDetailResp {
   };
 }
 
+export interface IGetSelfCompetitionUserDetailReq {
+  competitionId: number;
+}
+
+export interface IGetSelfCompetitionUserDetailResp {
+  competitionId: number;
+  userId: number;
+  role: number;
+  status: number;
+  fieldShortName: string | null;
+  seatNo: number | null;
+  banned: boolean;
+  unofficialParticipation: boolean;
+  createdAt: string;
+  info: {
+    nickname: string;
+    subname?: string;
+    realName?: string;
+    organization?: string;
+    company?: string;
+    studentNo?: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    tel?: string;
+    qq?: string;
+    weChat?: string;
+    clothing?: string;
+    slogan?: string;
+    group?: string;
+    [k: string]: unknown;
+  };
+}
+
 export interface IGetPublicCompetitionParticipantsReq {
   competitionId: number;
 }
