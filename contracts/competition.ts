@@ -424,4 +424,5 @@ export interface IGetCompetitionSettingsResp {
   frozenLength: number;
   allowedAuthMethods: string[];
   allowedSolutionLanguages: string[];
+  externalRanklistUrl: string;
 }

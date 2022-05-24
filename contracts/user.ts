@@ -201,6 +201,7 @@ export interface IUploadUserBannerImageReq {
 export interface IGetUserProblemResultStatsReq {
   userId: number;
   contestId?: number;
+  competitionId?: number;
 }
 
 export interface IGetUserProblemResultStatsResp {
