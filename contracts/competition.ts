@@ -447,6 +447,10 @@ export interface IRequestCompetitionParticipantPasswordResp {
   password: string;
 }
 
+export interface IRandomAllCompetitionUserPasswordsReq {
+  competitionId: number;
+}
+
 export interface IGetSignedUpCompetitionParticipantReq {
   competitionId: number;
 }

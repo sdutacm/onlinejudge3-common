@@ -846,6 +846,15 @@ const _routesBe = {
     },
     csrf: true,
   },
+  randomAllCompetitionUserPasswords: {
+    method: 'POST',
+    url: '/randomAllCompetitionUserPasswords',
+    contract: {
+      req: 'competition.randomAllCompetitionUserPasswordsReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   getSignedUpCompetitionParticipant: {
     method: 'POST',
     url: '/getSignedUpCompetitionParticipant',
