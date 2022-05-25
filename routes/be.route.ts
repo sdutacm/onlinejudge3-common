@@ -770,6 +770,33 @@ const _routesBe = {
       resp: null,
     },
   },
+  batchCreateCompetitionUsers: {
+    method: 'POST',
+    url: '/batchCreateCompetitionUsers',
+    contract: {
+      req: 'competition.batchCreateCompetitionUsersReq',
+      resp: null,
+    },
+    csrf: true,
+  },
+  createCompetitionUser: {
+    method: 'POST',
+    url: '/createCompetitionUser',
+    contract: {
+      req: 'competition.createCompetitionUserReq',
+      resp: null,
+    },
+    csrf: true,
+  },
+  updateCompetitionUser: {
+    method: 'POST',
+    url: '/updateCompetitionUser',
+    contract: {
+      req: 'competition.updateCompetitionUserReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   getCompetitionUsers: {
     method: 'POST',
     url: '/getCompetitionUsers',

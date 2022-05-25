@@ -97,6 +97,7 @@ export const codeMsgs = {
   1514: 'You have already quitted the competition',
   1515: 'Current user status cannot operate',
   1516: 'You are not logged in the competition',
+  1517: 'The competition user already exists',
 };
 
 export enum Codes {
@@ -198,4 +199,5 @@ export enum Codes {
   COMPETITION_ALREADY_QUITTED = 1514,
   COMPETITION_CURRENT_USER_INVALID_STATUS_TO_OPERATE = 1515,
   COMPETITION_NOT_LOGGED_IN = 1516,
+  COMPETITION_USER_EXISTS = 1517,
 }

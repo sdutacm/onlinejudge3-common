@@ -491,6 +491,12 @@
           "var": "COMPETITION_NOT_LOGGED_IN",
           "msg": "You are not logged in the competition",
           "description": "比赛未登录"
+        },
+        {
+          "code": 1517,
+          "var": "COMPETITION_USER_EXISTS",
+          "msg": "The competition user already exists",
+          "description": "比赛用户已存在"
         }
       ]
     }

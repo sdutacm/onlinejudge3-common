@@ -162,6 +162,102 @@ export interface ISetCompetitionProblemConfigReq {
   }[];
 }
 
+export interface IBatchCreateCompetitionUsersReq {
+  competitionId: number;
+  users: {
+    userId: number;
+    role: number;
+    status: number;
+    password: string | null;
+    fieldShortName: string | null;
+    seatNo: number | null;
+    banned: boolean;
+    unofficialParticipation: boolean;
+    info: {
+      nickname: string;
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      slogan?: string;
+      group?: string;
+      [k: string]: unknown;
+    };
+  }[];
+  conflict: 'insert' | 'upsert';
+}
+
+export interface ICreateCompetitionUserReq {
+  competitionId: number;
+  userId: number;
+  role: number;
+  status: number;
+  password?: string | null;
+  fieldShortName?: string | null;
+  seatNo?: number | null;
+  banned?: boolean;
+  unofficialParticipation?: boolean;
+  info: {
+    nickname: string;
+    subname?: string;
+    realName?: string;
+    organization?: string;
+    company?: string;
+    studentNo?: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    tel?: string;
+    qq?: string;
+    weChat?: string;
+    clothing?: string;
+    slogan?: string;
+    group?: string;
+    [k: string]: unknown;
+  };
+}
+
+export interface IUpdateCompetitionUserReq {
+  competitionId: number;
+  userId: number;
+  role?: number;
+  status?: number;
+  password?: string | null;
+  fieldShortName?: string | null;
+  seatNo?: number | null;
+  banned?: boolean;
+  unofficialParticipation?: boolean;
+  info?: {
+    nickname: string;
+    subname?: string;
+    realName?: string;
+    organization?: string;
+    company?: string;
+    studentNo?: string;
+    school?: string;
+    college?: string;
+    major?: string;
+    class?: string;
+    tel?: string;
+    qq?: string;
+    weChat?: string;
+    clothing?: string;
+    slogan?: string;
+    group?: string;
+    [k: string]: unknown;
+  };
+}
+
 export interface IGetCompetitionUsersReq {
   competitionId: number;
   role?: number;
@@ -178,6 +274,7 @@ export interface IGetCompetitionUsersResp {
     userId: number;
     role: number;
     status: number;
+    password?: string | null;
     fieldShortName: string | null;
     seatNo: number | null;
     banned: boolean;
