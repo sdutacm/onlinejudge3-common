@@ -53,6 +53,12 @@ export interface IGetSolutionListResp {
       isTeam: boolean;
       startAt: string;
       endAt: string;
+      settings: {
+        frozenLength: number;
+        allowedAuthMethods: string[];
+        allowedSolutionLanguages: string[];
+        externalRanklistUrl: string;
+      };
     };
     result: number;
     time?: number;
@@ -113,6 +119,12 @@ export interface IGetSolutionDetailResp {
     isTeam: boolean;
     startAt: string;
     endAt: string;
+    settings: {
+      frozenLength: number;
+      allowedAuthMethods: string[];
+      allowedSolutionLanguages: string[];
+      externalRanklistUrl: string;
+    };
   };
   result: number;
   time?: number;
@@ -175,6 +187,12 @@ export interface IBatchGetSolutionDetailResp {
       isTeam: boolean;
       startAt: string;
       endAt: string;
+      settings: {
+        frozenLength: number;
+        allowedAuthMethods: string[];
+        allowedSolutionLanguages: string[];
+        externalRanklistUrl: string;
+      };
     };
     result: number;
     time?: number;

@@ -27,6 +27,9 @@ export enum ESolutionResult {
 
   // temp (river Pending)
   RPD = -1,
+
+  // virtual
+  V_Frozen = -100,
 }
 
 export enum EContestType {
