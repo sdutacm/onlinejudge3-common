@@ -6,8 +6,6 @@
 
 export interface IGetCompetitionBalloonsReq {
   competitionId: number;
-  type?: number;
-  status?: number;
 }
 
 export interface IGetCompetitionBalloonsResp {
