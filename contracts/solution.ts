@@ -51,6 +51,7 @@ export interface IGetSolutionListResp {
       competitionId: number;
       title: string;
       isTeam: boolean;
+      ended: boolean;
       startAt: string;
       endAt: string;
       settings: {
@@ -117,6 +118,7 @@ export interface IGetSolutionDetailResp {
     competitionId: number;
     title: string;
     isTeam: boolean;
+    ended: boolean;
     startAt: string;
     endAt: string;
     settings: {
@@ -185,6 +187,7 @@ export interface IBatchGetSolutionDetailResp {
       competitionId: number;
       title: string;
       isTeam: boolean;
+      ended: boolean;
       startAt: string;
       endAt: string;
       settings: {
