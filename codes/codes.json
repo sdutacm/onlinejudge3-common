@@ -182,6 +182,12 @@
           "var": "SOLUTION_INVALID_LANGUAGE",
           "msg": "The language is invalid",
           "description": "语言不合法"
+        },
+        {
+          "code": 307,
+          "var": "SOLUTION_NO_SOLUTION_REJUDGED",
+          "msg": "No solutions rejudged",
+          "description": "没有可重判的提交"
         }
       ]
     },
