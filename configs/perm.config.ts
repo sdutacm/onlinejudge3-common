@@ -19,6 +19,8 @@ export enum EPerm {
   ReadContestUser = 'ReadContestUser',
   WriteContestUser = 'WriteContestUser',
   AuditContestUser = 'AuditContestUser',
+  ReadCompetition = 'ReadCompetition',
+  WriteCompetition = 'WriteCompetition',
   ReadUser = 'ReadUser',
   WriteUser = 'WriteUser',
   ResetUserPassword = 'ResetUserPassword',
@@ -123,6 +125,16 @@ const permConfig = [
     permission: EPerm.AuditContestUser,
     name: '审核比赛用户',
     description: '可审核任何比赛的用户，仅能根据公开注册信息提交审核结果',
+  },
+  {
+    permission: EPerm.ReadCompetition,
+    name: '竞赛-读',
+    description: '可读取完整竞赛列表和竞赛详情，包括隐藏的竞赛',
+  },
+  {
+    permission: EPerm.WriteCompetition,
+    name: '竞赛-写',
+    description: '可创建、编辑竞赛，控制是否隐藏',
   },
   {
     permission: EPerm.ReadUser,
