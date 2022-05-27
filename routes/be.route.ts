@@ -7,6 +7,7 @@ export interface IRouteBeConfig {
     resp: string | null;
   };
   csrf?: boolean;
+  competitionSide?: boolean;
 }
 
 const _routesBe = {
@@ -16,6 +17,7 @@ const _routesBe = {
     url: '/getSession',
     contract: { req: null, resp: 'user.getSessionResp' },
     csrf: true,
+    competitionSide: true,
   },
   login: {
     method: 'POST',
@@ -28,6 +30,7 @@ const _routesBe = {
     url: '/logout',
     contract: { req: null, resp: null },
     csrf: true,
+    competitionSide: true,
   },
   register: {
     method: 'POST',
@@ -56,6 +59,7 @@ const _routesBe = {
     method: 'POST',
     url: '/getUserDetail',
     contract: { req: 'user.getUserDetailReq', resp: 'user.getUserDetailResp' },
+    competitionSide: true,
   },
   updateUserDetail: {
     method: 'POST',
@@ -106,6 +110,7 @@ const _routesBe = {
       req: 'user.getUserProblemResultStatsReq',
       resp: 'user.getUserProblemResultStatsResp',
     },
+    competitionSide: true,
   },
   getUserSolutionCalendar: {
     method: 'POST',
@@ -127,6 +132,7 @@ const _routesBe = {
     method: 'POST',
     url: '/getActiveUserCount',
     contract: { req: null, resp: 'user.getActiveUserCountResp' },
+    competitionSide: true,
   },
   getAllUserPermissionsMap: {
     method: 'POST',
@@ -183,6 +189,7 @@ const _routesBe = {
     method: 'POST',
     url: '/getTagFullList',
     contract: { req: 'tag.getTagFullListReq', resp: 'tag.getTagFullListResp' },
+    competitionSide: true,
   },
   createTag: {
     method: 'POST',
@@ -201,11 +208,13 @@ const _routesBe = {
     method: 'POST',
     url: '/getSolutionList',
     contract: { req: 'solution.getSolutionListReq', resp: 'solution.getSolutionListResp' },
+    competitionSide: true,
   },
   getSolutionDetail: {
     method: 'POST',
     url: '/getSolutionDetail',
     contract: { req: 'solution.getSolutionDetailReq', resp: 'solution.getSolutionDetailResp' },
+    competitionSide: true,
   },
   batchGetSolutionDetail: {
     method: 'POST',
@@ -214,18 +223,21 @@ const _routesBe = {
       req: 'solution.batchGetSolutionDetailReq',
       resp: 'solution.batchGetSolutionDetailResp',
     },
+    competitionSide: true,
   },
   updateSolutionShare: {
     method: 'POST',
     url: '/updateSolutionShare',
     contract: { req: 'solution.updateSolutionShareReq', resp: null },
     csrf: true,
+    competitionSide: true,
   },
   submitSolution: {
     method: 'POST',
     url: '/submitSolution',
     contract: { req: 'solution.submitSolutionReq', resp: 'solution.submitSolutionResp' },
     csrf: true,
+    competitionSide: true,
   },
   rejudgeSolution: {
     method: 'POST',
@@ -391,6 +403,7 @@ const _routesBe = {
     method: 'POST',
     url: '/getLanguageConfig',
     contract: { req: null, resp: 'judger.getLanguageConfigResp' },
+    competitionSide: true,
   },
   // message
   getMessageList: {
@@ -695,6 +708,7 @@ const _routesBe = {
       req: 'competition.getCompetitionListReq',
       resp: 'competition.getCompetitionListResp',
     },
+    competitionSide: true,
   },
   getCompetitionSession: {
     method: 'POST',
@@ -703,6 +717,7 @@ const _routesBe = {
       req: 'competition.getCompetitionSessionReq',
       resp: 'competition.getCompetitionSessionResp',
     },
+    competitionSide: true,
   },
   loginCompetition: {
     method: 'POST',
@@ -712,6 +727,7 @@ const _routesBe = {
       resp: 'competition.loginCompetitionResp',
     },
     csrf: true,
+    competitionSide: true,
   },
   logoutCompetition: {
     method: 'POST',
@@ -721,6 +737,7 @@ const _routesBe = {
       resp: null,
     },
     csrf: true,
+    competitionSide: true,
   },
   getCompetitionDetail: {
     method: 'POST',
@@ -729,6 +746,7 @@ const _routesBe = {
       req: 'competition.getCompetitionDetailReq',
       resp: 'competition.getCompetitionDetailResp',
     },
+    competitionSide: true,
   },
   getCompetitionProblems: {
     method: 'POST',
@@ -737,6 +755,7 @@ const _routesBe = {
       req: 'competition.getCompetitionProblemsReq',
       resp: 'competition.getCompetitionProblemsResp',
     },
+    competitionSide: true,
   },
   createCompetition: {
     method: 'POST',
@@ -761,6 +780,7 @@ const _routesBe = {
       req: 'competition.getCompetitionProblemConfigReq',
       resp: 'competition.getCompetitionProblemConfigResp',
     },
+    competitionSide: true,
   },
   setCompetitionProblemConfig: {
     method: 'POST',
@@ -804,6 +824,7 @@ const _routesBe = {
       req: 'competition.getCompetitionUsersReq',
       resp: 'competition.getCompetitionUsersResp',
     },
+    competitionSide: true,
   },
   getCompetitionUserDetail: {
     method: 'POST',
@@ -812,6 +833,7 @@ const _routesBe = {
       req: 'competition.getCompetitionUserDetailReq',
       resp: 'competition.getCompetitionUserDetailResp',
     },
+    competitionSide: true,
   },
   getSelfCompetitionUserDetail: {
     method: 'POST',
@@ -820,6 +842,7 @@ const _routesBe = {
       req: 'competition.getSelfCompetitionUserDetailReq',
       resp: 'competition.getSelfCompetitionUserDetailResp',
     },
+    competitionSide: true,
   },
   getPublicCompetitionParticipants: {
     method: 'POST',
@@ -828,6 +851,7 @@ const _routesBe = {
       req: 'competition.getPublicCompetitionParticipantsReq',
       resp: 'competition.getPublicCompetitionParticipantsResp',
     },
+    competitionSide: true,
   },
   getPublicCompetitionParticipantDetail: {
     method: 'POST',
@@ -836,6 +860,7 @@ const _routesBe = {
       req: 'competition.getPublicCompetitionParticipantDetailReq',
       resp: 'competition.getPublicCompetitionParticipantDetailResp',
     },
+    competitionSide: true,
   },
   requestCompetitionParticipantPassword: {
     method: 'POST',
@@ -898,6 +923,7 @@ const _routesBe = {
       resp: null,
     },
     csrf: true,
+    competitionSide: true,
   },
   confirmQuitCompetition: {
     method: 'POST',
@@ -907,6 +933,7 @@ const _routesBe = {
       resp: null,
     },
     csrf: true,
+    competitionSide: true,
   },
   getCompetitionProblemSolutionStats: {
     method: 'POST',
@@ -915,6 +942,7 @@ const _routesBe = {
       req: 'competition.getCompetitionProblemSolutionStatsReq',
       resp: 'competition.getCompetitionProblemSolutionStatsResp',
     },
+    competitionSide: true,
   },
   getCompetitionSettings: {
     method: 'POST',
@@ -923,6 +951,7 @@ const _routesBe = {
       req: 'competition.getCompetitionSettingsReq',
       resp: 'competition.getCompetitionSettingsResp',
     },
+    competitionSide: true,
   },
   updateCompetitionSettings: {
     method: 'POST',
