@@ -989,6 +989,42 @@ const _routesBe = {
     },
     csrf: true,
   },
+  getCompetitionQuestions: {
+    method: 'POST',
+    url: '/getCompetitionQuestions',
+    contract: {
+      req: 'competition.getCompetitionQuestionsReq',
+      resp: 'competition.getCompetitionQuestionsResp',
+    },
+  },
+  getSelfCompetitionQuestions: {
+    method: 'POST',
+    url: '/getSelfCompetitionQuestions',
+    contract: {
+      req: 'competition.getSelfCompetitionQuestionsReq',
+      resp: 'competition.getSelfCompetitionQuestionsResp',
+    },
+    competitionSide: true,
+  },
+  createCompetitionQuestion: {
+    method: 'POST',
+    url: '/createCompetitionQuestion',
+    contract: {
+      req: 'competition.createCompetitionQuestionReq',
+      resp: null,
+    },
+    csrf: true,
+    competitionSide: true,
+  },
+  replyCompetitionQuestion: {
+    method: 'POST',
+    url: '/replyCompetitionQuestion',
+    contract: {
+      req: 'competition.replyCompetitionQuestionReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',

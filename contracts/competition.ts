@@ -596,3 +596,54 @@ export interface IDeleteCompetitionNotificationReq {
   competitionNotificationId: number;
   competitionId: number;
 }
+
+export interface IGetCompetitionQuestionsReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionQuestionsResp {
+  count: number;
+  rows: {
+    competitionQuestionId: number;
+    competitionId: number;
+    status: number;
+    userId: number;
+    content: string;
+    reply: string;
+    repliedUserId: number | null;
+    repliedAt: string | null;
+    createdAt: string;
+    updatedAt: string;
+  }[];
+}
+
+export interface IGetSelfCompetitionQuestionsReq {
+  competitionId: number;
+}
+
+export interface IGetSelfCompetitionQuestionsResp {
+  count: number;
+  rows: {
+    competitionQuestionId: number;
+    competitionId: number;
+    status: number;
+    userId: number;
+    content: string;
+    reply: string;
+    repliedUserId: number | null;
+    repliedAt: string | null;
+    createdAt: string;
+    updatedAt: string;
+  }[];
+}
+
+export interface ICreateCompetitionQuestionReq {
+  competitionId: number;
+  content: string;
+}
+
+export interface IReplyCompetitionQuestionReq {
+  competitionQuestionId: number;
+  competitionId: number;
+  reply: string;
+}

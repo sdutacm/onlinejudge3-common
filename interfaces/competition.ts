@@ -80,3 +80,16 @@ export interface ICompetitionNotification {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface ICompetitionQuestion {
+  competitionQuestionId: number;
+  competitionId: number;
+  status: number;
+  userId: string[];
+  content: string;
+  reply: string;
+  repliedUserId: number | null;
+  repliedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
