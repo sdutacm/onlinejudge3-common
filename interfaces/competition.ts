@@ -71,3 +71,12 @@ export interface ICompetitionSettings {
   allowedSolutionLanguages: string[];
   externalRanklistUrl: string;
 }
+
+export interface ICompetitionNotification {
+  competitionNotificationId: number;
+  competitionId: number;
+  userId: string[];
+  content: string;
+  createdAt: string;
+  updatedAt: string;
+}
