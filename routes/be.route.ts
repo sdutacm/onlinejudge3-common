@@ -962,6 +962,33 @@ const _routesBe = {
     },
     csrf: true,
   },
+  getCompetitionNotifications: {
+    method: 'POST',
+    url: '/getCompetitionNotifications',
+    contract: {
+      req: 'competition.getCompetitionNotificationsReq',
+      resp: 'competition.getCompetitionNotificationsResp',
+    },
+    competitionSide: true,
+  },
+  createCompetitionNotification: {
+    method: 'POST',
+    url: '/createCompetitionNotification',
+    contract: {
+      req: 'competition.createCompetitionNotificationReq',
+      resp: null,
+    },
+    csrf: true,
+  },
+  deleteCompetitionNotification: {
+    method: 'POST',
+    url: '/deleteCompetitionNotification',
+    contract: {
+      req: 'competition.deleteCompetitionNotificationReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',

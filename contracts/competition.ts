@@ -570,3 +570,29 @@ export interface IUpdateCompetitionSettingsReq {
   allowedSolutionLanguages?: string[];
   externalRanklistUrl?: string;
 }
+
+export interface IGetCompetitionNotificationsReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionNotificationsResp {
+  count: number;
+  rows: {
+    competitionNotificationId: number;
+    competitionId: number;
+    userId: number;
+    content: string;
+    createdAt: string;
+    updatedAt: string;
+  }[];
+}
+
+export interface ICreateCompetitionNotificationReq {
+  competitionId: number;
+  content: string;
+}
+
+export interface IDeleteCompetitionNotificationReq {
+  competitionNotificationId: number;
+  competitionId: number;
+}
