@@ -1,7 +1,7 @@
 export enum EPerm {
   AdminAccess = 'AdminAccess',
   // ReadLog = 'ReadLog',
-  // ReadMonitor = 'ReadMonitor',
+  ReadMonitor = 'ReadMonitor',
   ReadProblem = 'ReadProblem',
   WriteProblem = 'WriteProblem',
   ReadProblemData = 'ReadProblemData',
@@ -43,6 +43,7 @@ export enum EPerm {
   WriteField = 'WriteField',
   DeleteField = 'DeleteField',
   UploadAsset = 'UploadAsset',
+  NoFrequencyLimitAccess = 'NoFrequencyLimitAccess',
 }
 
 const permConfig = [
@@ -195,6 +196,16 @@ const permConfig = [
     permission: EPerm.SendSystemMessage,
     name: '发送系统消息',
     description: '可发送系统消息到一个或多个用户',
+  },
+  {
+    permission: EPerm.ReadMonitor,
+    name: '系统监控数据-读',
+    description: '可读取系统监控数据',
+  },
+  {
+    permission: EPerm.NoFrequencyLimitAccess,
+    name: '无频率限制访问',
+    description: '允许无频率限制访问',
   },
 ];
 
