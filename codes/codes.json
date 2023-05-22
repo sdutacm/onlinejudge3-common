@@ -168,7 +168,7 @@
         {
           "code": 304,
           "var": "SOLUTION_CONTEST_NO_PERMISSION",
-          "msg": "You do not have permission to view this contest",
+          "msg": "You do not have permission to submit to this contest",
           "description": "比赛无权限提交"
         },
         {

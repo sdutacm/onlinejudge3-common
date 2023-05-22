@@ -30,7 +30,7 @@ export const codeMsgs = {
   301: 'The problem does not exist',
   302: 'You do not have permission to view this problem',
   303: 'The contest does not exis',
-  304: 'You do not have permission to view this contest',
+  304: 'You do not have permission to submit to this contest',
   305: 'The contest is not in progress',
   306: 'The language is invalid',
   307: 'No solutions rejudged',
