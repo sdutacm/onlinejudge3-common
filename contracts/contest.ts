@@ -143,11 +143,13 @@ export interface IGetContestProblemsResp {
     description: string;
     input: string;
     output: string;
-    sampleInput: string;
-    sampleOutput: string;
+    samples: {
+      in: string;
+      out: string;
+    }[];
     hint: string;
     source: string;
-    author: number | null;
+    authors: string[];
     timeLimit: number;
     memoryLimit: number;
     difficulty: number;
