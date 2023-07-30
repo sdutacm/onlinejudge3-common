@@ -12,7 +12,7 @@ export interface IGetProblemListReq {
   problemIds?: number[];
   title?: string;
   source?: string;
-  author?: number;
+  authors?: string[];
   display?: boolean;
   tagIds?: number[];
   _scope?: 'available' | null;
@@ -26,7 +26,7 @@ export interface IGetProblemListResp {
     problemId: number;
     title: string;
     source: string;
-    author: number | null;
+    authors: string[];
     difficulty: number;
     accepted: number;
     submitted: number;
@@ -55,11 +55,13 @@ export interface IGetProblemDetailResp {
   description: string;
   input: string;
   output: string;
-  sampleInput: string;
-  sampleOutput: string;
+  samples: {
+    in: string;
+    out: string;
+  }[];
   hint: string;
   source: string;
-  author: number | null;
+  authors: string[];
   timeLimit: number;
   memoryLimit: number;
   difficulty: number;
@@ -84,10 +86,13 @@ export interface ICreateProblemReq {
   description: string;
   input: string;
   output: string;
-  sampleInput: string;
-  sampleOutput: string;
+  samples: {
+    in: string;
+    out: string;
+  }[];
   hint: string;
   source: string;
+  authors: string[];
   timeLimit: number;
   memoryLimit: number;
   difficulty?: number;
@@ -105,10 +110,13 @@ export interface IUpdateProblemDetailReq {
   description?: string;
   input?: string;
   output?: string;
-  sampleInput?: string;
-  sampleOutput?: string;
+  samples?: {
+    in: string;
+    out: string;
+  }[];
   hint?: string;
   source?: string;
+  authors?: string[];
   timeLimit?: number;
   memoryLimit?: number;
   difficulty?: number;
