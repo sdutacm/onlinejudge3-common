@@ -69,6 +69,9 @@ export interface IGetProblemDetailResp {
   submitted: number;
   spj: boolean;
   display: boolean;
+  spConfig: {
+    [k: string]: unknown;
+  };
   tags: {
     tagId: number;
     nameEn: string;
@@ -98,6 +101,9 @@ export interface ICreateProblemReq {
   difficulty?: number;
   spj?: boolean;
   display?: boolean;
+  spConfig?: {
+    [k: string]: unknown;
+  };
 }
 
 export interface ICreateProblemResp {
@@ -122,6 +128,9 @@ export interface IUpdateProblemDetailReq {
   difficulty?: number;
   spj?: boolean;
   display?: boolean;
+  spConfig?: {
+    [k: string]: unknown;
+  };
 }
 
 export interface ISetProblemTagsReq {

@@ -157,6 +157,9 @@ export interface IGetContestProblemsResp {
     submitted: number;
     spj: boolean;
     display: boolean;
+    spConfig: {
+      [k: string]: unknown;
+    };
     createdAt: string;
     updatedAt: string | null;
   }[];

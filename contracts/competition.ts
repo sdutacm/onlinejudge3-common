@@ -134,6 +134,9 @@ export interface IGetCompetitionProblemsResp {
     submitted: number;
     spj: boolean;
     display: boolean;
+    spConfig: {
+      [k: string]: unknown;
+    };
     createdAt: string;
     updatedAt: string | null;
     balloonAlias?: string;
