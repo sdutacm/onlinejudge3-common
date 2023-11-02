@@ -1025,6 +1025,15 @@ const _routesBe = {
     },
     csrf: true,
   },
+  endCompetition: {
+    method: 'POST',
+    url: '/endCompetition',
+    contract: {
+      req: 'competition.endCompetitionReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',

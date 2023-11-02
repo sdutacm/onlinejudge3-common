@@ -652,3 +652,7 @@ export interface IReplyCompetitionQuestionReq {
   competitionId: number;
   reply: string;
 }
+
+export interface IEndCompetitionReq {
+  competitionId: number;
+}
