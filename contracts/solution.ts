@@ -46,6 +46,8 @@ export interface IGetSolutionListResp {
       type: number;
       startAt: string;
       endAt: string;
+      ended: boolean;
+      frozenLength: number;
     };
     competition?: {
       competitionId: number;
@@ -113,6 +115,8 @@ export interface IGetSolutionDetailResp {
     type: number;
     startAt: string;
     endAt: string;
+    ended: boolean;
+    frozenLength: number;
   };
   competition?: {
     competitionId: number;
@@ -182,6 +186,8 @@ export interface IBatchGetSolutionDetailResp {
       type: number;
       startAt: string;
       endAt: string;
+      ended: boolean;
+      frozenLength: number;
     };
     competition?: {
       competitionId: number;
