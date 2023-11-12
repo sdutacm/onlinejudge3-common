@@ -135,6 +135,12 @@
           "var": "USER_NICKNAME_CONTAINS_ILLEGAL_CONTENT",
           "msg": "The nickname contains illegal content",
           "description": "昵称包含非法内容"
+        },
+        {
+          "code": 110,
+          "var": "USER_PASSWORD_STRENGTH_TOO_WEAK",
+          "msg": "The password strength is too weak",
+          "description": "密码强度过弱"
         }
       ]
     },

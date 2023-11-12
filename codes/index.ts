@@ -23,6 +23,7 @@ export const codeMsgs = {
   107: 'The user does not exist',
   108: 'Cannot clear current session',
   109: 'The nickname contains illegal content',
+  110: 'The password strength is too weak',
 
   // Problem 2XX
 
@@ -126,6 +127,7 @@ export enum Codes {
   USER_NOT_EXIST = 107,
   USER_CANNOT_CLEAR_CURRENT_SESSION = 108,
   USER_NICKNAME_CONTAINS_ILLEGAL_CONTENT = 109,
+  USER_PASSWORD_STRENGTH_TOO_WEAK = 110,
 
   // Problem 2XX
 
