@@ -79,10 +79,10 @@ const _routesBe = {
     contract: { req: 'user.resetUserPasswordReq', resp: null },
     csrf: true,
   },
-  resetUserPasswordByUsernameAndPassword: {
+  resetUserPasswordAndEmail: {
     method: 'POST',
-    url: '/resetUserPasswordByUsernameAndPassword',
-    contract: { req: 'user.resetUserPasswordByUsernameAndPasswordReq', resp: null },
+    url: '/resetUserPasswordAndEmail',
+    contract: { req: 'user.resetUserPasswordAndEmailReq', resp: null },
     csrf: true,
   },
   resetUserPasswordByAdmin: {

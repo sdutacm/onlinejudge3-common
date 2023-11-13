@@ -181,10 +181,10 @@ export interface IResetUserPasswordReq {
 
 export interface IResetUserPasswordByUsernameAndPasswordReq {
   username: string;
-  password: string;
+  oldPassword: string;
   email: string;
   code: number;
-  newPassword: string;
+  password: string;
 }
 
 export interface IResetUserPasswordByAdminReq {
