@@ -179,7 +179,7 @@ export interface IResetUserPasswordReq {
   password: string;
 }
 
-export interface IResetUserPasswordByUsernameAndPasswordReq {
+export interface IResetUserPasswordAndEmailReq {
   username: string;
   oldPassword: string;
   email: string;
