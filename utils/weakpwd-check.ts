@@ -45,7 +45,10 @@ export default function isWeakPassword(password: string) {
     '88888888',
   ];
   for (const commonPassword of commonPasswords) {
-    if (password.indexOf(commonPassword) !== -1) {
+    if (
+      password.indexOf(commonPassword) !== -1 &&
+      Math.abs(password.length - commonPassword.length) <= 3
+    ) {
       return true;
     }
   }
