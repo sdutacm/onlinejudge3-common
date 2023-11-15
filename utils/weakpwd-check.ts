@@ -13,7 +13,7 @@ export default function isWeakPassword(password: string) {
     return true;
   }
 
-  // 检查"弱密码"字典匹配
+  // 检查密码中是否包含常见密码
   const commonPasswords = [
     '000000',
     '111111',
@@ -44,8 +44,10 @@ export default function isWeakPassword(password: string) {
     '66666666',
     '88888888',
   ];
-  if (commonPasswords.includes(password.toLowerCase())) {
-    return true;
+  for (const commonPassword of commonPasswords) {
+    if (password.indexOf(commonPassword) !== -1) {
+      return true;
+    }
   }
 
   return false; // 密码强度符合要求
