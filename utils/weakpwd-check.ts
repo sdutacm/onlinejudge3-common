@@ -4,19 +4,47 @@ export default function isWeakPassword(password: string) {
     return true;
   }
 
-  // 检查字符组合: 需要存在字母、数字、特殊字符
+  // 检查字符组合: 需要存在字母、数字(、特殊字符)
   const hasChar = /[A-Za-z]/.test(password);
   const hasNumber = /[0-9]/.test(password);
-  const hasSpecialChar = /[^A-Za-z0-9]/.test(password);
+  // const hasSpecialChar = /[^A-Za-z0-9]/.test(password);
 
-  if (!(hasChar && hasNumber && hasSpecialChar)) {
+  if (!(hasChar && hasNumber)) {
     return true;
   }
 
-  // 不允许出现三个以上的连续字母或者数字
-  const hasThreeConsecutiveChars = /([A-Za-z0-9])\1{2,}/.test(password);
-
-  if (hasThreeConsecutiveChars) {
+  // 检查"弱密码"字典匹配
+  const commonPasswords = [
+    '000000',
+    '111111',
+    '11111111',
+    '112233',
+    '123123',
+    '123321',
+    '123456',
+    '12345678',
+    '654321',
+    '666666',
+    '888888',
+    'abcdef',
+    'abcabc',
+    'abc123',
+    'a1b2c3',
+    'aaa111',
+    '123qwe',
+    'qwerty',
+    'qweasd',
+    'admin',
+    'password',
+    'p@ssword',
+    'passwd',
+    'iloveyou',
+    '5201314',
+    'asdfghjkl',
+    '66666666',
+    '88888888',
+  ];
+  if (commonPasswords.includes(password.toLowerCase())) {
     return true;
   }
 
