@@ -2,7 +2,6 @@
 export default class WeakPasswordChecker {
   // 检查密码长度是否符合要求: 最小长度为6
   static checkLength(password: string) {
-    console.log('check-length-res', password.length >= 6, password.length);
     return password.length >= 6;
   }
 
@@ -10,7 +9,6 @@ export default class WeakPasswordChecker {
   static checkCharGroup(password: string) {
     const hasChar = /[A-Za-z]/.test(password);
     const hasNumber = /[0-9]/.test(password);
-    console.log('check-char-group-res', hasChar && hasNumber);
     return hasChar && hasNumber;
   }
 
@@ -18,11 +16,9 @@ export default class WeakPasswordChecker {
   static checkCommonPassword(password: string) {
     for (const commonPassword of commonPasswords) {
       if (password.indexOf(commonPassword) !== -1 && password.length - commonPassword.length <= 3) {
-        console.log('check-common-password-res', false);
         return false;
       }
     }
-    console.log('check-common-password-res', true);
     return true;
   }
 
