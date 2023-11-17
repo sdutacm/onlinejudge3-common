@@ -27,7 +27,7 @@ export interface IGetSolutionListResp {
     solutionId: number;
     problem: {
       problemId: number;
-      title: string;
+      title?: string;
       timeLimit: number;
       memoryLimit: number;
       spj: boolean;
@@ -96,7 +96,7 @@ export interface IGetSolutionDetailResp {
   solutionId: number;
   problem: {
     problemId: number;
-    title: string;
+    title?: string;
     timeLimit: number;
     memoryLimit: number;
     spj: boolean;
@@ -167,7 +167,7 @@ export interface IBatchGetSolutionDetailResp {
     solutionId: number;
     problem: {
       problemId: number;
-      title: string;
+      title?: string;
       timeLimit: number;
       memoryLimit: number;
       spj: boolean;
