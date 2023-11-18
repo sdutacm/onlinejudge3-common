@@ -179,6 +179,14 @@ export interface IResetUserPasswordReq {
   password: string;
 }
 
+export interface IResetUserPasswordAndEmailReq {
+  username: string;
+  oldPassword: string;
+  email: string;
+  code: number;
+  password: string;
+}
+
 export interface IResetUserPasswordByAdminReq {
   userId: number;
   password: string;
