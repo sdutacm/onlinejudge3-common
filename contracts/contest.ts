@@ -239,15 +239,15 @@ export interface IGetContestUsersResp {
     password: string;
     sitNo: string;
     members: {
-      schoolNo: string;
+      schoolNo?: string;
       name: string;
       school: string;
-      college: string;
-      major: string;
-      class: string;
+      college?: string;
+      major?: string;
+      class?: string;
       tel: string;
       email: string;
-      clothing: string;
+      clothing?: string;
     }[];
     createdAt: string | null;
     globalUserId?: number;
@@ -271,15 +271,15 @@ export interface IGetContestUserDetailResp {
   password: string;
   sitNo: string;
   members: {
-    schoolNo: string;
+    schoolNo?: string;
     name: string;
     school: string;
-    college: string;
-    major: string;
-    class: string;
+    college?: string;
+    major?: string;
+    class?: string;
     tel: string;
     email: string;
-    clothing: string;
+    clothing?: string;
   }[];
   createdAt: string | null;
   globalUserId?: number;
@@ -297,74 +297,74 @@ export interface ICreateContestUserReq {
   members:
     | [
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
       ]
     | [
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
       ]
     | [
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
       ];
 }
@@ -382,74 +382,74 @@ export interface IBatchCreateContestUsersReq {
     members:
       | [
           {
-            schoolNo: string;
+            schoolNo?: string;
             name: string;
             school: string;
-            college: string;
-            major: string;
-            class: string;
+            college?: string;
+            major?: string;
+            class?: string;
             tel: string;
             email: string;
-            clothing: string;
+            clothing?: string;
           },
         ]
       | [
           {
-            schoolNo: string;
+            schoolNo?: string;
             name: string;
             school: string;
-            college: string;
-            major: string;
-            class: string;
+            college?: string;
+            major?: string;
+            class?: string;
             tel: string;
             email: string;
-            clothing: string;
+            clothing?: string;
           },
           {
-            schoolNo: string;
+            schoolNo?: string;
             name: string;
             school: string;
-            college: string;
-            major: string;
-            class: string;
+            college?: string;
+            major?: string;
+            class?: string;
             tel: string;
             email: string;
-            clothing: string;
+            clothing?: string;
           },
         ]
       | [
           {
-            schoolNo: string;
+            schoolNo?: string;
             name: string;
             school: string;
-            college: string;
-            major: string;
-            class: string;
+            college?: string;
+            major?: string;
+            class?: string;
             tel: string;
             email: string;
-            clothing: string;
+            clothing?: string;
           },
           {
-            schoolNo: string;
+            schoolNo?: string;
             name: string;
             school: string;
-            college: string;
-            major: string;
-            class: string;
+            college?: string;
+            major?: string;
+            class?: string;
             tel: string;
             email: string;
-            clothing: string;
+            clothing?: string;
           },
           {
-            schoolNo: string;
+            schoolNo?: string;
             name: string;
             school: string;
-            college: string;
-            major: string;
-            class: string;
+            college?: string;
+            major?: string;
+            class?: string;
             tel: string;
             email: string;
-            clothing: string;
+            clothing?: string;
           },
         ];
   }[];
@@ -471,74 +471,74 @@ export interface IUpdateContestUserReq {
   members:
     | [
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
       ]
     | [
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
       ]
     | [
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
         {
-          schoolNo: string;
+          schoolNo?: string;
           name: string;
           school: string;
-          college: string;
-          major: string;
-          class: string;
+          college?: string;
+          major?: string;
+          class?: string;
           tel: string;
           email: string;
-          clothing: string;
+          clothing?: string;
         },
       ];
 }
