@@ -212,8 +212,8 @@ export interface IGetContestUserListResp {
     members: {
       name: string;
       school: string;
-      college: string;
-      major: string;
+      college?: string;
+      major?: string;
       class: string;
     }[];
     createdAt: string | null;
