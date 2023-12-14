@@ -52,13 +52,18 @@ export interface IGetSolutionListResp {
     competition?: {
       competitionId: number;
       title: string;
+      rule: string;
       isTeam: boolean;
+      isRating: boolean;
       ended: boolean;
       startAt: string;
       endAt: string;
       settings: {
         frozenLength: number;
+        allowedJoinMethods: string[];
         allowedAuthMethods: string[];
+        allowAnyObservation: boolean;
+        useOnetimePassword: boolean;
         allowedSolutionLanguages: string[];
         externalRanklistUrl: string;
       };
@@ -121,14 +126,19 @@ export interface IGetSolutionDetailResp {
   competition?: {
     competitionId: number;
     title: string;
+    rule: string;
     isTeam: boolean;
+    isRating: boolean;
     ended: boolean;
     startAt: string;
     endAt: string;
     settings: {
       frozenLength: number;
+      allowedJoinMethods: string[];
       allowedAuthMethods: string[];
       allowedSolutionLanguages: string[];
+      allowAnyObservation: boolean;
+      useOnetimePassword: boolean;
       externalRanklistUrl: string;
     };
   };
@@ -192,14 +202,19 @@ export interface IBatchGetSolutionDetailResp {
     competition?: {
       competitionId: number;
       title: string;
+      rule: string;
       isTeam: boolean;
+      isRating: boolean;
       ended: boolean;
       startAt: string;
       endAt: string;
       settings: {
         frozenLength: number;
+        allowedJoinMethods: string[];
         allowedAuthMethods: string[];
         allowedSolutionLanguages: string[];
+        allowAnyObservation: boolean;
+        useOnetimePassword: boolean;
         externalRanklistUrl: string;
       };
     };

@@ -11,7 +11,9 @@ export interface IGetCompetitionListReq {
   competitionId?: number;
   title?: string;
   ended?: boolean;
+  rule?: string;
   isTeam?: boolean;
+  isRating?: boolean;
   createdBy?: number;
   _scope?: 'available' | null;
 }
@@ -27,8 +29,10 @@ export interface IGetCompetitionListResp {
     endAt: string;
     registerStartAt: string | null;
     registerEndAt: string | null;
+    rule: string;
     ended: boolean;
     isTeam: boolean;
+    isRating: boolean;
     hidden: boolean;
     createdBy: number;
   }[];
@@ -76,7 +80,9 @@ export interface IGetCompetitionDetailResp {
   registerStartAt: string | null;
   registerEndAt: string | null;
   ended: boolean;
+  rule: string;
   isTeam: boolean;
+  isRating: boolean;
   hidden: boolean;
   createdBy: number;
 }
@@ -88,7 +94,9 @@ export interface ICreateCompetitionReq {
   endAt: string;
   registerStartAt: string | null;
   registerEndAt: string | null;
+  rule: string;
   isTeam: boolean;
+  isRating: boolean;
   hidden: boolean;
 }
 
@@ -104,7 +112,9 @@ export interface IUpdateCompetitionDetailReq {
   endAt?: string;
   registerStartAt?: string | null;
   registerEndAt?: string | null;
+  rule?: string;
   isTeam?: boolean;
+  isRating?: boolean;
   hidden?: boolean;
 }
 
@@ -141,6 +151,8 @@ export interface IGetCompetitionProblemsResp {
     updatedAt: string | null;
     balloonAlias?: string;
     balloonColor?: string;
+    score?: number | null;
+    varScoreExpression?: string;
   }[];
 }
 
@@ -155,6 +167,8 @@ export interface IGetCompetitionProblemConfigResp {
     title: string;
     balloonAlias: string;
     balloonColor: string;
+    score: number | null;
+    varScoreExpression: string;
   }[];
 }
 
@@ -164,6 +178,8 @@ export interface ISetCompetitionProblemConfigReq {
     problemId: number;
     balloonAlias: string;
     balloonColor: string;
+    score: number | null;
+    varScoreExpression: string;
   }[];
 }
 
@@ -563,16 +579,24 @@ export interface IGetCompetitionSettingsReq {
 
 export interface IGetCompetitionSettingsResp {
   frozenLength: number;
+  allowedJoinMethods: string[];
   allowedAuthMethods: string[];
   allowedSolutionLanguages: string[];
+  allowAnyObservation: boolean;
+  useOnetimePassword: boolean;
+  joinPassword?: string;
   externalRanklistUrl: string;
 }
 
 export interface IUpdateCompetitionSettingsReq {
   competitionId: number;
   frozenLength?: number;
+  allowedJoinMethods?: string[];
   allowedAuthMethods?: string[];
   allowedSolutionLanguages?: string[];
+  allowAnyObservation?: boolean;
+  useOnetimePassword?: boolean;
+  joinPassword?: string;
   externalRanklistUrl?: string;
 }
 

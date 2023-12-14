@@ -8,13 +8,22 @@ export interface ICompetition {
   startAt: Date;
   endAt: Date;
   ended: boolean;
+  rule: 'ICPC' | 'ICPCWithScore';
   isTeam: boolean;
+  isRating: boolean;
   registerStartAt: Date | null;
   registerEndAt: Date | null;
   createdByUser: IUserCommonRelative;
   hidden: boolean;
   createdAt: Date;
   updatedAt: Date;
+}
+
+export interface ICompetitionProblemMeta {
+  balloonAlias: string;
+  balloonColor: string;
+  score: number | null;
+  varScoreExpression: string;
 }
 
 export interface ICompetitionUser {
@@ -67,8 +76,12 @@ export interface ICompetitionSelfParticipantForm {
 
 export interface ICompetitionSettings {
   frozenLength: number;
-  allowedAuthMethods: string[];
+  allowedJoinMethods: 'public' | 'private' | 'register';
+  allowedAuthMethods: 'session' | 'password' | 'ip' | 'assistant';
   allowedSolutionLanguages: string[];
+  allowAnyObservation: boolean;
+  useOnetimePassword: boolean;
+  joinPassword?: string;
   externalRanklistUrl: string;
 }
 
