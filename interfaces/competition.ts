@@ -76,7 +76,7 @@ export interface ICompetitionSelfParticipantForm {
 
 export interface ICompetitionSettings {
   frozenLength: number;
-  allowedJoinMethods: 'public' | 'private' | 'register';
+  allowedJoinMethods: 'register' | 'public' | 'password';
   allowedAuthMethods: 'session' | 'password' | 'ip' | 'assistant';
   allowedSolutionLanguages: string[];
   allowAnyObservation: boolean;
