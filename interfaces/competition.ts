@@ -106,3 +106,14 @@ export interface ICompetitionQuestion {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface ICompetitionProblemVarScoreExpressionContext {
+  score: number;
+  problemIndex: number;
+  elapsedTime: {
+    h: number;
+    min: number;
+    s: number;
+  };
+  tries: number;
+}

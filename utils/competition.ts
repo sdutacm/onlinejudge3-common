@@ -1,4 +1,5 @@
 import { ECompetitionUserRole } from '../enums';
+import { ICompetitionProblemVarScoreExpressionContext } from '../interfaces/competition';
 
 /**
  * 校验比赛用户是否符合角色表达式
@@ -19,16 +20,7 @@ export function checkCompetitionUserRole(
  */
 export function compileVarScoreExpression(
   exp: string,
-  context: {
-    score: number;
-    problemIndex: number;
-    elapsedTime: {
-      h: number;
-      min: number;
-      s: number;
-    };
-    tries: number;
-  },
+  context: ICompetitionProblemVarScoreExpressionContext,
 ): string {
   return exp
     .replace(/\$score/g, context.score.toString())
