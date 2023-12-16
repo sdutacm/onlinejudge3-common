@@ -75,6 +75,7 @@ export interface IGetCompetitionDetailResp {
   competitionId: number;
   title: string;
   introduction: string;
+  announcement?: string;
   startAt: string;
   endAt: string;
   registerStartAt: string | null;
@@ -90,6 +91,7 @@ export interface IGetCompetitionDetailResp {
 export interface ICreateCompetitionReq {
   title: string;
   introduction: string;
+  announcement?: string;
   startAt: string;
   endAt: string;
   registerStartAt: string | null;
@@ -108,6 +110,7 @@ export interface IUpdateCompetitionDetailReq {
   competitionId: number;
   title?: string;
   introduction?: string;
+  announcement?: string;
   startAt?: string;
   endAt?: string;
   registerStartAt?: string | null;
@@ -572,6 +575,7 @@ export interface IGetCompetitionProblemSolutionStatsResp {
     submitted: number;
     selfTries: number;
     selfAccepted: boolean;
+    selfAcceptedTime: string | null;
   };
 }
 

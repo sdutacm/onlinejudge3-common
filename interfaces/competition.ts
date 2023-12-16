@@ -5,6 +5,7 @@ export interface ICompetition {
   competitionId: number;
   title: string;
   introduction: string;
+  announcement?: string;
   startAt: Date;
   endAt: Date;
   ended: boolean;
