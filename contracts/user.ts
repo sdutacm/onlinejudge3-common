@@ -134,8 +134,12 @@ export interface IGetUserDetailResp {
   rating: number;
   ratingHistory:
     | {
-        contest: {
+        contest?: {
           contestId: number;
+          title: string;
+        };
+        competition?: {
+          competitionId: number;
           title: string;
         };
         rank: number;
