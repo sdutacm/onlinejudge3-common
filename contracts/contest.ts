@@ -581,11 +581,11 @@ export interface IGetContestRanklistResp {
       oldRating?: number;
       newRating?: number;
     };
-    solved: number;
+    score: number;
     time: number;
     stats: {
-      result: 'FB' | 'AC' | 'X' | '-' | '?';
-      attempted: number;
+      result: ('FB' | 'AC' | 'RJ' | '?') | null;
+      tries: number;
       time: number;
     }[];
   }[];

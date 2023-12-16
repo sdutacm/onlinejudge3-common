@@ -1040,6 +1040,24 @@ const _routesBe = {
     },
     csrf: true,
   },
+  getCompetitionRanklist: {
+    method: 'POST',
+    url: '/getCompetitionRanklist',
+    contract: {
+      req: 'competition.getCompetitionRanklistReq',
+      resp: 'competition.getCompetitionRanklistResp',
+    },
+    competitionSide: true,
+  },
+  getCompetitionRatingStatus: {
+    method: 'POST',
+    url: '/getCompetitionRatingStatus',
+    contract: {
+      req: 'competition.getCompetitionRatingStatusReq',
+      resp: 'competition.getCompetitionRatingStatusResp',
+    },
+    competitionSide: true,
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',

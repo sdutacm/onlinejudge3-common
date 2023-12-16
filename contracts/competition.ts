@@ -680,3 +680,44 @@ export interface IReplyCompetitionQuestionReq {
 export interface IEndCompetitionReq {
   competitionId: number;
 }
+
+export interface IGetCompetitionRanklistReq {
+  competitionId: number;
+  god?: boolean;
+}
+
+export interface IGetCompetitionRanklistResp {
+  count: number;
+  rows: {
+    rank: number;
+    user: {
+      userId: number;
+      username: string;
+      nickname: string;
+      avatar: string | null;
+      bannerImage: string;
+      rating: number;
+      globalUserId?: number;
+      oldRating?: number;
+      newRating?: number;
+    };
+    score: number;
+    time: number;
+    stats: {
+      result: ('FB' | 'AC' | 'RJ' | '?') | null;
+      tries: number;
+      time: number;
+      score?: number;
+    }[];
+  }[];
+}
+
+export interface IGetCompetitionRatingStatusReq {
+  competitionId: number;
+}
+
+export type IGetCompetitionRatingStatusResp = {
+  status: number;
+  progress?: number;
+  used?: number;
+} | null;
