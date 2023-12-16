@@ -488,9 +488,9 @@
         },
         {
           "code": 1514,
-          "var": "COMPETITION_ALREADY_QUITTED",
-          "msg": "You have already quitted the competition",
-          "description": "已签退比赛"
+          "var": "COMPETITION_USER_BANNED",
+          "msg": "The user has already banned",
+          "description": "用户已被封禁"
         },
         {
           "code": 1515,
