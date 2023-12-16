@@ -570,6 +570,8 @@ export interface IGetCompetitionProblemSolutionStatsResp {
   [k: string]: {
     accepted: number;
     submitted: number;
+    selfTries: number;
+    selfAccepted: boolean;
   };
 }
 
