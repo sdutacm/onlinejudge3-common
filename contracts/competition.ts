@@ -573,9 +573,9 @@ export interface IGetCompetitionProblemSolutionStatsResp {
   [k: string]: {
     accepted: number;
     submitted: number;
-    selfTries: number;
-    selfAccepted: boolean;
-    selfAcceptedTime: string | null;
+    selfTries?: number;
+    selfAccepted?: boolean;
+    selfAcceptedTime?: string | null;
   };
 }
 
