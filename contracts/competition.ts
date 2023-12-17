@@ -726,4 +726,5 @@ export type IGetCompetitionRatingStatusResp = {
   status: number;
   progress?: number;
   used?: number;
+  totalUsed?: number;
 } | null;

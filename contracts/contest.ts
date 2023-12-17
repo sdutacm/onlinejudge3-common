@@ -599,6 +599,7 @@ export type IGetContestRatingStatusResp = {
   status: number;
   progress?: number;
   used?: number;
+  totalUsed?: number;
 } | null;
 
 export interface IEndContestReq {
