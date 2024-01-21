@@ -1058,6 +1058,15 @@ const _routesBe = {
     },
     competitionSide: true,
   },
+  getAllCompetitionSolutionsForSrkLite: {
+    method: 'POST',
+    url: '/getAllCompetitionSolutionsForSrkLite',
+    contract: {
+      req: 'competition.getAllCompetitionSolutionsForSrkLiteReq',
+      resp: null,
+    },
+    competitionSide: true,
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',

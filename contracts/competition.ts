@@ -728,3 +728,9 @@ export type IGetCompetitionRatingStatusResp = {
   used?: number;
   totalUsed?: number;
 } | null;
+
+export interface IGetAllCompetitionSolutionsForSrkLiteReq {
+  competitionId: number;
+  lastSolutionId?: number;
+  stopOnUnsettled?: boolean;
+}
