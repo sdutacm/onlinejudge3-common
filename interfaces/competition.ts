@@ -16,11 +16,14 @@ export interface ICompetition {
   registerEndAt: Date | null;
   createdByUser: IUserCommonRelative;
   hidden: boolean;
+  // TODO type
+  spConfig: any;
   createdAt: Date;
   updatedAt: Date;
 }
 
 export interface ICompetitionProblemMeta {
+  alias: string;
   balloonAlias: string;
   balloonColor: string;
   score: number | null;

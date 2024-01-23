@@ -86,6 +86,9 @@ export interface IGetCompetitionDetailResp {
   isRating: boolean;
   hidden: boolean;
   createdBy: number;
+  spConfig: {
+    [k: string]: unknown;
+  };
 }
 
 export interface ICreateCompetitionReq {
@@ -100,6 +103,9 @@ export interface ICreateCompetitionReq {
   isTeam: boolean;
   isRating: boolean;
   hidden: boolean;
+  spConfig?: {
+    [k: string]: unknown;
+  };
 }
 
 export interface ICreateCompetitionResp {
@@ -119,6 +125,9 @@ export interface IUpdateCompetitionDetailReq {
   isTeam?: boolean;
   isRating?: boolean;
   hidden?: boolean;
+  spConfig?: {
+    [k: string]: unknown;
+  };
 }
 
 export interface IGetCompetitionProblemsReq {
@@ -152,6 +161,7 @@ export interface IGetCompetitionProblemsResp {
     };
     createdAt: string;
     updatedAt: string | null;
+    alias?: string;
     balloonAlias?: string;
     balloonColor?: string;
     score?: number | null;
@@ -168,6 +178,7 @@ export interface IGetCompetitionProblemConfigResp {
   rows: {
     problemId: number;
     title: string;
+    alias: string;
     balloonAlias: string;
     balloonColor: string;
     score: number | null;
@@ -179,6 +190,7 @@ export interface ISetCompetitionProblemConfigReq {
   competitionId: number;
   problems: {
     problemId: number;
+    alias: string;
     balloonAlias: string;
     balloonColor: string;
     score: number | null;
