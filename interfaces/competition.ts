@@ -16,10 +16,13 @@ export interface ICompetition {
   registerEndAt: Date | null;
   createdByUser: IUserCommonRelative;
   hidden: boolean;
-  // TODO type
-  spConfig: any;
+  spConfig: ICompetitionSpConfig;
   createdAt: Date;
   updatedAt: Date;
+}
+
+export interface ICompetitionSpConfig {
+  preset?: 'genshin';
 }
 
 export interface ICompetitionProblemMeta {
