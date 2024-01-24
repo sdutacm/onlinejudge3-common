@@ -21,8 +21,20 @@ export interface ICompetition {
   updatedAt: Date;
 }
 
+export interface ICompetitionSpConfigMemberInfoField {
+  name: string;
+  field: string;
+  type: 'string' | 'number' | 'boolean';
+  component: 'input' | 'textarea' | 'select' | 'checkbox' | 'datetime' | 'richtext';
+  initialValue: string | number | boolean | null;
+  placeholder?: string;
+  options?: { value: string; name: string }[]; // only for select
+  rules?: any[]; // antd form rules
+}
+
 export interface ICompetitionSpConfig {
   preset?: 'genshin';
+  memberInfoFields?: ICompetitionSpConfigMemberInfoField[];
 }
 
 export interface ICompetitionProblemMeta {
