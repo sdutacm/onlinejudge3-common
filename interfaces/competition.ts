@@ -30,11 +30,52 @@ export interface ICompetitionSpConfigMemberInfoField {
   placeholder?: string;
   options?: { value: string; name: string }[]; // only for select
   rules?: any[]; // antd form rules
+  private?: boolean;
+  [key: string]: any;
 }
 
 export interface ICompetitionSpConfig {
   preset?: 'genshin';
   memberInfoFields?: ICompetitionSpConfigMemberInfoField[];
+  genshinConfig?: {
+    useExplorationMode?: boolean;
+    explorationModeOptions?: {
+      /** 初始钥匙数量 */
+      initialKeyNum?: number;
+      /** 最大钥匙数量 */
+      maxKeyNum?: number;
+      /** 获取钥匙的方式 */
+      waysToGetKey?: Array<
+        | {
+            by: 'distributePeriodically';
+            startAtSecond: number;
+            periodSecond: number;
+            num: number;
+          }
+        | {
+            by: 'getBySolveProblems';
+            condition: 'onceSectionCompleted';
+            num: number;
+          }
+      >;
+      /** 区域分段设置 */
+      sections?: {
+        /** 区域 ID */
+        id: string;
+        /** 显示标题 */
+        title: string;
+        /** 区域内使用的题目（以比赛题目下标来关联） */
+        problemIndexes: number[];
+        /** 默认解锁 */
+        unlockByDefault?: boolean;
+        /**
+         * 区域解锁花费钥匙数量
+         * @default 1
+         */
+        unlockKeyCost?: number;
+      }[];
+    };
+  };
 }
 
 export interface ICompetitionProblemMeta {
