@@ -53,7 +53,7 @@ export interface ICompetitionSpConfig {
             num: number;
           }
         | {
-            by: 'getBySolveProblems';
+            by: 'getBySolvingProblems';
             condition: 'onceSectionCompleted';
             num: number;
           }
