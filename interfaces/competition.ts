@@ -117,6 +117,7 @@ export interface ICompetitionUserInfo {
   clothing?: string;
   slogan?: string;
   group?: string;
+  [k: string]: any;
 }
 
 export interface ICompetitionSelfParticipant {
