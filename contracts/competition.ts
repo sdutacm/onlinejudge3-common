@@ -537,6 +537,7 @@ export interface ISignUpCompetitionParticipantReq {
     weChat?: string;
     clothing?: string;
     slogan?: string;
+    [k: string]: unknown;
   };
 }
 
@@ -559,6 +560,7 @@ export interface IModifySignedUpCompetitionParticipantReq {
     weChat?: string;
     clothing?: string;
     slogan?: string;
+    [k: string]: unknown;
   };
 }
 
