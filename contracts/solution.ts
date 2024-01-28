@@ -31,6 +31,9 @@ export interface IGetSolutionListResp {
       timeLimit: number;
       memoryLimit: number;
       spj: boolean;
+      spConfig?: {
+        [k: string]: unknown;
+      };
     };
     user: {
       userId: number;
@@ -105,6 +108,9 @@ export interface IGetSolutionDetailResp {
     timeLimit: number;
     memoryLimit: number;
     spj: boolean;
+    spConfig?: {
+      [k: string]: unknown;
+    };
   };
   user: {
     userId: number;
@@ -181,6 +187,9 @@ export interface IBatchGetSolutionDetailResp {
       timeLimit: number;
       memoryLimit: number;
       spj: boolean;
+      spConfig?: {
+        [k: string]: unknown;
+      };
     };
     user: {
       userId: number;
