@@ -6,5 +6,8 @@ export interface IProblemSpConfig {
   postACVideo?: {
     url: string;
     allowSkip?: boolean;
-  }
+  };
+  onEnteredAudio?: {
+    url: string;
+  };
 }
