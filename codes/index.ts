@@ -100,6 +100,7 @@ export const codeMsgs = {
   1515: 'Current user status cannot operate',
   1516: 'You are not logged in the competition',
   1517: 'The competition user already exists',
+  1518: 'Not enough keys',
 };
 
 export enum Codes {
@@ -204,4 +205,5 @@ export enum Codes {
   COMPETITION_CURRENT_USER_INVALID_STATUS_TO_OPERATE = 1515,
   COMPETITION_NOT_LOGGED_IN = 1516,
   COMPETITION_USER_EXISTS = 1517,
+  COMPETITION_SP_GENSHIN_NOT_ENOUGH_KEYS = 1518,
 }

@@ -1067,6 +1067,22 @@ const _routesBe = {
     },
     competitionSide: true,
   },
+  getCompetitionSpGenshinExplorationUnlockRecords: {
+    method: 'POST',
+    url: '/getCompetitionSpGenshinExplorationUnlockRecords',
+    contract: {
+      req: 'competition.getCompetitionSpGenshinExplorationUnlockRecordsReq',
+      resp: 'competition.getCompetitionSpGenshinExplorationUnlockRecordsResp',
+    },
+  },
+  doCompetitionSpGenshinExplorationUnlockReq: {
+    method: 'POST',
+    url: '/doCompetitionSpGenshinExplorationUnlock',
+    contract: {
+      req: 'competition.doCompetitionSpGenshinExplorationUnlockReq',
+      resp: null,
+    },
+  },
   // balloon
   getCompetitionBalloons: {
     method: 'POST',

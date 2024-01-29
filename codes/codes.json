@@ -509,6 +509,12 @@
           "var": "COMPETITION_USER_EXISTS",
           "msg": "The competition user already exists",
           "description": "比赛用户已存在"
+        },
+        {
+          "code": 1518,
+          "var": "COMPETITION_SP_GENSHIN_NOT_ENOUGH_KEYS",
+          "msg": "Not enough keys",
+          "description": "钥匙数量不足"
         }
       ]
     }

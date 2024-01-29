@@ -34,6 +34,19 @@ export interface ICompetitionSpConfigMemberInfoField {
   [key: string]: any;
 }
 
+export interface ICompetitionSpConfigGenhinExplorationW2KByDistributePeriodically {
+  by: 'distributePeriodically';
+  startAtSecond: number;
+  periodSecond: number;
+  num: number;
+}
+
+export interface ICompetitionSpConfigGenhinExplorationW2KByGetBySolvingProblems {
+  by: 'getBySolvingProblems';
+  condition: 'onceSectionCompleted';
+  num: number;
+}
+
 export interface ICompetitionSpConfig {
   preset?: 'genshin';
   memberInfoFields?: ICompetitionSpConfigMemberInfoField[];
@@ -46,17 +59,8 @@ export interface ICompetitionSpConfig {
       maxKeyNum?: number;
       /** 获取钥匙的方式 */
       waysToGetKey?: Array<
-        | {
-            by: 'distributePeriodically';
-            startAtSecond: number;
-            periodSecond: number;
-            num: number;
-          }
-        | {
-            by: 'getBySolvingProblems';
-            condition: 'onceSectionCompleted';
-            num: number;
-          }
+        | ICompetitionSpConfigGenhinExplorationW2KByDistributePeriodically
+        | ICompetitionSpConfigGenhinExplorationW2KByGetBySolvingProblems
       >;
       /** 区域分段设置 */
       sections?: {

@@ -748,3 +748,20 @@ export interface IGetAllCompetitionSolutionsForSrkLiteReq {
   lastSolutionId?: number;
   stopOnUnsettled?: boolean;
 }
+
+export interface IGetCompetitionSpGenshinExplorationUnlockRecordsReq {
+  competitionId: number;
+}
+
+export interface IGetCompetitionSpGenshinExplorationUnlockRecordsResp {
+  records: {
+    sectionId: string;
+    unlockedAt: string;
+    relativeUnlockedSecond: number;
+  }[];
+}
+
+export interface IDoCompetitionSpGenshinExplorationUnlockReq {
+  competitionId: number;
+  sectionId: string;
+}
