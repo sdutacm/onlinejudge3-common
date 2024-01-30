@@ -8,6 +8,13 @@ export interface IProblemSpConfig {
     allowSkip?: boolean;
   };
   onEnteredAudio?: {
-    url: string;
+    urls: string[];
+    play: 'one' | 'all';
+    playMode: 'random' | 'sequence';
+  };
+  onAcceptedAudio?: {
+    urls: string[];
+    play: 'one' | 'all';
+    playMode: 'random' | 'sequence';
   };
 }
