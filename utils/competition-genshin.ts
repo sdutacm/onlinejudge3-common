@@ -14,7 +14,7 @@ import {
  * @returns 钥匙信息
  */
 export function getSpGenshinExplorationKeyInfo(
-  competition: RequireSome<ICompetition, 'spConfig'>,
+  competition: { spConfig: ICompetitionSpConfig },
   elapsedTimeSecond: number,
   acceptedProblemIndexes: number[],
   unlockedSectionIds: string[],
