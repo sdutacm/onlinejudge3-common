@@ -1075,7 +1075,7 @@ const _routesBe = {
       resp: 'competition.getCompetitionSpGenshinExplorationUnlockRecordsResp',
     },
   },
-  doCompetitionSpGenshinExplorationUnlockReq: {
+  doCompetitionSpGenshinExplorationUnlock: {
     method: 'POST',
     url: '/doCompetitionSpGenshinExplorationUnlock',
     contract: {
