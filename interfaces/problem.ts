@@ -3,6 +3,7 @@ export interface IProblemSpConfig {
   genshinStart?: boolean;
   genshinStartPostOpenUrl?: string;
   customFontFamily?: string;
+  hasEgg?: boolean;
   postACVideo?: {
     url: string;
     allowSkip?: boolean;
