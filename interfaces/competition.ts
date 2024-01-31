@@ -77,6 +77,14 @@ export interface ICompetitionSpConfig {
          * @default 1
          */
         unlockKeyCost?: number;
+        /** 解锁时 hook */
+        onUnlock?: {
+          playAudio?: {
+            urls: string[];
+            play: 'one' | 'all';
+            playMode: 'random' | 'sequence';
+          };
+        };
       }[];
     };
   };

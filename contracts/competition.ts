@@ -136,7 +136,7 @@ export interface IGetCompetitionProblemsReq {
 
 export interface IGetCompetitionProblemsResp {
   count: number;
-  rows: (null | {
+  rows: {
     problemId: number;
     title: string;
     description: string;
@@ -167,7 +167,7 @@ export interface IGetCompetitionProblemsResp {
     score?: number | null;
     varScoreExpression?: string;
     [k: string]: unknown;
-  })[];
+  }[];
 }
 
 export interface IGetCompetitionProblemConfigReq {
