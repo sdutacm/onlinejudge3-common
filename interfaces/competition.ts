@@ -47,6 +47,30 @@ export interface ICompetitionSpConfigGenhinExplorationW2KByGetBySolvingProblems 
   num: number;
 }
 
+export interface ICompetitionSpConfigGenshinExplorationSection {
+  /** 区域 ID */
+  id: string;
+  /** 显示标题 */
+  title: string;
+  /** 区域内使用的题目（以比赛题目下标来关联） */
+  problemIndexes: number[];
+  /** 默认解锁 */
+  unlockByDefault?: boolean;
+  /**
+   * 区域解锁花费钥匙数量
+   * @default 1
+   */
+  unlockKeyCost?: number;
+  /** 解锁时 hook */
+  onUnlock?: {
+    playAudio?: {
+      urls: string[];
+      play: 'one' | 'all';
+      playMode: 'random' | 'sequence';
+    };
+  };
+}
+
 export interface ICompetitionSpConfig {
   preset?: 'genshin';
   memberInfoFields?: ICompetitionSpConfigMemberInfoField[];
@@ -63,29 +87,7 @@ export interface ICompetitionSpConfig {
         | ICompetitionSpConfigGenhinExplorationW2KByGetBySolvingProblems
       >;
       /** 区域分段设置 */
-      sections?: {
-        /** 区域 ID */
-        id: string;
-        /** 显示标题 */
-        title: string;
-        /** 区域内使用的题目（以比赛题目下标来关联） */
-        problemIndexes: number[];
-        /** 默认解锁 */
-        unlockByDefault?: boolean;
-        /**
-         * 区域解锁花费钥匙数量
-         * @default 1
-         */
-        unlockKeyCost?: number;
-        /** 解锁时 hook */
-        onUnlock?: {
-          playAudio?: {
-            urls: string[];
-            play: 'one' | 'all';
-            playMode: 'random' | 'sequence';
-          };
-        };
-      }[];
+      sections?: ICompetitionSpConfigGenshinExplorationSection[];
     };
   };
 }
