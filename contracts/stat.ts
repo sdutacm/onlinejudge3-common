@@ -104,3 +104,14 @@ export interface IGetUserSubmittedProblemsResp {
    */
   _updatedAt: number;
 }
+
+export interface IGetJudgeQueueStatsResp {
+  running: number;
+  waiting: number;
+  queueSize: number;
+  deadQueueSize: number;
+  workers: {
+    id: string;
+    status: number;
+  }[];
+}

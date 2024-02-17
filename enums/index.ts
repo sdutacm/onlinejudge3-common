@@ -131,3 +131,12 @@ export enum EBalloonStatus {
   /** 已取消 */
   cancelled = 4,
 }
+
+export enum EStatJudgeQueueWorkerStatus {
+  /** 空闲 */
+  idle = 1,
+  /** 评测中 */
+  judging = 2,
+  /** 故障 */
+  fault = 3,
+}

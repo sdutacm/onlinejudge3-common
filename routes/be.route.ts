@@ -677,6 +677,14 @@ const _routesBe = {
       resp: 'stat.getUserSubmittedProblemsResp',
     },
   },
+  getJudgeQueueStats: {
+    method: 'POST',
+    url: '/getJudgeQueueStats',
+    contract: {
+      req: null,
+      resp: 'stat.getJudgeQueueStatsResp',
+    },
+  },
   // field
   getFieldList: {
     method: 'POST',

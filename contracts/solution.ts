@@ -79,6 +79,9 @@ export interface IGetSolutionListResp {
     shared: boolean;
     isContestUser: boolean;
     judgeInfo?: {
+      result: number;
+      time: number;
+      memory: number;
       lastCase: number;
       totalCase: number;
       detail: {
@@ -89,8 +92,9 @@ export interface IGetSolutionListResp {
           errMsg?: string;
           outMsg?: string;
         }[];
-      };
-      finishedAt: string;
+      } | null;
+      createdAt: string;
+      finishedAt: string | null;
     };
     createdAt: string;
   }[];
@@ -158,6 +162,9 @@ export interface IGetSolutionDetailResp {
   shared: boolean;
   isContestUser: boolean;
   judgeInfo?: {
+    result: number;
+    time: number;
+    memory: number;
     lastCase: number;
     totalCase: number;
     detail: {
@@ -168,8 +175,9 @@ export interface IGetSolutionDetailResp {
         errMsg?: string;
         outMsg?: string;
       }[];
-    };
-    finishedAt: string;
+    } | null;
+    createdAt: string;
+    finishedAt: string | null;
   };
   createdAt: string;
 }
@@ -237,6 +245,9 @@ export interface IBatchGetSolutionDetailResp {
     shared: boolean;
     isContestUser: boolean;
     judgeInfo?: {
+      result: number;
+      time: number;
+      memory: number;
       lastCase: number;
       totalCase: number;
       detail: {
@@ -247,8 +258,9 @@ export interface IBatchGetSolutionDetailResp {
           errMsg?: string;
           outMsg?: string;
         }[];
-      };
-      finishedAt: string;
+      } | null;
+      createdAt: string;
+      finishedAt: string | null;
     };
     createdAt: string;
   };
