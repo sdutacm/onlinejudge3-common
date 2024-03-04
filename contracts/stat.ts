@@ -112,6 +112,10 @@ export interface IGetJudgeQueueStatsResp {
   deadQueueSize: number;
   workers: {
     id: string;
+    platform: string;
+    arch: string;
+    cpuModel: string;
+    group: string;
     status: number;
   }[];
 }
