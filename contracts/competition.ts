@@ -159,6 +159,7 @@ export interface IGetCompetitionProblemsResp {
     spConfig: {
       [k: string]: unknown;
     };
+    revision?: number;
     createdAt: string;
     updatedAt: string | null;
     alias?: string;

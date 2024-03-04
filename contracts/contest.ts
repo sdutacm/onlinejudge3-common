@@ -160,6 +160,7 @@ export interface IGetContestProblemsResp {
     spConfig: {
       [k: string]: unknown;
     };
+    revision?: number;
     createdAt: string;
     updatedAt: string | null;
   }[];

@@ -34,6 +34,7 @@ export interface IGetSolutionListResp {
       spConfig?: {
         [k: string]: unknown;
       };
+      revision?: number;
     };
     user: {
       userId: number;
@@ -79,6 +80,7 @@ export interface IGetSolutionListResp {
     shared: boolean;
     isContestUser: boolean;
     judgeInfo?: {
+      problemRevision?: number | null;
       result: number;
       time: number;
       memory: number;
@@ -115,6 +117,7 @@ export interface IGetSolutionDetailResp {
     spConfig?: {
       [k: string]: unknown;
     };
+    revision?: number;
   };
   user: {
     userId: number;
@@ -162,6 +165,7 @@ export interface IGetSolutionDetailResp {
   shared: boolean;
   isContestUser: boolean;
   judgeInfo?: {
+    problemRevision?: number | null;
     result: number;
     time: number;
     memory: number;
@@ -198,6 +202,7 @@ export interface IBatchGetSolutionDetailResp {
       spConfig?: {
         [k: string]: unknown;
       };
+      revision?: number;
     };
     user: {
       userId: number;
@@ -245,6 +250,7 @@ export interface IBatchGetSolutionDetailResp {
     shared: boolean;
     isContestUser: boolean;
     judgeInfo?: {
+      problemRevision?: number | null;
       result: number;
       time: number;
       memory: number;
@@ -291,4 +297,8 @@ export interface IRejudgeSolutionReq {
   contestId?: number;
   competitionId?: number;
   result?: number;
+}
+
+export interface IRejudgeSolutionResp {
+  rejudgedCount: number;
 }

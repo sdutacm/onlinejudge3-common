@@ -72,6 +72,7 @@ export interface IGetProblemDetailResp {
   spConfig: {
     [k: string]: unknown;
   };
+  revision: number;
   tags: {
     tagId: number;
     nameEn: string;

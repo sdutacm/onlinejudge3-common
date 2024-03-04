@@ -194,6 +194,12 @@
           "var": "SOLUTION_NO_SOLUTION_REJUDGED",
           "msg": "No solutions rejudged",
           "description": "没有可重判的提交"
+        },
+        {
+          "code": 308,
+          "var": "SOLUTION_CODE_TOO_LONG",
+          "msg": "The code is too long",
+          "description": "提交代码过长"
         }
       ]
     },

@@ -35,6 +35,7 @@ export const codeMsgs = {
   305: 'The contest is not in progress',
   306: 'The language is invalid',
   307: 'No solutions rejudged',
+  308: 'The code is too long',
 
   // Contest 4XX
   401: 'Incorrect username or password',
@@ -140,6 +141,7 @@ export enum Codes {
   SOLUTION_CONTEST_NOT_IN_PROGRESS = 305,
   SOLUTION_INVALID_LANGUAGE = 306,
   SOLUTION_NO_SOLUTION_REJUDGED = 307,
+  SOLUTION_CODE_TOO_LONG = 308,
 
   // Contest 4XX
   CONTEST_INCORRECT_USERNAME_OR_PASSWORD = 401,
