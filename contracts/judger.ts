@@ -33,9 +33,9 @@ export interface IGetJudgerDataArchiveReq {
 
 export interface IUploadJudgerDataReq {
   problemId: number | string;
-  name: string;
-  email: string;
-  commitMessage: string;
+  name?: string;
+  email?: string;
+  commitMessage?: string;
   [k: string]: unknown;
 }
 
