@@ -251,6 +251,15 @@ const _routesBe = {
     contract: { req: 'solution.rejudgeSolutionReq', resp: null },
     csrf: true,
   },
+  callbackJudge: {
+    method: 'POST',
+    url: '/callbackJudge',
+    contract: {
+      req: 'solution.callbackJudgeReq',
+      resp: null,
+    },
+    competitionSide: true,
+  },
   // contest
   getContestList: {
     method: 'POST',

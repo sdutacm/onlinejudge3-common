@@ -302,3 +302,26 @@ export interface IRejudgeSolutionReq {
 export interface IRejudgeSolutionResp {
   rejudgedCount: number;
 }
+
+export interface ICallbackJudgeReq {
+  judgeInfoId: number;
+  solutionId: number;
+  judgerId: string;
+  data:
+    | {
+        type: 'start';
+      }
+    | {
+        type: 'progress';
+        current: number;
+        total: number;
+      }
+    | {
+        type: 'finish';
+        resultType: 'CompileError' | 'SystemError' | 'Done';
+        detail?: {
+          [k: string]: unknown;
+        };
+      };
+  eventTimestampUs: number;
+}
