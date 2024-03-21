@@ -110,12 +110,14 @@ export interface IGetJudgeQueueStatsResp {
   waiting: number;
   queueSize: number;
   deadQueueSize: number;
-  workers: {
-    id: string;
+  workerGroups: {
+    group: string;
     platform: string;
     arch: string;
     cpuModel: string;
-    group: string;
-    status: number;
+    workers: {
+      id: string;
+      status: number;
+    }[];
   }[];
 }
