@@ -307,6 +307,10 @@ export interface ICallbackJudgeReq {
   judgeInfoId: number;
   solutionId: number;
   judgerId: string;
+  userId?: number;
+  problemId?: number;
+  contestId?: number;
+  competitionId?: number;
   data:
     | {
         type: 'start';
@@ -324,4 +328,5 @@ export interface ICallbackJudgeReq {
         };
       };
   eventTimestampUs: number;
+  [k: string]: unknown;
 }

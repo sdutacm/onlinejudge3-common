@@ -25,8 +25,10 @@ export enum ESolutionResult {
   PE = 8,
   SE = 11,
 
-  // temp (river Pending)
+  /** Judger (river) Pending */
   RPD = -1,
+  /** 已取消。仅用于评测任务 */
+  CNL = -2,
 
   // virtual
   V_Frozen = -100,
