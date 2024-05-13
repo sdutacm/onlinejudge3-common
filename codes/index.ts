@@ -80,6 +80,7 @@ export const codeMsgs = {
   1203: 'Data git working dir is not clean. Please retry',
 
   // Misc 13XX
+  1301: 'Not the latest competition or contest',
 
   // Field 14XX
 
@@ -186,6 +187,7 @@ export enum Codes {
   JUDGER_DATA_GIT_WD_NOT_CLEAN = 1203,
 
   // Misc 13XX
+  NOT_LATEST_RANKED = 1301,
 
   // Field 14XX
 

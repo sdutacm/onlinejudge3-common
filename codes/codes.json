@@ -403,7 +403,14 @@
     {
       "name": "Misc",
       "range": "13XX",
-      "codes": []
+      "codes": [
+        {
+          "code": 1301,
+          "var": "NOT_LATEST_RANKED",
+          "msg": "Not the latest competition or contest",
+          "description": "不是最后结算的评分模式的比赛"
+        }
+      ]
     },
     {
       "name": "Field",
