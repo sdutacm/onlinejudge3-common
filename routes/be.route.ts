@@ -1057,6 +1057,15 @@ const _routesBe = {
     },
     csrf: true,
   },
+  cancelEndCompetition: {
+    method: 'POST',
+    url: '/cancelEndCompetition',
+    contract: {
+      req: 'competition.cancelEndCompetitionReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   getCompetitionRanklist: {
     method: 'POST',
     url: '/getCompetitionRanklist',

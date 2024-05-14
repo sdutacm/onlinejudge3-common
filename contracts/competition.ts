@@ -767,3 +767,7 @@ export interface IDoCompetitionSpGenshinExplorationUnlockReq {
   competitionId: number;
   sectionId: string;
 }
+
+export interface ICancelEndCompetitionReq {
+  competitionId: number;
+}
