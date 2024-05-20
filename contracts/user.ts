@@ -74,7 +74,6 @@ export interface IGetUserListReq {
   limit?: number;
   order?: ['userId' | 'accepted' | 'rating', 'ASC' | 'DESC'][];
   userId?: number;
-  username?: string;
   nickname?: string;
   school?: string;
   college?: string;
@@ -93,7 +92,6 @@ export interface IGetUserListResp {
   count: number;
   rows: {
     userId: number;
-    username: string;
     nickname: string;
     submitted: number;
     accepted: number;
@@ -117,7 +115,6 @@ export interface IGetUserDetailReq {
 
 export interface IGetUserDetailResp {
   userId: number;
-  username: string;
   nickname: string;
   email?: string;
   submitted: number;

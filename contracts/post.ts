@@ -23,7 +23,6 @@ export interface IGetPostListResp {
     postId: number;
     user?: {
       userId: number;
-      username: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;
@@ -46,7 +45,6 @@ export interface IGetPostDetailResp {
   postId: number;
   user?: {
     userId: number;
-    username: string;
     nickname: string;
     avatar: string | null;
     bannerImage: string;

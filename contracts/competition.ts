@@ -703,6 +703,10 @@ export interface IEndCompetitionReq {
   competitionId: number;
 }
 
+export interface ICancelEndCompetitionReq {
+  competitionId: number;
+}
+
 export interface IGetCompetitionRanklistReq {
   competitionId: number;
   god?: boolean;
@@ -766,8 +770,4 @@ export interface IGetCompetitionSpGenshinExplorationUnlockRecordsResp {
 export interface IDoCompetitionSpGenshinExplorationUnlockReq {
   competitionId: number;
   sectionId: string;
-}
-
-export interface ICancelEndCompetitionReq {
-  competitionId: number;
 }
