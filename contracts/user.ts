@@ -74,6 +74,7 @@ export interface IGetUserListReq {
   limit?: number;
   order?: ['userId' | 'accepted' | 'rating', 'ASC' | 'DESC'][];
   userId?: number;
+  username?: string;
   nickname?: string;
   school?: string;
   college?: string;
