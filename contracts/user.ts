@@ -265,3 +265,11 @@ export interface ISetUserPermissionsReq {
   userId: number;
   permissions: string[];
 }
+
+export interface IGetSelfCompletedAchievementsResp {
+  count: number;
+  rows: {
+    achievementKey: string;
+    createdAt: string;
+  }[];
+}

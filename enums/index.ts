@@ -142,3 +142,9 @@ export enum EStatJudgeQueueWorkerStatus {
   /** 故障 */
   fault = 3,
 }
+
+export enum EAchievementLevel {
+  bronze = 1,
+  silver = 2,
+  gold = 3,
+}

@@ -151,6 +151,11 @@ const _routesBe = {
     contract: { req: 'user.setUserPermissionsReq', resp: null },
     csrf: true,
   },
+  getSelfCompletedAchievements: {
+    method: 'POST',
+    url: '/getSelfCompletedAchievements',
+    contract: { req: null, resp: 'user.getSelfCompletedAchievementsResp' },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',
