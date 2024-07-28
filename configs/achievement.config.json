@@ -1,3 +1,54 @@
 [
-
+  {
+    "categoryKey": "c1",
+    "title": "成就分类1",
+    "achievements": [
+      {
+        "achievementKey": "a1",
+        "title": "成就1-1,逗号 +\"\"",
+        "level": 1,
+        "description": "成就描述",
+        "annotation": "成就注释",
+        "hidden": false
+      },
+      {
+        "achievementKey": "a4",
+        "title": "成就1-2",
+        "level": 3,
+        "description": "成就描述",
+        "annotation": "",
+        "hidden": false
+      },
+      {
+        "achievementKey": "a5",
+        "title": "成就1-3",
+        "level": 2,
+        "description": "成就描述",
+        "annotation": "",
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "categoryKey": "c2",
+    "title": "成就分类2",
+    "achievements": [
+      {
+        "achievementKey": "a2",
+        "title": "成就2",
+        "level": 2,
+        "description": "成就描述",
+        "annotation": "成就注释",
+        "hidden": true
+      },
+      {
+        "achievementKey": "a3",
+        "title": "成就3",
+        "level": 3,
+        "description": "成就描述",
+        "annotation": "",
+        "hidden": false
+      }
+    ]
+  }
 ]

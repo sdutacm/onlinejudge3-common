@@ -3,4 +3,10 @@
  * DO NOT MODIFY IT BY HAND.
  */
 
-export enum EAchievementKey {}
+export enum EAchievementKey {
+  a1 = 'a1',
+  a2 = 'a2',
+  a3 = 'a3',
+  a4 = 'a4',
+  a5 = 'a5',
+}
