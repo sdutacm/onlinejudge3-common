@@ -117,6 +117,7 @@ export interface IGetUserDetailReq {
 export interface IGetUserDetailResp {
   userId: number;
   nickname: string;
+  username?: string;
   email?: string;
   submitted: number;
   accepted: number;
