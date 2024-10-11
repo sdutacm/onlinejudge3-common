@@ -148,3 +148,12 @@ export enum EAchievementLevel {
   silver = 2,
   gold = 3,
 }
+
+export enum EUserAchievementStatus {
+  /** 已创建 */
+  created = 0,
+  /** 已推送 */
+  deliveried = 1,
+  /** 已领取 */
+  received = 2,
+}
