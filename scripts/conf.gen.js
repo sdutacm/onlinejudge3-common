@@ -43,7 +43,7 @@ function main() {
     };
   });
   fs.writeFileSync(
-    path.join(baseDir, 'achievement.config.json'),
+    path.join(baseDir, 'achievement-config.json'),
     JSON.stringify(achievementConfig, null, 2),
     'utf-8',
   );
