@@ -29,6 +29,7 @@ export const codeMsgs = {
   108: 'Cannot clear current session',
   109: 'The nickname contains illegal content',
   110: 'The password strength is too weak',
+  111: 'The achievement has not been achieved',
 
   // Problem 2XX
 
@@ -136,6 +137,7 @@ export enum Codes {
   USER_CANNOT_CLEAR_CURRENT_SESSION = 108,
   USER_NICKNAME_CONTAINS_ILLEGAL_CONTENT = 109,
   USER_PASSWORD_STRENGTH_TOO_WEAK = 110,
+  USER_ACHIEVEMENT_NOT_ACHIEVED = 111,
 
   // Problem 2XX
 

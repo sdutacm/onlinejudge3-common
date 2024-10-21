@@ -271,6 +271,11 @@ export interface IGetSelfCompletedAchievementsResp {
   count: number;
   rows: {
     achievementKey: string;
+    status: number;
     createdAt: string;
   }[];
+}
+
+export interface IReceiveAchievementReq {
+  achievementKey: string;
 }

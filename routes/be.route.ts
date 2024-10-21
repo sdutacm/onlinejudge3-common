@@ -156,6 +156,11 @@ const _routesBe = {
     url: '/getSelfCompletedAchievements',
     contract: { req: null, resp: 'user.getSelfCompletedAchievementsResp' },
   },
+  receiveAchievement: {
+    method: 'POST',
+    url: '/receiveAchievement',
+    contract: { req: 'user.receiveAchievementReq', resp: null },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',
