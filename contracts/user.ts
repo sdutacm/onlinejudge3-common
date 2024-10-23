@@ -276,6 +276,10 @@ export interface IGetSelfCompletedAchievementsResp {
   }[];
 }
 
+export interface IConfirmAchievementDeliveriedReq {
+  achievementKey: string;
+}
+
 export interface IReceiveAchievementReq {
   achievementKey: string;
 }
