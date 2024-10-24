@@ -151,10 +151,10 @@ const _routesBe = {
     contract: { req: 'user.setUserPermissionsReq', resp: null },
     csrf: true,
   },
-  getSelfCompletedAchievements: {
+  getSelfAchievedAchievements: {
     method: 'POST',
-    url: '/getSelfCompletedAchievements',
-    contract: { req: null, resp: 'user.getSelfCompletedAchievementsResp' },
+    url: '/getSelfAchievedAchievements',
+    contract: { req: null, resp: 'user.getSelfAchievedAchievementsResp' },
   },
   confirmAchievementDeliveried: {
     method: 'POST',

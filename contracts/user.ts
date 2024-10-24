@@ -267,7 +267,7 @@ export interface ISetUserPermissionsReq {
   permissions: string[];
 }
 
-export interface IGetSelfCompletedAchievementsResp {
+export interface IGetSelfAchievedAchievementsResp {
   count: number;
   rows: {
     achievementKey: string;
