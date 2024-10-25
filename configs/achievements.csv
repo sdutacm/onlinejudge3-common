@@ -40,7 +40,7 @@ RatingLv4,Competition,无量长者,3,Rating 达到 2500 分。,,0
 SolveDuringFrozenTime,Competition,功夫不负有心人,1,在任意一场比赛的封榜时间内过题。,,0
 FB,Competition,First Blood,2,在任意一场比赛中取得一次题目的 FB。,,0
 AK,Competition,AK God,3,在任意一场比赛中通过全部题目。,,1
-AttendCompetitionAPF,Competition,WTF???,1,参加一场愚人节主题赛。,,1
-AttendCompetitionSDUTPC,Competition,沙梨的希望,1,参加一场 SDUT 校赛。,"Shaly ACM, Best ACM",1
-AttendCompetitionAzurSeries,Competition,蔚蓝之梦,1,参加一场蔚蓝系列赛。,,1
-AttendCompetitionGenshinImpact,Competition,原神，启动！,1,参加一场原神主题赛。,「原来，你也玩原神！」,1
+AttendCompetitionAPF,Competition,WTF???,2,参加一场愚人节主题赛。,,1
+AttendCompetitionSDUTPC,Competition,沙梨的希望,2,参加一场 SDUT 校赛。,"Shaly ACM, Best ACM",1
+AttendCompetitionAzurSeries,Competition,蔚蓝之梦,2,参加一场蔚蓝系列赛。,,1
+AttendCompetitionGenshinImpact,Competition,原神，启动！,2,参加一场原神主题赛。,「原来，你也玩原神！」,1

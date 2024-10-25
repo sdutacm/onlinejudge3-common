@@ -346,7 +346,7 @@
       {
         "achievementKey": "AttendCompetitionAPF",
         "title": "WTF???",
-        "level": 1,
+        "level": 2,
         "description": "参加一场愚人节主题赛。",
         "annotation": "",
         "hidden": true
@@ -354,7 +354,7 @@
       {
         "achievementKey": "AttendCompetitionSDUTPC",
         "title": "沙梨的希望",
-        "level": 1,
+        "level": 2,
         "description": "参加一场 SDUT 校赛。",
         "annotation": "Shaly ACM, Best ACM",
         "hidden": true
@@ -362,7 +362,7 @@
       {
         "achievementKey": "AttendCompetitionAzurSeries",
         "title": "蔚蓝之梦",
-        "level": 1,
+        "level": 2,
         "description": "参加一场蔚蓝系列赛。",
         "annotation": "",
         "hidden": true
@@ -370,7 +370,7 @@
       {
         "achievementKey": "AttendCompetitionGenshinImpact",
         "title": "原神，启动！",
-        "level": 1,
+        "level": 2,
         "description": "参加一场原神主题赛。",
         "annotation": "「原来，你也玩原神！」",
         "hidden": true
