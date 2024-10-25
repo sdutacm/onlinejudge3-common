@@ -102,7 +102,7 @@
       {
         "achievementKey": "LanguageUsageLv2",
         "title": "语言高手",
-        "level": 1,
+        "level": 2,
         "description": "使用 6 种不同的语言通过题目。",
         "annotation": "",
         "hidden": false
@@ -110,7 +110,7 @@
       {
         "achievementKey": "LanguageUsageLv3",
         "title": "语言学家",
-        "level": 2,
+        "level": 3,
         "description": "使用 10 种不同的语言通过题目。",
         "annotation": "",
         "hidden": false
