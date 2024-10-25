@@ -1,6 +1,46 @@
 achievementKey,categoryKey,title,level,description,annotation,hidden
-a1,c1,"成就1-1,逗号 +""""",1,成就描述,成就注释,0
-a2,c2,"成就2",2,成就描述,成就注释,1
-a3,c2,"成就3",3,成就描述,,0
-a4,c1,"成就1-2",3,成就描述,,0
-a5,c1,"成就1-3",2,成就描述,,0
+SolveProblemsLv1,Adventure,刷题勇者,1,累计通过 50 道题目。,,0
+SolveProblemsLv2,Adventure,刷题大师,1,累计通过 100 道题目。,,0
+SolveProblemsLv3,Adventure,刷题魔王,2,累计通过 200 道题目。,,0
+SolveProblemsLv4,Adventure,刷题圣者,3,累计通过 500 道题目。,,0
+SolutionGetAC,Adventure,小试牛刀,1,提交获得一次 AC。,,0
+SolutionGetWA,Adventure,听取 WA 声,1,提交获得一次 WA。,,0
+SolutionGetPE,Adventure,小格式，大问题,1,提交获得一次 PE。,,0
+SolutionGetTLE,Adventure,时间的意义,1,提交获得一次 TLE。,,0
+SolutionGetMLE,Adventure,该加内存了！,1,提交获得一次 MLE。,,0
+SolutionGetRTE,Adventure,Segment Fault,1,提交获得一次 RTE。,,0
+SolutionGetCE,Adventure,是编译器的问题,1,提交获得一次 CE。,,0
+LanguageUsageLv1,Adventure,语言学徒,1,使用 3 种不同的语言通过题目。,,0
+LanguageUsageLv2,Adventure,语言高手,1,使用 6 种不同的语言通过题目。,,0
+LanguageUsageLv3,Adventure,语言学家,2,使用 10 种不同的语言通过题目。,,0
+SolveInContinuouslyDayLv1,Adventure,做题成瘾,1,连续 3 天通过题目。,,0
+SolveInContinuouslyDayLv2,Adventure,做题，已成习惯,2,连续 10 天通过题目。,,0
+SolveInOneDay,Adventure,根本停不下来啊！,2,在一天之内通过 10 道题目。,,1
+SolveWithAttemptedLv1,Adventure,AC 之母,1,在一道题目中，提交错误至少 5 次才通过。,,0
+SolveWithAttemptedLv2,Adventure,立于失败之上,2,在一道题目中，提交错误至少 20 次才通过。,,0
+SolveWithMultiResults,Adventure,写得真花啊！,2,在一道题目中，获得至少 5 种不同的提交结果。,,1
+NightSolver,Adventure,夜猫子,1,在凌晨 0 至 6 点间通过题目。,,1
+SolutionFailedOnFirstTest,Adventure,过样例了吗？,1,提交错误在第一个测试点。,,1
+SolutionFailedOnLastTest,Adventure,偏偏只差一步…,1,提交错误在最后一个测试点。,,1
+SolutionRunsWithLongTime,Adventure,直到世界尽头,2,提交的运行时间超过 60 秒。,,1
+SetAvatar,Exploration,有名有姓,1,设置头像。,,0
+SetBannerImage,Exploration,全 OJ 最靓的仔,1,设置背景横幅。,,0
+SendAndReceiveMessageWithSameUser,Exploration,友谊四叶草,1,与一个用户互发消息。,,1
+Fav,Exploration,小小收藏家,1,收藏 5 个项目。,,0
+JoinGroup,Exploration,找到组织,1,加入一个群组。,,0
+CompleteSetPartially,Exploration,开始训练！,1,完成一个题目集中的一个章节。,,0
+CompleteSetAll,Exploration,你过关！,2,完成一个题目集中的全部章节。,,0
+AttendRatingCompetitionsLv1,Competition,初来乍到,1,参加 1 场 Rating 比赛。,,0
+AttendRatingCompetitionsLv2,Competition,愈发熟练,2,参加 5 场 Rating 比赛。,,0
+AttendRatingCompetitionsLv3,Competition,算竞常客,3,参加 20 场 Rating 比赛。,,0
+RatingLv1,Competition,步入史诗,1,Rating 达到 1600 分。,,0
+RatingLv2,Competition,已臻传说,2,Rating 达到 1900 分。,,0
+RatingLv3,Competition,超凡不朽,3,Rating 达到 2200 分。,,0
+RatingLv4,Competition,无量长者,3,Rating 达到 2500 分。,,0
+SolveDuringFrozenTime,Competition,功夫不负有心人,1,在任意一场比赛的封榜时间内过题。,,0
+FB,Competition,First Blood,2,在任意一场比赛中取得一次题目的 FB。,,0
+AK,Competition,AK God,3,在任意一场比赛中通过全部题目。,,1
+AttendCompetitionAPF,Competition,WTF???,1,参加一场愚人节主题赛。,,1
+AttendCompetitionSDUTPC,Competition,沙梨的希望,1,参加一场 SDUT 校赛。,"Shaly ACM, Best ACM",1
+AttendCompetitionAzurSeries,Competition,蔚蓝之梦,1,参加一场蔚蓝系列赛。,,1
+AttendCompetitionGenshinImpact,Competition,原神，启动！,1,参加一场原神主题赛。,「原来，你也玩原神！」,1
