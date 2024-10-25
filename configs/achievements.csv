@@ -12,7 +12,7 @@ SolutionGetRTE,Adventure,Segment Fault,1,提交获得一次 RTE。,,0
 SolutionGetCE,Adventure,是编译器的问题,1,提交获得一次 CE。,,0
 LanguageUsageLv1,Adventure,语言学徒,1,使用 3 种不同的语言通过题目。,,0
 LanguageUsageLv2,Adventure,语言高手,2,使用 6 种不同的语言通过题目。,,0
-LanguageUsageLv3,Adventure,语言学家,3,使用 10 种不同的语言通过题目。,,0
+LanguageUsageLv3,Adventure,语言学家,3,使用 12 种不同的语言通过题目。,,0
 SolveInContinuouslyDayLv1,Adventure,做题成瘾,1,连续 3 天通过题目。,,0
 SolveInContinuouslyDayLv2,Adventure,做题，已成习惯,2,连续 10 天通过题目。,,0
 SolveInOneDay,Adventure,根本停不下来啊！,2,在一天之内通过 10 道题目。,,1
