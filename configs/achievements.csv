@@ -24,7 +24,7 @@ SolutionFailedOnFirstTest,Adventure,过样例了吗？,1,提交错误在第一�
 SolutionFailedOnLastTest,Adventure,偏偏只差一步…,1,提交错误在最后一个测试点。,,1
 SolutionRunsWithLongTime,Adventure,直到世界尽头,2,提交的运行时间超过 60 秒。,,1
 SetAvatar,Exploration,有名有姓,1,设置头像。,,0
-SetBannerImage,Exploration,全 OJ 最靓的仔,1,设置背景横幅。,,0
+SetBannerImage,Exploration,全 OJ 最靓的仔,1,设置背景巨幅。,,0
 SendAndReceiveMessageWithSameUser,Exploration,友谊四叶草,1,与一个用户互发消息。,,1
 Fav,Exploration,小小收藏家,1,收藏 5 个项目。,,0
 JoinGroup,Exploration,找到组织,1,加入一个群组。,,0
