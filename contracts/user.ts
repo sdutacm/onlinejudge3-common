@@ -148,7 +148,7 @@ export interface IGetUserDetailResp {
       }[]
     | null;
   site: string;
-  defaultLanguage?: string;
+  defaultLanguage?: string | null;
   settings?: {} | null;
   coin?: number;
   verified?: boolean;
