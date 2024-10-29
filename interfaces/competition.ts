@@ -72,6 +72,7 @@ export interface ICompetitionSpConfigGenshinExplorationSection {
 }
 
 export interface ICompetitionSpConfig {
+  brands?: ('SDUTPC' | 'SDUTRound' | 'APF' | 'AzurSeries' | 'Genshin')[];
   preset?: 'genshin';
   memberInfoFields?: ICompetitionSpConfigMemberInfoField[];
   genshinConfig?: {
