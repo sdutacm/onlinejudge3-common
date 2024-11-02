@@ -47,8 +47,11 @@ export enum EAchievementKey {
   SolveDuringFrozenTime = 'SolveDuringFrozenTime',
   FB = 'FB',
   AK = 'AK',
+  Competition1AMaster = 'Competition1AMaster',
+  TooManyPenalties = 'TooManyPenalties',
   AttendCompetitionAPF = 'AttendCompetitionAPF',
   AttendCompetitionSDUTPC = 'AttendCompetitionSDUTPC',
+  AttendCompetitionSDUTRound = 'AttendCompetitionSDUTRound',
   AttendCompetitionAzurSeries = 'AttendCompetitionAzurSeries',
   AttendCompetitionGenshinImpact = 'AttendCompetitionGenshinImpact',
 }

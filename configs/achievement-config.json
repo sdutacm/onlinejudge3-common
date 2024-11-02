@@ -357,6 +357,22 @@
         "level": 3,
         "description": "在任意一场比赛中通过全部题目。",
         "annotation": "",
+        "hidden": false
+      },
+      {
+        "achievementKey": "Competition1AMaster",
+        "title": "1A God",
+        "level": 3,
+        "description": "在一场比赛中，通过不少于 5 道题目且没有错误提交。",
+        "annotation": "",
+        "hidden": true
+      },
+      {
+        "achievementKey": "TooManyPenalties",
+        "title": "罚时略多",
+        "level": 2,
+        "description": "在一场 ICPC 赛制比赛中，被计入的罚时达到 200 分钟。",
+        "annotation": "",
         "hidden": true
       },
       {
@@ -372,6 +388,14 @@
         "title": "沙梨的希望",
         "level": 2,
         "description": "参加一场 SDUT 校赛。",
+        "annotation": "Shaly ACM, Best ACM",
+        "hidden": true
+      },
+      {
+        "achievementKey": "AttendCompetitionSDUTRound",
+        "title": "沙梨欢迎你",
+        "level": 2,
+        "description": "参加一场 SDUT Round。",
         "annotation": "Shaly ACM, Best ACM",
         "hidden": true
       },
