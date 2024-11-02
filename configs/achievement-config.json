@@ -60,6 +60,14 @@
         "hidden": false
       },
       {
+        "achievementKey": "SolutionGetOLE",
+        "title": "输出大爆炸",
+        "level": 1,
+        "description": "提交获得一次 OLE。",
+        "annotation": "",
+        "hidden": false
+      },
+      {
         "achievementKey": "SolutionGetTLE",
         "title": "时间的意义",
         "level": 1,
@@ -192,6 +200,14 @@
         "title": "直到世界尽头",
         "level": 2,
         "description": "提交的运行时间超过 60 秒。",
+        "annotation": "",
+        "hidden": true
+      },
+      {
+        "achievementKey": "SolutionRunsWithLargeMemory",
+        "title": "内存就是用来霍霍的！",
+        "level": 2,
+        "description": "提交的运行内存超过 1 GiB。",
         "annotation": "",
         "hidden": true
       }

@@ -6,6 +6,7 @@ SolveProblemsLv4,Adventure,刷题圣者,3,累计通过 500 道题目。,,0
 SolutionGetAC,Adventure,小试牛刀,1,提交获得一次 AC。,,0
 SolutionGetWA,Adventure,听取 WA 声,1,提交获得一次 WA。,,0
 SolutionGetPE,Adventure,小格式，大问题,1,提交获得一次 PE。,,0
+SolutionGetOLE,Adventure,输出大爆炸,1,提交获得一次 OLE。,,0
 SolutionGetTLE,Adventure,时间的意义,1,提交获得一次 TLE。,,0
 SolutionGetMLE,Adventure,该加内存了！,1,提交获得一次 MLE。,,0
 SolutionGetRTE,Adventure,Segment Fault,1,提交获得一次 RTE。,,0
@@ -23,6 +24,7 @@ NightSolver,Adventure,夜猫子,1,在凌晨 0 至 6 点间通过题目。,,1
 SolutionFailedOnFirstTest,Adventure,过样例了吗？,1,提交错误在第一个测试点。,,1
 SolutionFailedOnLastTest,Adventure,偏偏只差一步…,1,提交错误在最后一个测试点。,,1
 SolutionRunsWithLongTime,Adventure,直到世界尽头,2,提交的运行时间超过 60 秒。,,1
+SolutionRunsWithLargeMemory,Adventure,内存就是用来霍霍的！,2,提交的运行内存超过 1 GiB。,,1
 SetAvatar,Exploration,有名有姓,1,设置头像。,,0
 SetBannerImage,Exploration,全 OJ 最靓的仔,1,设置背景巨幅。,,0
 SendAndReceiveMessageWithSameUser,Exploration,友谊四叶草,1,与一个用户互发消息。,,1
