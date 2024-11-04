@@ -39,9 +39,9 @@ RatingLv1,Competition,步入史诗,1,Rating 达到 1600 分。,,0
 RatingLv2,Competition,已臻传说,2,Rating 达到 1900 分。,,0
 RatingLv3,Competition,超凡不朽,3,Rating 达到 2200 分。,,0
 RatingLv4,Competition,无量长者,3,Rating 达到 2500 分。,,0
-SolveDuringFrozenTime,Competition,功夫不负有心人,1,在任意一场比赛的封榜时间内过题。,,0
-FB,Competition,First Blood,2,在任意一场比赛中取得一次题目的 FB。,,0
-AK,Competition,AK God,3,在任意一场比赛中通过全部题目。,,0
+SolveDuringFrozenTime,Competition,功夫不负有心人,1,在一场比赛的封榜时间内过题。,,0
+FB,Competition,First Blood,2,在一场比赛中取得一次题目的 FB。,,0
+AK,Competition,AK God,3,在一场比赛中通过全部题目。,,0
 Competition1AMaster,Competition,1A God,3,在一场比赛中，通过不少于 5 道题目且没有错误提交。,,1
 TooManyPenalties,Competition,罚时略多,2,在一场 ICPC 赛制比赛中，被计入的罚时达到 200 分钟。,,1
 AttendCompetitionAPF,Competition,WTF???,2,参加一场愚人节主题赛。,,1

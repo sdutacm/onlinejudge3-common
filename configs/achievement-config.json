@@ -339,7 +339,7 @@
         "achievementKey": "SolveDuringFrozenTime",
         "title": "功夫不负有心人",
         "level": 1,
-        "description": "在任意一场比赛的封榜时间内过题。",
+        "description": "在一场比赛的封榜时间内过题。",
         "annotation": "",
         "hidden": false
       },
@@ -347,7 +347,7 @@
         "achievementKey": "FB",
         "title": "First Blood",
         "level": 2,
-        "description": "在任意一场比赛中取得一次题目的 FB。",
+        "description": "在一场比赛中取得一次题目的 FB。",
         "annotation": "",
         "hidden": false
       },
@@ -355,7 +355,7 @@
         "achievementKey": "AK",
         "title": "AK God",
         "level": 3,
-        "description": "在任意一场比赛中通过全部题目。",
+        "description": "在一场比赛中通过全部题目。",
         "annotation": "",
         "hidden": false
       },
