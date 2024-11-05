@@ -1151,6 +1151,15 @@ const _routesBe = {
       resp: 'achievement.getAchievementRateResp',
     },
   },
+  requestAchievementPush: {
+    method: 'POST',
+    url: '/requestAchievementPush',
+    contract: {
+      req: null,
+      resp: null,
+    },
+    csrf: true,
+  },
 };
 
 Object.keys(_routesBe).forEach((key) => {
