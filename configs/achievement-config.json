@@ -368,10 +368,26 @@
         "hidden": true
       },
       {
+        "achievementKey": "CompetitionACCombo",
+        "title": "气球连击！",
+        "level": 2,
+        "description": "在一场比赛中，300 秒内连续通过 2 道题目。",
+        "annotation": "",
+        "hidden": true
+      },
+      {
         "achievementKey": "TooManyPenalties",
         "title": "罚时略多",
         "level": 2,
         "description": "在一场 ICPC 赛制比赛中，被计入的罚时达到 200 分钟。",
+        "annotation": "",
+        "hidden": true
+      },
+      {
+        "achievementKey": "AllSubmittedButAllFailed",
+        "title": "极好的比赛、心态的忍耐",
+        "level": 2,
+        "description": "在一场比赛中，提交全部题目但均未通过。",
         "annotation": "",
         "hidden": true
       },

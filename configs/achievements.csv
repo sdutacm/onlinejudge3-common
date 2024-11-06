@@ -43,7 +43,9 @@ SolveDuringFrozenTime,Competition,功夫不负有心人,1,在一场比赛的封�
 FB,Competition,First Blood,2,在一场比赛中取得一次题目的 FB。,,0
 AK,Competition,AK God,3,在一场比赛中通过全部题目。,,0
 Competition1AMaster,Competition,1A God,3,在一场比赛中，通过不少于 5 道题目且没有错误提交。,,1
+CompetitionACCombo,Competition,气球连击！,2,在一场比赛中，300 秒内连续通过 2 道题目。,,1
 TooManyPenalties,Competition,罚时略多,2,在一场 ICPC 赛制比赛中，被计入的罚时达到 200 分钟。,,1
+AllSubmittedButAllFailed,Competition,极好的比赛、心态的忍耐,2,在一场比赛中，提交全部题目但均未通过。,,1
 AttendCompetitionAPF,Competition,WTF???,2,参加一场愚人节主题赛。,,1
 AttendCompetitionSDUTPC,Competition,沙梨的希望,2,参加一场 SDUT 校赛。,"Shaly ACM, Best ACM",1
 AttendCompetitionSDUTRound,Competition,沙梨欢迎你,2,参加一场 SDUT Round。,"Shaly ACM, Best ACM",1
