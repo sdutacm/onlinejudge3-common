@@ -48,6 +48,6 @@ TooManyPenalties,Competition,罚时略多,2,在一场 ICPC 赛制比赛中，被
 AllSubmittedButAllFailed,Competition,极好的比赛、心态的忍耐,2,在一场比赛中，提交全部题目但均未通过。,,1
 AttendCompetitionAPF,Competition,WTF???,2,参加一场愚人节主题赛。,,1
 AttendCompetitionSDUTPC,Competition,沙梨的希望,2,参加一场 SDUT 校赛。,"Shaly ACM, Best ACM",1
-AttendCompetitionSDUTRound,Competition,沙梨欢迎你,2,参加一场 SDUT Round。,"Shaly ACM, Best ACM",1
+AttendCompetitionSDUTRound,Competition,沙梨欢迎你,2,参加一场 SDUT Round。,,1
 AttendCompetitionAzurSeries,Competition,蔚蓝之梦,2,参加一场蔚蓝系列赛。,,1
 AttendCompetitionGenshinImpact,Competition,原神，启动！,2,参加一场原神主题赛。,「原来，你也玩原神！」,1
