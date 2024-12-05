@@ -11,6 +11,7 @@ export type IGetSessionResp = {
   permission: number;
   permissions: string[];
   avatar: string | null;
+  type: number;
 } | null;
 
 export interface ILoginReq {
@@ -25,6 +26,7 @@ export interface ILoginResp {
   permission: number;
   permissions: string[];
   avatar: string | null;
+  type: number;
 }
 
 export interface IRegisterReq {
@@ -33,6 +35,7 @@ export interface IRegisterReq {
   email: string;
   code: number;
   password: string;
+  type: 1 | 2;
 }
 
 export interface IRegisterResp {
@@ -49,6 +52,7 @@ export interface ICreateUserReq {
   major?: string;
   class?: string;
   grade?: string;
+  type: 1 | 2;
 }
 
 export interface ICreateUserResp {
@@ -65,6 +69,8 @@ export interface IBatchCreateUsersReq {
     major?: string;
     class?: string;
     grade?: string;
+    type: 1 | 2;
+    status?: 0 | 1;
   }[];
   conflict: 'insert' | 'upsert';
 }
@@ -84,6 +90,8 @@ export interface IGetUserListReq {
   forbidden?: number;
   permission?: number;
   verified?: boolean;
+  type?: number;
+  status?: number;
   _scope?: 'available' | null;
 }
 
@@ -103,6 +111,8 @@ export interface IGetUserListResp {
     forbidden: number;
     permission?: number;
     verified?: boolean;
+    type: number;
+    status?: number;
     lastIp?: string;
     lastTime?: string | null;
     createdAt?: string;
@@ -152,6 +162,8 @@ export interface IGetUserDetailResp {
   settings?: {} | null;
   coin?: number;
   verified?: boolean;
+  type: number;
+  status?: number;
   lastIp?: string;
   lastTime?: string | null;
   createdAt?: string;
@@ -282,4 +294,30 @@ export interface IConfirmAchievementDeliveriedReq {
 
 export interface IReceiveAchievementReq {
   achievementKey: string;
+}
+
+export interface IGetUserMembersReq {
+  userId: number;
+}
+
+export interface IGetUserMembersResp {
+  count: number;
+  rows: {
+    userId: number;
+    status: number;
+    createdAt: string;
+    updatedAt: string;
+  }[];
+}
+
+export interface IAddUserMemberReq {
+  memberUserId: number;
+}
+
+export interface IRemoveUserMemberReq {
+  memberUserId: number;
+}
+
+export interface IConfirmJoinTeamReq {
+  teamUserId: number;
 }

@@ -12,6 +12,21 @@ export enum EUserForbidden {
   closed = 2, // 销号
 }
 
+export enum EUserType {
+  personal = 1, // 个人
+  team = 2, // 团队
+}
+
+export enum EUserStatus {
+  normal = 0,
+  settled = 1, // 已固定成员（适用于团队账号）
+}
+
+export enum EUserMemberStatus {
+  pending = 0,
+  available = 1,
+}
+
 export enum ESolutionResult {
   WT = 0,
   JG = 12,

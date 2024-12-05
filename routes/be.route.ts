@@ -166,6 +166,31 @@ const _routesBe = {
     url: '/receiveAchievement',
     contract: { req: 'user.receiveAchievementReq', resp: null },
   },
+  getUserMembers: {
+    method: 'POST',
+    url: '/getUserMembers',
+    contract: { req: 'user.getUserMembersReq', resp: 'user.getUserMembersResp' },
+  },
+  addUserMember: {
+    method: 'POST',
+    url: '/addUserMember',
+    contract: { req: 'user.addUser<MemberReq', resp: null },
+  },
+  removeUserMember: {
+    method: 'POST',
+    url: '/removeUserMember',
+    contract: { req: 'user.removeUserMemberReq', resp: null },
+  },
+  confirmJoinTeam: {
+    method: 'POST',
+    url: '/confirmJoinTeam',
+    contract: { req: 'user.confirmJoinTeamReq', resp: null },
+  },
+  confirmTeamSettlement: {
+    method: 'POST',
+    url: '/confirmTeamSettlement',
+    contract: { req: null, resp: null },
+  },
   // verification
   sendEmailVerification: {
     method: 'POST',

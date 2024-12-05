@@ -147,6 +147,36 @@
           "var": "USER_ACHIEVEMENT_NOT_ACHIEVED",
           "msg": "The achievement has not been achieved",
           "description": "成就未达成"
+        },
+        {
+          "code": 112,
+          "var": "USER_EXISTS",
+          "msg": "The user already exists",
+          "description": "用户已存在"
+        },
+        {
+          "code": 113,
+          "var": "USER_HAS_JOINED_TEAM",
+          "msg": "You have already joined this team",
+          "description": "已加入该团队"
+        },
+        {
+          "code": 114,
+          "var": "USER_TEAM_NEED_AT_LEAST_ONE_MEMBER",
+          "msg": "Team needs at least one member",
+          "description": "团队至少需要一名成员"
+        },
+        {
+          "code": 115,
+          "var": "USER_TEAM_MEMBERS_ARE_NOT_READY",
+          "msg": "Team members are not ready",
+          "description": "团队成员未全部就绪"
+        },
+        {
+          "code": 116,
+          "var": "USER_TEAM_HAS_SETTLED",
+          "msg": "The team has settled",
+          "description": "团队已确认锁定"
         }
       ]
     },

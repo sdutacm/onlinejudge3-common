@@ -30,6 +30,11 @@ export const codeMsgs = {
   109: 'The nickname contains illegal content',
   110: 'The password strength is too weak',
   111: 'The achievement has not been achieved',
+  112: 'The user already exists',
+  113: 'You have already joined this team',
+  114: 'Team needs at least one member',
+  115: 'Team members are not ready',
+  116: 'The team has settled',
 
   // Problem 2XX
 
@@ -138,6 +143,11 @@ export enum Codes {
   USER_NICKNAME_CONTAINS_ILLEGAL_CONTENT = 109,
   USER_PASSWORD_STRENGTH_TOO_WEAK = 110,
   USER_ACHIEVEMENT_NOT_ACHIEVED = 111,
+  USER_EXISTS = 112,
+  USER_HAS_JOINED_TEAM = 113,
+  USER_TEAM_NEED_AT_LEAST_ONE_MEMBER = 114,
+  USER_TEAM_MEMBERS_ARE_NOT_READY = 115,
+  USER_TEAM_HAS_SETTLED = 116,
 
   // Problem 2XX
 
