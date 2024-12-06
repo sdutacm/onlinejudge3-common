@@ -174,7 +174,7 @@ const _routesBe = {
   addUserMember: {
     method: 'POST',
     url: '/addUserMember',
-    contract: { req: 'user.addUser<MemberReq', resp: null },
+    contract: { req: 'user.addUserMemberReq', resp: null },
   },
   removeUserMember: {
     method: 'POST',

@@ -304,9 +304,18 @@ export interface IGetUserMembersResp {
   count: number;
   rows: {
     userId: number;
+    username: string;
+    nickname: string;
+    avatar: string | null;
+    bannerImage: string;
+    accepted: number;
+    submitted: number;
+    rating: number;
+    verified: boolean;
     status: number;
     createdAt: string;
     updatedAt: string;
+    [k: string]: unknown;
   }[];
 }
 
