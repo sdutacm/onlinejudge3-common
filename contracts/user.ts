@@ -327,6 +327,35 @@ export interface IRemoveUserMemberReq {
   memberUserId: number;
 }
 
+export interface IGetSelfJoinedTeamsResp {
+  count: number;
+  rows: {
+    teamUserId: number;
+    selfMemberStatus: number;
+    username: string;
+    nickname: string;
+    avatar: string | null;
+    bannerImage: string;
+    status: number;
+    members: {
+      userId: number;
+      username: string;
+      nickname: string;
+      avatar: string | null;
+      bannerImage: string;
+      accepted: number;
+      submitted: number;
+      rating: number;
+      verified: boolean;
+      status: number;
+      createdAt: string;
+      updatedAt: string;
+      [k: string]: unknown;
+    }[];
+    [k: string]: unknown;
+  }[];
+}
+
 export interface IConfirmJoinTeamReq {
   teamUserId: number;
 }

@@ -181,6 +181,11 @@ const _routesBe = {
     url: '/removeUserMember',
     contract: { req: 'user.removeUserMemberReq', resp: null },
   },
+  getSelfJoinedTeams: {
+    method: 'POST',
+    url: '/getSelfJoinedTeams',
+    contract: { req: null, resp: 'user.getSelfJoinedTeamsResp' },
+  },
   confirmJoinTeam: {
     method: 'POST',
     url: '/confirmJoinTeam',
