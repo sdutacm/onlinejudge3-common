@@ -101,6 +101,7 @@ export interface IGetUserListResp {
   count: number;
   rows: {
     userId: number;
+    username?: string;
     nickname: string;
     submitted: number;
     accepted: number;
@@ -116,6 +117,7 @@ export interface IGetUserListResp {
     lastIp?: string;
     lastTime?: string | null;
     createdAt?: string;
+    [k: string]: unknown;
   }[];
 }
 
