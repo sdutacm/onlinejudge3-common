@@ -332,6 +332,12 @@
           "var": "CONTEST_NOT_LOGGED_IN",
           "msg": "You are not logged in the contest",
           "description": "比赛未登录"
+        },
+        {
+          "code": 414,
+          "var": "CONTEST_STARTED",
+          "msg": "The contest has started",
+          "description": "比赛已开始"
         }
       ]
     },

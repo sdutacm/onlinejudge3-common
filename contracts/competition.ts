@@ -566,6 +566,10 @@ export interface IModifySignedUpCompetitionParticipantReq {
   };
 }
 
+export interface IDeleteSignedUpCompetitionParticipantReq {
+  competitionId: number;
+}
+
 export interface IAuditCompetitionParticipantReq {
   competitionId: number;
   userId: number;

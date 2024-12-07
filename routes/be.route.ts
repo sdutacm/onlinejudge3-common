@@ -974,6 +974,15 @@ const _routesBe = {
     },
     csrf: true,
   },
+  deleteSignedUpCompetitionParticipant: {
+    method: 'POST',
+    url: '/deleteSignedUpCompetitionParticipant',
+    contract: {
+      req: 'competition.deleteSignedUpCompetitionParticipantReq',
+      resp: null,
+    },
+    csrf: true,
+  },
   auditCompetitionParticipant: {
     method: 'POST',
     url: '/auditCompetitionParticipant',

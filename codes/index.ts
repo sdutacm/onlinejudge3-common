@@ -64,6 +64,7 @@ export const codeMsgs = {
   411: 'Please login this private-type contest',
   412: 'Please login this register-type contest',
   413: 'You are not logged in the contest',
+  414: 'The contest has started',
 
   // Topic 5XX
   501: 'The problem does not exist',
@@ -179,6 +180,7 @@ export enum Codes {
   CONTEST_NEED_LOGIN_PRIVATE_CONTEST = 411,
   CONTEST_NEED_LOGIN_REGISTER_CONTEST = 412,
   CONTEST_NOT_LOGGED_IN = 413,
+  CONTEST_STARTED = 414,
 
   // Topic 5XX
   TOPIC_PROBLEM_NOT_EXIST = 501,
