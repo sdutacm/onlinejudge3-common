@@ -332,6 +332,7 @@ export interface IGetSelfJoinedTeamsResp {
   rows: {
     teamUserId: number;
     selfMemberStatus: number;
+    selfJoinedAt: string;
     username: string;
     nickname: string;
     avatar: string | null;
