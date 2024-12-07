@@ -43,6 +43,7 @@ export interface IGetSolutionListResp {
       avatar: string | null;
       bannerImage: string;
       rating: number;
+      type?: number;
     };
     contest?: {
       contestId: number;
@@ -126,6 +127,7 @@ export interface IGetSolutionDetailResp {
     avatar: string | null;
     bannerImage: string;
     rating: number;
+    type?: number;
   };
   contest?: {
     contestId: number;
@@ -211,6 +213,7 @@ export interface IBatchGetSolutionDetailResp {
       avatar: string | null;
       bannerImage: string;
       rating: number;
+      type?: number;
     };
     contest?: {
       contestId: number;
