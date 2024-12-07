@@ -35,6 +35,8 @@ export const codeMsgs = {
   114: 'Team needs at least one member',
   115: 'Team members are not ready',
   116: 'The team has settled',
+  117: 'No such team',
+  118: 'You are not invited to this team',
 
   // Problem 2XX
 
@@ -148,6 +150,8 @@ export enum Codes {
   USER_TEAM_NEED_AT_LEAST_ONE_MEMBER = 114,
   USER_TEAM_MEMBERS_ARE_NOT_READY = 115,
   USER_TEAM_HAS_SETTLED = 116,
+  USER_NO_SUCH_TEAM = 117,
+  USER_NOT_INVITED_TO_THIS_TEAM = 118,
 
   // Problem 2XX
 

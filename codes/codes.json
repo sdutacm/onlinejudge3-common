@@ -177,6 +177,18 @@
           "var": "USER_TEAM_HAS_SETTLED",
           "msg": "The team has settled",
           "description": "团队已确认锁定"
+        },
+        {
+          "code": 117,
+          "var": "USER_NO_SUCH_TEAM",
+          "msg": "No such team",
+          "description": "团队不存在"
+        },
+        {
+          "code": 118,
+          "var": "USER_NOT_INVITED_TO_THIS_TEAM",
+          "msg": "You are not invited to this team",
+          "description": "未受邀加入该团队"
         }
       ]
     },
