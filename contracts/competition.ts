@@ -228,6 +228,22 @@ export interface IBatchCreateCompetitionUsersReq {
       clothing?: string;
       slogan?: string;
       group?: string;
+      members?: {
+        subname?: string;
+        realName?: string;
+        organization?: string;
+        company?: string;
+        studentNo?: string;
+        school?: string;
+        college?: string;
+        major?: string;
+        class?: string;
+        tel?: string;
+        qq?: string;
+        weChat?: string;
+        clothing?: string;
+        [k: string]: unknown;
+      }[];
       [k: string]: unknown;
     };
   }[];
@@ -261,6 +277,22 @@ export interface ICreateCompetitionUserReq {
     clothing?: string;
     slogan?: string;
     group?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 }
@@ -292,6 +324,22 @@ export interface IUpdateCompetitionUserReq {
     clothing?: string;
     slogan?: string;
     group?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 }
@@ -335,6 +383,22 @@ export interface IGetCompetitionUsersResp {
       clothing?: string;
       slogan?: string;
       group?: string;
+      members?: {
+        subname?: string;
+        realName?: string;
+        organization?: string;
+        company?: string;
+        studentNo?: string;
+        school?: string;
+        college?: string;
+        major?: string;
+        class?: string;
+        tel?: string;
+        qq?: string;
+        weChat?: string;
+        clothing?: string;
+        [k: string]: unknown;
+      }[];
       [k: string]: unknown;
     };
   }[];
@@ -373,6 +437,22 @@ export interface IGetCompetitionUserDetailResp {
     clothing?: string;
     slogan?: string;
     group?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 }
@@ -408,6 +488,22 @@ export interface IGetSelfCompetitionUserDetailResp {
     clothing?: string;
     slogan?: string;
     group?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 }
@@ -440,6 +536,22 @@ export interface IGetPublicCompetitionParticipantsResp {
       class?: string;
       slogan?: string;
       group?: string;
+      members?: {
+        subname?: string;
+        realName?: string;
+        organization?: string;
+        company?: string;
+        studentNo?: string;
+        school?: string;
+        college?: string;
+        major?: string;
+        class?: string;
+        tel?: string;
+        qq?: string;
+        weChat?: string;
+        clothing?: string;
+        [k: string]: unknown;
+      }[];
       [k: string]: unknown;
     };
   }[];
@@ -472,6 +584,22 @@ export interface IGetPublicCompetitionParticipantDetailResp {
     class?: string;
     slogan?: string;
     group?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 }
@@ -516,6 +644,22 @@ export type IGetSignedUpCompetitionParticipantResp = {
     clothing?: string;
     slogan?: string;
     group?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 } | null;
@@ -539,6 +683,22 @@ export interface ISignUpCompetitionParticipantReq {
     weChat?: string;
     clothing?: string;
     slogan?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 }
@@ -562,6 +722,22 @@ export interface IModifySignedUpCompetitionParticipantReq {
     weChat?: string;
     clothing?: string;
     slogan?: string;
+    members?: {
+      subname?: string;
+      realName?: string;
+      organization?: string;
+      company?: string;
+      studentNo?: string;
+      school?: string;
+      college?: string;
+      major?: string;
+      class?: string;
+      tel?: string;
+      qq?: string;
+      weChat?: string;
+      clothing?: string;
+      [k: string]: unknown;
+    }[];
     [k: string]: unknown;
   };
 }
