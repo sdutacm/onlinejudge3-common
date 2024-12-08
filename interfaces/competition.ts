@@ -74,6 +74,10 @@ export interface ICompetitionSpConfigGenshinExplorationSection {
 export interface ICompetitionSpConfig {
   brands?: ('SDUTPC' | 'SDUTRound' | 'APF' | 'AzurSeries' | 'Genshin')[];
   preset?: 'genshin';
+  teamConfig?: {
+    minMemberCount?: number;
+    maxMemberCount?: number;
+  };
   memberInfoFields?: ICompetitionSpConfigMemberInfoField[];
   genshinConfig?: {
     useExplorationMode?: boolean;
