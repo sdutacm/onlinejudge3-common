@@ -166,6 +166,11 @@ const _routesBe = {
     url: '/receiveAchievement',
     contract: { req: 'user.receiveAchievementReq', resp: null },
   },
+  getSelfOfficialMembers: {
+    method: 'POST',
+    url: '/getSelfOfficialMembers',
+    contract: { req: null, resp: 'user.getSelfOfficialMembersResp' },
+  },
   getUserMembers: {
     method: 'POST',
     url: '/getUserMembers',
