@@ -314,7 +314,7 @@ export interface ICallbackJudgeReq {
   problemId?: number;
   contestId?: number;
   competitionId?: number;
-  data:
+  data?:
     | {
         type: 'start';
       }
@@ -330,6 +330,25 @@ export interface ICallbackJudgeReq {
           [k: string]: unknown;
         };
       };
-  eventTimestampUs: number;
+  eventTimestampUs?: number;
+  batchData?: {
+    data:
+      | {
+          type: 'start';
+        }
+      | {
+          type: 'progress';
+          current: number;
+          total: number;
+        }
+      | {
+          type: 'finish';
+          resultType: 'CompileError' | 'SystemError' | 'Done';
+          detail?: {
+            [k: string]: unknown;
+          };
+        };
+    eventTimestampUs: number;
+  }[];
   [k: string]: unknown;
 }
