@@ -20,3 +20,16 @@ export interface IUploadAssetReq {
 export interface IUploadAssetResp {
   url: string;
 }
+
+export interface IGetStaticObjectReq {
+  key: string;
+}
+
+export interface IGetStaticObjectResp {
+  key: string;
+  category: string;
+  mime: string;
+  content: unknown;
+  createdAt: string;
+  updatedAt: string;
+}

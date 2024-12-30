@@ -16,7 +16,6 @@ const _routesBe = {
     method: 'GET',
     url: '/getSession',
     contract: { req: null, resp: 'user.getSessionResp' },
-    csrf: true,
     competitionSide: true,
   },
   login: {
@@ -155,51 +154,67 @@ const _routesBe = {
     method: 'POST',
     url: '/getSelfAchievedAchievements',
     contract: { req: null, resp: 'user.getSelfAchievedAchievementsResp' },
+    competitionSide: true,
   },
   confirmAchievementDeliveried: {
     method: 'POST',
     url: '/confirmAchievementDeliveried',
     contract: { req: 'user.confirmAchievementDeliveriedReq', resp: null },
+    competitionSide: true,
   },
   receiveAchievement: {
     method: 'POST',
     url: '/receiveAchievement',
     contract: { req: 'user.receiveAchievementReq', resp: null },
+    competitionSide: true,
   },
   getSelfOfficialMembers: {
     method: 'POST',
     url: '/getSelfOfficialMembers',
     contract: { req: null, resp: 'user.getSelfOfficialMembersResp' },
+    competitionSide: true,
   },
   getUserMembers: {
     method: 'POST',
     url: '/getUserMembers',
     contract: { req: 'user.getUserMembersReq', resp: 'user.getUserMembersResp' },
+    competitionSide: true,
   },
   addUserMember: {
     method: 'POST',
     url: '/addUserMember',
     contract: { req: 'user.addUserMemberReq', resp: null },
+    competitionSide: true,
   },
   removeUserMember: {
     method: 'POST',
     url: '/removeUserMember',
     contract: { req: 'user.removeUserMemberReq', resp: null },
+    competitionSide: true,
   },
   getSelfJoinedTeams: {
     method: 'POST',
     url: '/getSelfJoinedTeams',
     contract: { req: null, resp: 'user.getSelfJoinedTeamsResp' },
+    competitionSide: true,
   },
   confirmJoinTeam: {
     method: 'POST',
     url: '/confirmJoinTeam',
     contract: { req: 'user.confirmJoinTeamReq', resp: null },
+    competitionSide: true,
   },
   confirmTeamSettlement: {
     method: 'POST',
     url: '/confirmTeamSettlement',
     contract: { req: null, resp: null },
+    competitionSide: true,
+  },
+  getSelfStaticObject: {
+    method: 'POST',
+    url: '/getSelfStaticObject',
+    contract: { req: 'user.getSelfStaticObjectReq', resp: 'user.getSelfStaticObjectResp' },
+    competitionSide: true,
   },
   // verification
   sendEmailVerification: {
@@ -717,6 +732,12 @@ const _routesBe = {
     contract: { req: 'misc.uploadAssetReq', resp: 'misc.uploadAssetResp' },
     csrf: true,
   },
+  getStaticObject: {
+    method: 'POST',
+    url: '/getStaticObject',
+    contract: { req: 'misc.getStaticObjectReq', resp: 'misc.getStaticObjectResp' },
+    competitionSide: true,
+  },
   // stat
   getUserACRank: {
     method: 'POST',
@@ -960,6 +981,7 @@ const _routesBe = {
       req: 'competition.getSignedUpCompetitionParticipantReq',
       resp: 'competition.getSignedUpCompetitionParticipantResp',
     },
+    competitionSide: true,
   },
   signUpCompetitionParticipant: {
     method: 'POST',
@@ -1159,6 +1181,7 @@ const _routesBe = {
       req: 'competition.getCompetitionSpGenshinExplorationUnlockRecordsReq',
       resp: 'competition.getCompetitionSpGenshinExplorationUnlockRecordsResp',
     },
+    competitionSide: true,
   },
   doCompetitionSpGenshinExplorationUnlock: {
     method: 'POST',
@@ -1167,6 +1190,7 @@ const _routesBe = {
       req: 'competition.doCompetitionSpGenshinExplorationUnlockReq',
       resp: null,
     },
+    competitionSide: true,
   },
   // balloon
   getCompetitionBalloons: {
@@ -1194,6 +1218,7 @@ const _routesBe = {
       req: null,
       resp: 'achievement.getAchievementRateResp',
     },
+    competitionSide: true,
   },
   requestAchievementPush: {
     method: 'POST',
@@ -1202,6 +1227,7 @@ const _routesBe = {
       req: null,
       resp: null,
     },
+    competitionSide: true,
     csrf: true,
   },
 };

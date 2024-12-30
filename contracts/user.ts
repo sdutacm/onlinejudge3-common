@@ -381,3 +381,17 @@ export interface IGetSelfJoinedTeamsResp {
 export interface IConfirmJoinTeamReq {
   teamUserId: number;
 }
+
+export interface IGetSelfStaticObjectReq {
+  key: string;
+}
+
+export interface IGetSelfStaticObjectResp {
+  key: string;
+  category: string;
+  userId: number;
+  mime: string;
+  content: unknown;
+  createdAt: string;
+  updatedAt: string;
+}
