@@ -392,6 +392,7 @@ export interface IGetSelfStaticObjectResp {
   userId: number;
   mime: string;
   content: unknown;
+  viewCount: number;
   createdAt: string;
   updatedAt: string;
 }

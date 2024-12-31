@@ -30,6 +30,7 @@ export interface IGetStaticObjectResp {
   category: string;
   mime: string;
   content: unknown;
+  viewCount: number;
   createdAt: string;
   updatedAt: string;
 }
