@@ -13,8 +13,8 @@ export type IGetJudgerDataFileResp = {
   filename: string;
   path: string;
   size: number;
-  createTime: string;
-  modifyTime: string;
+  createTime?: string;
+  modifyTime?: string;
   isBinary?: boolean;
   content?: string;
   files?: {
@@ -22,8 +22,8 @@ export type IGetJudgerDataFileResp = {
     filename: string;
     path: string;
     size: number;
-    createTime: string;
-    modifyTime: string;
+    createTime?: string;
+    modifyTime?: string;
   }[];
 } | null;
 
