@@ -887,6 +887,10 @@ export interface ICancelEndCompetitionReq {
   competitionId: number;
 }
 
+export interface ICallbackCompetitionRatingPostprocessReq {
+  competitionId: number;
+}
+
 export interface IGetCompetitionRanklistReq {
   competitionId: number;
   god?: boolean;

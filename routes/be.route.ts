@@ -1148,6 +1148,14 @@ const _routesBe = {
     },
     csrf: true,
   },
+  callbackCompetitionRatingPostprocess: {
+    method: 'POST',
+    url: '/callbackCompetitionRatingPostprocess',
+    contract: {
+      req: 'competition.callbackCompetitionRatingPostprocessReq',
+      resp: null,
+    },
+  },
   getCompetitionRanklist: {
     method: 'POST',
     url: '/getCompetitionRanklist',
