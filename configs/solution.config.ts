@@ -10,6 +10,7 @@ export const oj2SrkResultMap = {
   [ESolutionResult.CE]: 'CE',
   [ESolutionResult.PE]: 'PE',
   [ESolutionResult.SE]: 'UKE',
+  [ESolutionResult.NLF]: 'NLF',
 
   [ESolutionResult.WT]: null,
   [ESolutionResult.JG]: null,
@@ -24,4 +25,5 @@ export const noPenaltyResults = [
   ESolutionResult.AC,
   ESolutionResult.CE,
   ESolutionResult.SE,
+  ESolutionResult.NLF,
 ];
