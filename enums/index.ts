@@ -39,6 +39,8 @@ export enum ESolutionResult {
   CE = 7,
   PE = 8,
   SE = 11,
+  /** nullified */
+  NL = 13,
 
   /** Judger (river) Pending */
   RPD = -1,
