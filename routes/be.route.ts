@@ -2,12 +2,14 @@ export interface IRouteBeConfig {
   i: string;
   method: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
   url: string;
+  description?: string;
   contract: {
     req: string | null;
     resp: string | null;
   };
   csrf?: boolean;
   competitionSide?: boolean;
+  private?: true;
 }
 
 const _routesBe = {
@@ -15,6 +17,7 @@ const _routesBe = {
   getSession: {
     method: 'GET',
     url: '/getSession',
+    description: '获取当前用户 Session。如未登录，返回 null',
     contract: { req: null, resp: 'user.getSessionResp' },
     csrf: true,
     competitionSide: true,
@@ -22,12 +25,14 @@ const _routesBe = {
   login: {
     method: 'POST',
     url: '/login',
+    description: '登录',
     contract: { req: 'user.loginReq', resp: 'user.loginResp' },
     csrf: true,
   },
   logout: {
     method: 'POST',
     url: '/logout',
+    description: '登出',
     contract: { req: null, resp: null },
     csrf: true,
     competitionSide: true,
@@ -35,18 +40,21 @@ const _routesBe = {
   register: {
     method: 'POST',
     url: '/register',
+    description: '注册用户',
     contract: { req: 'user.registerReq', resp: 'user.registerResp' },
     csrf: true,
   },
   createUser: {
     method: 'POST',
     url: '/createUser',
+    description: '管理员创建用户',
     contract: { req: 'user.createUserReq', resp: 'user.createUserResp' },
     csrf: true,
   },
   batchCreateUsers: {
     method: 'POST',
     url: '/batchCreateUsers',
+    description: '管理员批量创建用户',
     contract: { req: 'user.batchCreateUsersReq', resp: null },
     csrf: true,
   },
@@ -325,6 +333,7 @@ const _routesBe = {
       resp: null,
     },
     competitionSide: true,
+    private: true,
   },
   // contest
   getContestList: {
@@ -808,6 +817,8 @@ const _routesBe = {
   getCompetitionSession: {
     method: 'POST',
     url: '/getCompetitionSession',
+    description:
+      '获取指定比赛 Session。如可通过全局 Session 自动换取比赛 Session，则自动登录，否则返回 null',
     contract: {
       req: 'competition.getCompetitionSessionReq',
       resp: 'competition.getCompetitionSessionResp',
@@ -817,6 +828,7 @@ const _routesBe = {
   loginCompetition: {
     method: 'POST',
     url: '/loginCompetition',
+    description: '登录指定比赛',
     contract: {
       req: 'competition.loginCompetitionReq',
       resp: 'competition.loginCompetitionResp',
@@ -827,6 +839,7 @@ const _routesBe = {
   logoutCompetition: {
     method: 'POST',
     url: '/logoutCompetition',
+    description: '登出指定比赛',
     contract: {
       req: 'competition.logoutCompetitionReq',
       resp: null,
@@ -837,6 +850,7 @@ const _routesBe = {
   getCompetitionDetail: {
     method: 'POST',
     url: '/getCompetitionDetail',
+    description: '获取指定比赛详情',
     contract: {
       req: 'competition.getCompetitionDetailReq',
       resp: 'competition.getCompetitionDetailResp',
@@ -846,6 +860,7 @@ const _routesBe = {
   getCompetitionProblems: {
     method: 'POST',
     url: '/getCompetitionProblems',
+    description: '获取指定比赛题目列表',
     contract: {
       req: 'competition.getCompetitionProblemsReq',
       resp: 'competition.getCompetitionProblemsResp',
@@ -871,6 +886,7 @@ const _routesBe = {
   getCompetitionProblemConfig: {
     method: 'POST',
     url: '/getCompetitionProblemConfig',
+    description: '获取指定比赛题目配置。需要裁判或更高权限',
     contract: {
       req: 'competition.getCompetitionProblemConfigReq',
       resp: 'competition.getCompetitionProblemConfigResp',
@@ -880,6 +896,7 @@ const _routesBe = {
   setCompetitionProblemConfig: {
     method: 'POST',
     url: '/setCompetitionProblemConfig',
+    description: '更新指定比赛题目配置。需要负责人或更高权限',
     contract: {
       req: 'competition.setCompetitionProblemConfigReq',
       resp: null,
@@ -915,6 +932,7 @@ const _routesBe = {
   getCompetitionUsers: {
     method: 'POST',
     url: '/getCompetitionUsers',
+    description: '获取指定比赛全部用户（包括各种状态）。需要审核员、负责人或更高权限',
     contract: {
       req: 'competition.getCompetitionUsersReq',
       resp: 'competition.getCompetitionUsersResp',
@@ -942,6 +960,7 @@ const _routesBe = {
   getPublicCompetitionParticipants: {
     method: 'POST',
     url: '/getPublicCompetitionParticipants',
+    description: '获取指定比赛的所有有效参赛者列表',
     contract: {
       req: 'competition.getPublicCompetitionParticipantsReq',
       resp: 'competition.getPublicCompetitionParticipantsResp',
@@ -951,6 +970,7 @@ const _routesBe = {
   getPublicCompetitionParticipantDetail: {
     method: 'POST',
     url: '/getPublicCompetitionParticipantDetail',
+    description: '获取指定比赛中指定有效参赛者的详情',
     contract: {
       req: 'competition.getPublicCompetitionParticipantDetailReq',
       resp: 'competition.getPublicCompetitionParticipantDetailResp',
@@ -960,6 +980,7 @@ const _routesBe = {
   requestCompetitionParticipantPassword: {
     method: 'POST',
     url: '/requestCompetitionParticipantPassword',
+    description: '获取指定比赛中指定参赛者的新随机登录密码。需要场地协助或管理员权限',
     contract: {
       req: 'competition.requestCompetitionParticipantPasswordReq',
       resp: 'competition.requestCompetitionParticipantPasswordResp',
@@ -978,6 +999,7 @@ const _routesBe = {
   getSignedUpCompetitionParticipant: {
     method: 'POST',
     url: '/getSignedUpCompetitionParticipant',
+    description: '获取指定比赛中自己作为参赛者的注册信息。如未注册，返回 null',
     contract: {
       req: 'competition.getSignedUpCompetitionParticipantReq',
       resp: 'competition.getSignedUpCompetitionParticipantResp',
@@ -987,6 +1009,7 @@ const _routesBe = {
   signUpCompetitionParticipant: {
     method: 'POST',
     url: '/signUpCompetitionParticipant',
+    description: '注册参赛到指定比赛',
     contract: {
       req: 'competition.signUpCompetitionParticipantReq',
       resp: null,
@@ -996,6 +1019,7 @@ const _routesBe = {
   modifySignedUpCompetitionParticipant: {
     method: 'POST',
     url: '/modifySignedUpCompetitionParticipant',
+    description: '修改指定比赛中自己作为参赛者的注册信息',
     contract: {
       req: 'competition.modifySignedUpCompetitionParticipantReq',
       resp: null,
@@ -1005,6 +1029,7 @@ const _routesBe = {
   deleteSignedUpCompetitionParticipant: {
     method: 'POST',
     url: '/deleteSignedUpCompetitionParticipant',
+    description: '删除指定比赛中自己作为参赛者的注册信息',
     contract: {
       req: 'competition.deleteSignedUpCompetitionParticipantReq',
       resp: null,
@@ -1023,6 +1048,7 @@ const _routesBe = {
   confirmEnterCompetition: {
     method: 'POST',
     url: '/confirmEnterCompetition',
+    description: '确认进入指定比赛。仅有效参赛者自身可用',
     contract: {
       req: 'competition.confirmEnterCompetitionReq',
       resp: null,
@@ -1033,6 +1059,7 @@ const _routesBe = {
   confirmQuitCompetition: {
     method: 'POST',
     url: '/confirmQuitCompetition',
+    description: '确认签退指定比赛。仅有效参赛者自身可用',
     contract: {
       req: 'competition.confirmQuitCompetitionReq',
       resp: null,
@@ -1133,6 +1160,7 @@ const _routesBe = {
   endCompetition: {
     method: 'POST',
     url: '/endCompetition',
+    description: '触发指定比赛结算。需要负责人或更高权限',
     contract: {
       req: 'competition.endCompetitionReq',
       resp: null,
@@ -1142,6 +1170,7 @@ const _routesBe = {
   cancelEndCompetition: {
     method: 'POST',
     url: '/cancelEndCompetition',
+    description: '回滚指定比赛结算。需要负责人或更高权限',
     contract: {
       req: 'competition.cancelEndCompetitionReq',
       resp: null,
@@ -1155,6 +1184,7 @@ const _routesBe = {
       req: 'competition.callbackCompetitionRatingPostprocessReq',
       resp: null,
     },
+    private: true,
   },
   getCompetitionRanklist: {
     method: 'POST',
