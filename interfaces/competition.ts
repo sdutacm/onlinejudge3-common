@@ -79,6 +79,7 @@ export interface ICompetitionSpConfig {
     maxMemberCount?: number;
   };
   memberInfoFields?: ICompetitionSpConfigMemberInfoField[];
+  subnameExpr?: string;
   genshinConfig?: {
     useExplorationMode?: boolean;
     explorationModeOptions?: {
