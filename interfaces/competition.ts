@@ -1,6 +1,5 @@
 import { IUserCommonRelative } from './user';
 import { ECompetitionUserRole, ECompetitionUserStatus } from '../enums';
-import { type } from 'os';
 
 export interface ICompetition {
   competitionId: number;
