@@ -1,5 +1,6 @@
 import { IUserCommonRelative } from './user';
 import { ECompetitionUserRole, ECompetitionUserStatus } from '../enums';
+import { type } from 'os';
 
 export interface ICompetition {
   competitionId: number;
@@ -71,9 +72,18 @@ export interface ICompetitionSpConfigGenshinExplorationSection {
   };
 }
 
+export type CompetitionSettingBrands =
+  | 'SDUTPC'
+  | 'SDUTRound'
+  | 'APF'
+  | 'AzurSeries'
+  | 'Genshin'
+  | 'StarRail';
+export type CompetitionSettingPreset = 'genshin';
+
 export interface ICompetitionSpConfig {
-  brands?: ('SDUTPC' | 'SDUTRound' | 'APF' | 'AzurSeries' | 'Genshin')[];
-  preset?: 'genshin';
+  brands?: CompetitionSettingBrands[];
+  preset?: CompetitionSettingPreset;
   teamConfig?: {
     minMemberCount?: number;
     maxMemberCount?: number;
@@ -155,10 +165,13 @@ export interface ICompetitionSelfParticipantForm {
   info: ICompetitionUserInfo;
 }
 
+export type CompetitionSettingAllowedJoinMethods = 'register' | 'public' | 'password';
+export type CompetitionSettingAllowedAuthMethods = 'session' | 'password' | 'ip' | 'assistant';
+
 export interface ICompetitionSettings {
   frozenLength: number;
-  allowedJoinMethods: Array<'register' | 'public' | 'password'>;
-  allowedAuthMethods: Array<'session' | 'password' | 'ip' | 'assistant'>;
+  allowedJoinMethods: Array<CompetitionSettingAllowedJoinMethods>;
+  allowedAuthMethods: Array<CompetitionSettingAllowedAuthMethods>;
   allowedSolutionLanguages: string[];
   allowAnyObservation: boolean;
   useOnetimePassword: boolean;
