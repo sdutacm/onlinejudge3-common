@@ -133,6 +133,24 @@ export enum ECompetitionUserStatus {
   quitted = 6,
 }
 
+export enum ECompetitionRulePreset {
+  ICPC = 'ICPC',
+  ICPCWithScore = 'ICPCWithScore',
+}
+
+export enum ECompetitionSettingAllowedJoinMethod {
+  Register = 'register',
+  Public = 'public',
+  Password = 'password',
+}
+
+export enum ECompetitionSettingAllowedAuthMethod {
+  Session = 'session',
+  Password = 'password',
+  IP = 'ip',
+  Assistant = 'assistant',
+}
+
 export enum EBalloonType {
   /** 派送 */
   delivery = 1,
