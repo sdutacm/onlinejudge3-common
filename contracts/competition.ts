@@ -10,9 +10,6 @@ export interface IGetCompetitionListReq {
   order?: ['competitionId', 'ASC' | 'DESC'][];
   competitionId?: number;
   title?: string;
-  /**
-   * 是否已结束
-   */
   ended?: boolean;
   rule?: string;
   isTeam?: boolean;
@@ -902,7 +899,7 @@ export interface IGetCompetitionRanklistReq {
 export interface IGetCompetitionRanklistResp {
   count: number;
   rows: {
-    rank: number;
+    rank: number | null;
     user: {
       userId: number;
       username: string;
