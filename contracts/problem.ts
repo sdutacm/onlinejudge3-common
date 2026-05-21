@@ -28,6 +28,8 @@ export interface IGetProblemListResp {
     source: string;
     authors: string[];
     difficulty: number;
+    difficultyAigc: number;
+    difficultyAiAuthor: string;
     accepted: number;
     submitted: number;
     display: boolean;
@@ -36,6 +38,8 @@ export interface IGetProblemListResp {
       nameEn: string;
       nameZhHans: string;
       nameZhHant: string;
+      isAigc: boolean;
+      aiAuthor: string;
       hidden: boolean;
       createdAt: string;
     }[];
@@ -65,6 +69,8 @@ export interface IGetProblemDetailResp {
   timeLimit: number;
   memoryLimit: number;
   difficulty: number;
+  difficultyAigc: number;
+  difficultyAiAuthor: string;
   accepted: number;
   submitted: number;
   spj: boolean;
@@ -78,6 +84,8 @@ export interface IGetProblemDetailResp {
     nameEn: string;
     nameZhHans: string;
     nameZhHant: string;
+    isAigc: boolean;
+    aiAuthor: string;
     hidden: boolean;
     createdAt: string;
   }[];
@@ -100,6 +108,8 @@ export interface ICreateProblemReq {
   timeLimit: number;
   memoryLimit: number;
   difficulty?: number;
+  difficultyAigc?: number;
+  difficultyAiAuthor?: string;
   spj?: boolean;
   display?: boolean;
   spConfig?: {
@@ -127,6 +137,8 @@ export interface IUpdateProblemDetailReq {
   timeLimit?: number;
   memoryLimit?: number;
   difficulty?: number;
+  difficultyAigc?: number;
+  difficultyAiAuthor?: string;
   spj?: boolean;
   display?: boolean;
   spConfig?: {
@@ -136,5 +148,9 @@ export interface IUpdateProblemDetailReq {
 
 export interface ISetProblemTagsReq {
   problemId: number;
-  tagIds: number[];
+  tags: {
+    tagId: number;
+    isAigc?: boolean;
+    aiAuthor?: string;
+  }[];
 }
