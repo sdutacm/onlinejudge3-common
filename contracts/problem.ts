@@ -152,5 +152,6 @@ export interface ISetProblemTagsReq {
     tagId: number;
     isAigc?: boolean;
     aiAuthor?: string;
+    hidden?: boolean;
   }[];
 }
