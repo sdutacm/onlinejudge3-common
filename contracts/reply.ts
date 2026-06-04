@@ -27,7 +27,7 @@ export interface IGetReplyListResp {
     };
     user: {
       userId: number;
-      username: string;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;

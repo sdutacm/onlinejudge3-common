@@ -22,14 +22,14 @@ export interface IGetMessageListResp {
     messageId: number;
     from?: {
       userId: number;
-      username: string;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;
     };
     to: {
       userId: number;
-      username: string;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;

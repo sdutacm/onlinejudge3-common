@@ -302,7 +302,7 @@ export interface IGetSelfOfficialMembersResp {
   count: number;
   rows: {
     userId: number;
-    username: string;
+    username?: string;
     nickname: string;
     avatar: string | null;
     bannerImage: string;
@@ -325,7 +325,7 @@ export interface IGetUserMembersResp {
   count: number;
   rows: {
     userId: number;
-    username: string;
+    username?: string;
     nickname: string;
     avatar: string | null;
     bannerImage: string;
@@ -361,7 +361,7 @@ export interface IGetSelfJoinedTeamsResp {
     status: number;
     members: {
       userId: number;
-      username: string;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;

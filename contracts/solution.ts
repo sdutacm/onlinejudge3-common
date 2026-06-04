@@ -38,7 +38,7 @@ export interface IGetSolutionListResp {
     };
     user: {
       userId: number;
-      username: string;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;
@@ -122,7 +122,7 @@ export interface IGetSolutionDetailResp {
   };
   user: {
     userId: number;
-    username: string;
+    username?: string;
     nickname: string;
     avatar: string | null;
     bannerImage: string;
@@ -208,7 +208,7 @@ export interface IBatchGetSolutionDetailResp {
     };
     user: {
       userId: number;
-      username: string;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;

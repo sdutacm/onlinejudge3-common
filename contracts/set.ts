@@ -23,6 +23,7 @@ export interface IGetSetListResp {
     setId: number;
     user: {
       userId: number;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;
@@ -50,6 +51,7 @@ export interface IGetSetDetailResp {
   setId: number;
   user: {
     userId: number;
+    username?: string;
     nickname: string;
     avatar: string | null;
     bannerImage: string;

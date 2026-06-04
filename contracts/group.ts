@@ -122,6 +122,7 @@ export interface IGetGroupMemberListResp {
     groupId: number;
     user: {
       userId: number;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;

@@ -23,7 +23,7 @@ export interface IGetTopicListResp {
     topicId: number;
     user: {
       userId: number;
-      username: string;
+      username?: string;
       nickname: string;
       avatar: string | null;
       bannerImage: string;
@@ -51,7 +51,7 @@ export interface IGetTopicDetailResp {
   topicId: number;
   user: {
     userId: number;
-    username: string;
+    username?: string;
     nickname: string;
     avatar: string | null;
     bannerImage: string;
